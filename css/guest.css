@@ -268,7 +268,7 @@ header {
   line-height: 24px;
 }
 .about_text:last-of-type {
-  margin-bottom: 40px;
+  margin-bottom: auto;
 }
 .about_text-main {
   color: #fba902;
