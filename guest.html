@@ -13,43 +13,48 @@
       <div class="container">
         <header>
           <div class="logo">
-            <img src="images/logo.svg" alt="YUM YUM coffee" />
+            <img src="images/logo.svg" alt="Логотип YUM YUM coffee" />
           </div>
           <nav class="menu">
             <ul class="menu_list">
               <li class="menu_block">
-                <a href="#" class="menu_link">О нас</a>
+                <a href="#about" class="menu_link">О нас</a>
               </li>
-              <li class="menu_block"><a href="#" class="menu_link">Меню</a></li>
+              <li class="menu_block"><a href="#content-menu" class="menu_link">Меню</a></li>
               <li class="menu_block">
-                <a href="#" class="menu_link">Вакансии</a>
+                <a href="#vacancies" class="menu_link">Вакансии</a>
               </li>
-              <li class="menu_block"><a href="#" class="menu_link">Блог</a></li>
+              <li class="menu_block"><a href="#blog" class="menu_link">Блог</a></li>
             </ul>
           </nav>
           <div class="contacts">
-            <div class="contact">Контакты</div>
-            <div class="contact_images">
-              <div class="contact_img"><img src="images/la_vk.svg" /></div>
-              <div class="contact_img">
-                <img src="images/la_instagram.svg" />
-              </div>
-              <div class="contact_img">
-                <img src="images/la_whatsapp.svg" />
-              </div>
-            </div>
+            <a href="tel:8(3412)99-88-22" class="contact">+7 (3412) 99-88-22</a>
+            <ul class="contact_links">
+              <li class="contact_item">
+                <a
+                  href="#"
+                  class="contact_link contact_vk"
+                  aria-labelledby="Ссылка на вконтакте"
+                ></a>
+              </li>
+              <li class="contact_item">
+                <a
+                  href="#"
+                  class="contact_link contact_ig"
+                  aria-labelledby="Ссылка на инстаграм"
+                ></a>
+              </li>
+              <li class="contact_item">
+                <a
+                  href="#"
+                  class="contact_link contact_ws"
+                  aria-labelledby="Ссылка на whatsapp"
+                ></a>
+              </li>
+            </ul>
           </div>
-          <div class="design">
-            <!-- <img src="images/design/header_design.png" /> -->
-          </div>
-          <!-- <div class="design_2">
-            <img src="images/design/ellipse_1.png" />
-          </div>
-          <div class="design_3">
-            <img src="images/design/ellipse_2.png" />
-          </div> 
-           -->
         </header>
+
         <main>
           <section class="intro">
             <div class="intro-flex">
@@ -57,19 +62,20 @@
                 Кофе в съедобных <br />стаканчиках
               </h2>
               <p class="intro_text">
-                Кофейня формата to go с уникальной подачей и стремлением
-                изменить мир к лучшему
+                Кофейня формата to go с уникальной подачей <br />
+                и стремлением изменить мир к лучшему
               </p>
               <a href="#" class="intro_button orange_button">Посмотреть меню</a>
             </div>
-            <figure class="intro_cup">
-              <img
-                src="images/design/cup.png"
-                alt="Изображение напитка в съедобном стаканчике"
-              />
-            </figure>
+            <img
+              class="intro_cup"
+              src="images/main-cup.png"
+              alt="Изображение напитка в съедобном стаканчике"
+              width="378"
+              height="447"
+            />
           </section>
-          <section class="about">
+          <section class="about" id="about">
             <h2 class="about_title title slide_title">О нас</h2>
             <ul class="about_menu slider_menu">
               <li class="about_menu-item slider_menu-item active">Концепция</li>
@@ -81,6 +87,8 @@
                 src="images/about1.png"
                 alt="Изображение кофе в съедобном стаканчике"
                 class="about_img"
+                width="600"
+                height="365"
               />
               <div class="about_description">
                 <p class="about_text">
@@ -104,10 +112,12 @@
                 src="images/about2.png"
                 alt="Интерьер кофейни"
                 class="about_img"
+                width="600"
+                height="365"
               />
               <div class="about_description">
                 <p class="about_text">
-                  Все началось с мечты об улучшении жизни людей. Эта мечта стал
+                  Все началось с мечты об улучшении жизни людей. Эта мечта стала
                   навязчивой идеей, и теперь мы каждое утро просыпаемся с
                   широкой улыбкой, чтобы бороться за эту мечту. Сейчас полный
                   отказ от пластиковой посуды маловероятен. Но наша команда
@@ -127,10 +137,9 @@
               </div>
             </div>
           </section>
-
           <section class="advantages">
             <h2 class="advantages_title title">
-              Преимущества <span>съедобных стаканчиков</span>
+              Преимущества съедобных <span>стаканчиков</span>
             </h2>
             <div class="advantages_grid">
               <ul class="left_list advantages_list">
@@ -152,6 +161,8 @@
                 <img
                   src="images/design/cup2.png"
                   alt="Фото съедобного стаканчика в разрезе"
+                  width="239"
+                  height="436"
                 />
               </div>
               <ul class="right_list advantages_list">
@@ -170,9 +181,8 @@
               </ul>
             </div>
           </section>
-
           <section class="actions">
-            <div class="actions_title title">Акции</div>
+            <h2 class="actions_title title">Акции</h2>
             <ul class="actions_list">
               <li class="actions_item action_1">
                 <div class="actions_item_text">
@@ -183,7 +193,7 @@
               </li>
               <li class="actions_item action_2">
                 <div class="actions_item_text">
-                  <span>шестой стакан</span> кофе<br />
+                  <span>Шестой стакан</span> кофе<br />
                   в подарок
                 </div>
               </li>
@@ -195,23 +205,25 @@
               </li>
             </ul>
           </section>
-          <section class="content-menu">
+          <section class="content-menu" id="content-menu">
             <h2 class="content-menu_title title slide_title">Меню</h2>
-            <ul class="content-menu slider_menu">
-              <li class="content-menu-item slider_menu-item active">
+            <ul class="content-menu_nav slider_menu">
+              <li class="content-menu_item slider_menu-item active">
                 Авторское
               </li>
-              <li class="content-menu-item slider_menu-item">Классическое</li>
-              <li class="content-menu-item slider_menu-item">Десертное</li>
+              <li class="content-menu_item slider_menu-item">Классическое</li>
+              <li class="content-menu_item slider_menu-item">Десертное</li>
             </ul>
             <div class="content-menu_slide slide content-menu_author">
               <ul class="content-menu_list">
                 <li class="author-menu_item author_1">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/author-1.png"
                       alt="Изображение напитка"
                       class="item_image"
+                      width="280"
+                      height="300"
                     />
                     <figcaption class="item_properties">
                       <p class="item_volume">220мл/330мл</p>
@@ -250,9 +262,11 @@
                 <li class="author-menu_item author_2">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/author-2.png"
                       alt="Изображение напитка"
                       class="item_image"
+                      width="280"
+                      height="300"
                     />
                     <figcaption class="item_properties">
                       <p class="item_volume">220мл/330мл</p>
@@ -262,10 +276,13 @@
                       <dl class="item_energy">
                         <dt>Ккал</dt>
                         <dd>327/393</dd>
+                        <br />
                         <dt>Белки, г</dt>
                         <dd>8/10.3</dd>
+                        <br />
                         <dt>Жиры, г</dt>
                         <dd>8.25/10.5</dd>
+                        <br />
                         <dt>Углеводы, г</dt>
                         <dd>30.8/40.1</dd>
                       </dl>
@@ -288,9 +305,11 @@
                 <li class="author-menu_item author_3">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/author-3.png"
                       alt="Изображение напитка"
                       class="item_image"
+                      width="280"
+                      height="300"
                     />
                     <figcaption class="item_properties">
                       <p class="item_volume">220мл/330мл</p>
@@ -300,10 +319,13 @@
                       <dl class="item_energy">
                         <dt>Ккал</dt>
                         <dd>329/407</dd>
+                        <br />
                         <dt>Белки, г</dt>
                         <dd>8.3/10.6</dd>
+                        <br />
                         <dt>Жиры, г</dt>
                         <dd>8.8/11.2</dd>
+                        <br />
                         <dt>Углеводы, г</dt>
                         <dd>28.8/40.3</dd>
                       </dl>
@@ -327,14 +349,16 @@
                 </li>
               </ul>
             </div>
-            <div class="content-menu_slide slide content-menu_classic">
+            <div class="content-menu_slide slide content-menu_classic hidden">
               <ul class="classic-menu_list">
                 <li class="classic-menu_item classic_1">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/classic-1.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
                     <figcaption class="item_description">
                       <h3 class="item_name"><span>Американо</span></h3>
@@ -352,9 +376,11 @@
                 <li class="classic-menu_item classic_2">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/classic-2.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
                     <figcaption class="item_description">
                       <h3 class="item_name">
@@ -377,9 +403,11 @@
                 <li class="classic-menu_item classic_3">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/classic-3.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
                     <figcaption class="item_description">
                       <h3 class="item_name">
@@ -401,9 +429,11 @@
                 <li class="classic-menu_item classic_4">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/classic-4.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
                     <figcaption class="item_description">
                       <h3 class="item_name"><span>Раф</span>-кофе</h3>
@@ -423,14 +453,16 @@
                 </li>
               </ul>
             </div>
-            <div class="content-menu_slide slide content-menu_dessert">
+            <div class="content-menu_slide slide content-menu_dessert hidden">
               <ul class="dessert-menu_list">
                 <li class="dessert-menu_item dessert_1">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/dessert-1.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
                     <figcaption class="item_description">
                       <h3 class="item_name"><span>Какао</span></h3>
@@ -450,9 +482,11 @@
                 <li class="dessert-menu_item dessert_2">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/dessert-2.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
                     <figcaption class="item_description">
                       <h3 class="item_name">Горячий <span>шоколад</span></h3>
@@ -472,9 +506,11 @@
                 <li class="dessert-menu_item dessert_3">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/dessert-3.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
                     <figcaption class="item_description">
                       <h3 class="item_name">Матча <span>латте</span></h3>
@@ -495,9 +531,11 @@
                 <li class="dessert-menu_item dessert_4">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/dessert-4.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
                     <figcaption class="item_description">
                       <h3 class="item_name">Анчан <span>латте</span></h3>
@@ -514,330 +552,244 @@
                     </figcaption>
                   </figure>
                 </li>
-                <li class="dessert-menu_item-big dessert_5">
+                <li class="dessert-menu_item dessert_5">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/dessert-5.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
-                    <figcaption class="item_properties">
-                      <p class="item_volume">220мл/330мл</p>
-                      <p class="item_definition">
-                        Энергетическая и пищевая ценность:
+                    <figcaption class="item_description">
+                      <h3 class="item_name">Молочный<span> коктейль</span></h3>
+                      <p class="item_text">
+                        Нежный освежающий напиток на основе молока и мороженого.
+                        По желанию добавьте сироп
                       </p>
-                      <dl class="item_energy">
-                        <dt>Ккал</dt>
-                        <dd>392/524</dd>
-                        <br />
-                        <dt>Белки, г</dt>
-                        <dd>7.8/11</dd>
-                        <br />
-                        <dt>Жиры, г</dt>
-                        <dd>15.5/22.5</dd>
-                        <br />
-                        <dt>Углеводы, г</dt>
-                        <dd>31.2/45.6</dd>
-                      </dl>
+                      <p class="item_compound">
+                        <span>Состав напитка:</span> молоко, мороженое, сироп
+                      </p>
+                      <p class="item_volume">
+                        220мл/330мл<span>Ккал 392/524</span>
+                      </p>
                     </figcaption>
                   </figure>
-                  <div class="item_description">
-                    <h3 class="item_name">Молочный<span> коктейль</span></h3>
-                    <p class="item_text">
-                      Нежный освежающий напиток на основе молока и мороженого.
-                      По желанию добавьте сироп
-                    </p>
-                    <p class="item_compound">
-                      <span>Состав напитка:</span> молоко, мороженое, сироп
-                    </p>
-                  </div>
                 </li>
-                <li class="dessert-menu_item-big dessert_6">
+                <li class="dessert-menu_item dessert_6">
                   <figure>
                     <img
-                      src="images/drink.png"
+                      src="images/menu/dessert-6.png"
                       alt="Изображение напитка"
                       class="item_image"
+					  width="280"
+                      height="300"
                     />
-                    <figcaption class="item_properties">
-                      <p class="item_volume">220мл/330мл</p>
-                      <p class="item_definition">
-                        Энергетическая и пищевая ценность:
+                    <figcaption class="item_description">
+                      <h3 class="item_name">
+                        <span>мороженое</span> в стаканчике
+                      </h3>
+                      <p class="item_text">
+                        Яркое сочетание холодного шарика мороженого и хрустящего
+                        песочного стаканчика с шоколадной прослойкой
                       </p>
-                      <dl class="item_energy">
-                        <dt>Ккал</dt>
-                        <dd>329/407</dd>
-                        <br />
-                        <dt>Белки, г</dt>
-                        <dd>8.3/10.6</dd>
-                        <br />
-                        <dt>Жиры, г</dt>
-                        <dd>8.8/11.2</dd>
-                        <br />
-                        <dt>Углеводы, г</dt>
-                        <dd>28.8/40.3</dd>
-                      </dl>
+                      <p class="item_compound">
+                        <span>Состав:</span> мороженое, топпинг (по желанию)
+                      </p>
+                      <p class="item_volume">
+                        220мл/330мл<span>Ккал 329/407</span>
+                      </p>
                     </figcaption>
                   </figure>
-                  <div class="item_description">
-                    <h3 class="item_name">
-                      <span>мороженое</span> в стаканчике
-                    </h3>
-                    <p class="item_text">
-                      Яркое сочетание холодного шарика мороженого и хрустящего
-                      песочного стаканчика с шоколадной прослойкой
-                    </p>
-                    <p class="item_compound">
-                      <span>Состав:</span> мороженое, топпинг (по желанию)
-                    </p>
-                  </div>
                 </li>
               </ul>
             </div>
           </section>
-          <!--
-          <div class="add_form">
-            <div class="add_form_design1">
-              <img src="images/design/addform.png" />
-            </div>
-            <div class="add_form_design2">
-              <img src="images/design/ellipse_7.png" />
-            </div>
-            <div class="add_form_design3">
-              <img src="images/design/ellipse_8.png" />
-            </div>
-            <div class="add_form_blocks">
-              <div class="add_forma">
-                <form>
-                  <input
-                    type="text"
-                    name="name"
-                    class="form_name"
-                    required="required"
-                  />
-                  <label class="label_name">Ваше имя</label>
-                  <input
-                    type="text"
-                    name="number"
-                    class="form_number"
-                    required="required"
-                  />
-                  <label class="label_phone">Номер телефона</label>
-                  <input
-                    type="text"
-                    name="comment"
-                    class="form_comment"
-                    required="required"
-                  />
-                  <label class="label_comment"
-                    >Напишите ваш вариант напитка...</label
-                  >
-                  <input
-                    type="submit"
-                    name=""
-                    class="submit"
-                    value="Отправить идею"
-                  />
-                </form>
-              </div>
-              <div class="add_form_two">
-                <div class="add_form_title">добавь свой напиток</div>
-                <div class="add_fotm_text">
-                  Теперь и вы можете внести<br />
+          <section class="add-form">
+            <div class="add-form_blocks">
+              <form method="POST" action="" class="add-form_form">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form_name"
+                  required="required"
+                />
+                <label for="name" class="label_name">Ваше имя</label>
+                <input
+                  type="tel"
+                  name="number"
+                  class="form_number"
+                  required="required"
+                />
+                <label for="number" class="label_phone">Номер телефона</label>
+                <textarea
+                  rows="20"
+                  cols="10"
+                  name="comment"
+                  id="comment"
+                  class="form_comment"
+                >Напишите ваш вариант напитка...</textarea>
+                <p class="add-form_copyright">
+                  Нажимая кнопку «Отправить идею» вы соглашаетесь с обработкой
+                  персональных данных. <a href="#" class="add-form_link">Подробнее о политике конфиденциальности</a>
+                </p>
+                <input
+                  type="submit"
+                  name="submit"
+                  class="add-form_submit orange_button"
+                  value="Отправить идею"
+                />
+              </form>
+              <div class="add-form_two">
+                <h2 class="add-form_title">Добавь свой напиток</h2>
+                <p class="add-form_text">
+                  Теперь и ты можешь внести<br />
                   разнообразие вкусов в наше меню!
-                </div>
-                <div class="add_form_text2">
-                  Предложите свой вариант сезонного напитка,<br />
+				</p>
+                <p class="add-form_text-little">
+                  Предложи свой вариант сезонного напитка,<br />
                   и, возможно, именно его мы добавим в меню!<br />
-                  А вы получите промокод на скидку :)
-                </div>
+				  <span>А ты получишь промокод на скидку :)</span>
+				</p>
               </div>
             </div>
-          </div>
-          <div class="vacancy">
-            <div class="vacancy_design">
-              <img src="images/design/vacancy.png" />
-            </div>
-            <div class="vacancy_block">
-              <div class="vacancy_title">ВАКАНСИИ</div>
-              <div class="vacancy_text">
+          </section>
+          <section class="vacancies" id="vacancies">
+			<h2 class="vacancies_title title">Вакансии</h2>
+			<p class="vacancies_text">
                 Начни свой путь <span>в нашей команде</span>, поддержи экологию!
-              </div>
-              <div class="barista">
-                <div class="barista_title">БАРИСТА</div>
-                <div class="barista_text">
-                  <span>ЕСЛИ ТЫ</span>: энергичный, позитивный, любишь<br />общение
+			</p>
+            <div class="vacancies_blocks">
+              <div class="barista vacancy_block">
+                <h3 class="barista_title vacancy_title">Бариста</h3>
+                <p class="barista_text">
+                  <span>Если ты:</span> энергичный, позитивный, любишь<br />общение
                   и вкусный кофе, заботишься о природе,<br />то скорее вливайся
                   в наш дружный коллектив!
-                </div>
-                <div class="barista_botton">
-                  <div class="barista_botton_text">СТАТЬ БАРИСТОЙ</div>
-                </div>
+				</p>
+                <input type="button" class="barista_button vacancy_button" value="Стать баристой">
               </div>
-              <div class="guest">
-                <div class="guest_title">Тайный гость</div>
-                <div class="guest_text">
+              <div class="guest vacancy_block">
+                <h3 class="guest_title vacancy_title">Тайный гость</h3>
+                <p class="guest_text">
                   Оцените работу кофейни и работу бариста
-                </div>
-                <div class="guest_text2">
+				</p>
+                <p class="guest_text2">
                   Готов повлиять на качество продукта и сервиса?<br />Отправляй
                   заявку, получай указания<br />и начинай миссию!
-                </div>
-                <div class="guest_button">
-                  <div class="guest_button_text">СТАТЬ ТАЙНЫМ ГОСТЕМ</div>
-                </div>
+				</p>
+                <input type="button" class="guest_button vacancy_button" value="Стать тайным гостем">
               </div>
             </div>
-          </div>
-          <div class="map">
-            <div class="map_title"><span>YUM-YUM</span> КАРТА</div>
-            <div class="izhevsk">
-              г. Ижевск
-              <div class="place">ул. михаила петрова, 29</div>
-              <div class="place_bar"></div>
-              <div class="place_time">Ежедневно с 9:00 до 23:00</div>
-              <div class="place">березовая роща</div>
-              <div class="place_bar"></div>
-              <div class="place_time">Ежедневно с 9:00 до 23:00</div>
-              <div class="place">центральная площадь, павильон 4</div>
-              <div class="place_bar"></div>
-              <div class="place_time">Ежедневно с 9:00 до 23:00</div>
-              <div class="place">ул. ленина, 140</div>
-              <div class="place_bar"></div>
-              <div class="place_time">Ежедневно с 9:00 до 23:00</div>
-              <div class="place">ул. кирова, 8д</div>
-              <div class="place_bar"></div>
-              <div class="place_time">Ежедневно с 9:00 до 23:00</div>
-            </div>
-            <div class="map_img">
-              <img src="images/map.png" />
-            </div>
-          </div>
-          <div class="social">
-            <div class="social_design">
-              <img src="images/design/social.png" />
-            </div>
-            <div class="sociality">
-              <div class="social_title">Мы в социальных сетях</div>
-              <div class="social_text">
-                Поделись своим мнением<br />поддержи нашу эко-идею<br />следи за
-                новостями
-              </div>
-            </div>
-            <div class="social_contacts">
-              <a href="https://vk.com/yumcoffee" target="blank">
-                <div class="social_block">
-                  <div class="social_img">
-                    <img src="images/vk2.png" />
-                  </div>
-                  <div class="social_contact_text">vkontakte</div>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/yumyum_coffee/" target="blank">
-                <div class="social_block">
-                  <div class="social_img">
-                    <img src="images/inst2.png" />
-                  </div>
-                  <div class="social_contact_text">instagram</div>
-                </div>
-              </a>
-              <div class="social_block">
-                <div class="social_img">
-                  <img src="images/wa.png" />
-                </div>
-                <div class="social_contact_text">whatsapp</div>
-              </div>
-            </div>
-          </div>
-          <div class="blog">
-            <div class="blog_design">
-              <img src="images/design/blog.png" />
-            </div>
-            <div class="blog_design_2">
-              <img src="images/design/ellipse_9.png" />
-            </div>
-            <div class="blog_design_3">
-              <img src="images/design/ellipse_10.png" />
-            </div>
-            <div class="blog_title"><span>Эко</span>-блог</div>
-            <div class="blog_button">
-              <div class="blog_button_text">Читать все статьи</div>
-            </div>
+		  </section>
+          <section class="map">
+            <h2 class="map_title title"><span>yum-yum</span> карта</h2>
+			<div class="map-flex">
+			<div class="map_places">
+				<h3 class="map_city" data-city="izhevsk">г. Ижевск</h3>
+				<ul class="map_list">
+					<li class="map_list-item">
+						<p class="place">ул. Михаила Петрова, 29</p>
+						<p class="place_time">Ежедневно с 9:00 до 23:00</p>
+					</li>
+					<li class="map_list-item">
+						<p class="place">Березовая роща</p>
+						<p class="place_time">Ежедневно с 9:00 до 23:00</p>
+					</li>
+					<li class="map_list-item">
+						<p class="place">Центральная площадь, павильон 4</p>
+						<p class="place_time">Ежедневно с 9:00 до 23:00</p>
+					</li>
+					<li class="map_list-item">
+						<p class="place">ул. Ленина, 140</p>
+						<p class="place_time">Ежедневно с 9:00 до 23:00</p>
+					</li>
+					<li class="map_list-item">
+						<p class="place">ул. Кирова, 8д</p>
+						<p class="place_time">Ежедневно с 9:00 до 23:00</p>
+					</li>
+				</ul>
+			</div>
+			<img src="images/map.png" width="805" height="444" />
+			</div>
+			</section>
+          <section class="blog" id="blog">
+            <h2 class="blog_title title"><span>Эко</span>-блог</h2>
+			<a href="#" class="button blog_button-read">Читать все статьи</a>
             <div class="blog_blocks">
               <div class="blog_block blog_1">
-                <img class="blog_img" src="images/blog1.png" />
-                <div class="blog_text text_1">
-                  Забота о природе как<br /><span>образ жизни</span>
-                </div>
+                <p class="blog_text text_1">
+                  Забота о природе <br />как <span>образ жизни</span>
+				</p>
               </div>
               <div class="blog_block blog_2">
-                <img class="blog_img" src="images/blog2.png" />
-                <div class="blog_text text_2">
-                  Выпил кофе, съел<br />посуду.
-                  <span>Съедобная<br />чашка-печенье</span> Cookie<br />Cup для
+                <p class="blog_text text_2">
+                  Выпил кофе, съел посуду.<br>
+                  <span>Съедобная чашка-печенье</span> Cookie Cup для
                   Lavazza
-                </div>
+				</p>
               </div>
               <div class="blog_block blog_3">
-                <img class="blog_img" src="images/blog3.png" />
-                <div class="blog_text text_3">
-                  <span>Экология в тренде.</span> Как стать самым модным на
+                <p class="blog_text text_3">
+                  <span>Экология в тренде.</span><br> Как стать самым<br> модным на
                   планете?
-                </div>
+				</p>
               </div>
-            </div>
-          </div> -->
+            </section> 
         </main>
-        <!-- <footer>
-          <div class="footer_design">
-            <img src="images/design/footer.png" />
-          </div>
-          <div>
+
+        <footer>
+          <section class="footer_main-info">
             <div class="footer_logo">
-              <img src="images/logo.svg" />
-              <img class="coffee" src="images/coffee.png" />
-              <img class="bar" src="images/bar.png" />
+              <img src="images/logo.svg" class="footer_logo-img"  height="40" alt = "Логотип YUM-YUM coffee"/>
             </div>
-            <div class="footer_icons">
-              <div class="footer_icon">
-                <img src="images/vk2.png" />
-              </div>
-              <div class="footer_icon">
-                <img src="images/inst2.png" />
-              </div>
-              <div class="footer_icon">
-                <img src="images/wa.png" />
-              </div>
-            </div>
-            <div class="copyright">© 2021 YUM-YUM coffee</div>
-            <div class="politic">Политика конфиденциальности</div>
-          </div>
-          <div>
-            <div class="footer_block_title">Гостю</div>
-            <div class="footer_block_text footer_1">О нас</div>
-            <div class="footer_block_text">Меню</div>
-            <div class="footer_block_text">Вакансии</div>
-            <div class="footer_block_text">Блог</div>
-          </div>
-          <div>
-            <div class="footer_block_title">Бизнесу</div>
-            <div class="footer_block_text footer_1">О нас</div>
-            <div class="footer_block_text">Меню</div>
-            <div class="footer_block_text">Вакансии</div>
-            <div class="footer_block_text">Блог</div>
-          </div>
-          <div>
-            <div class="footer_block_title">
-              +7 (3412) 99-88-22<br /><span
-                >для звонков из России и других стран</span
-              >
-            </div>
-            <div class="footer_block_text footer_2">
-              yum-yum.coffee@gmail.com
-            </div>
-          </div>
-        </footer> -->
+            <div class="contacts footer_contacts">
+				<ul class="contact_links footer_contact-links">
+				  <li class="contact_item footer_contact-item">
+					<a
+					  href="#"
+					  class="contact_link footer_contact-link footer_contact-vk"
+					  aria-labelledby="Ссылка на вконтакте"
+					></a>
+				  </li>
+				  <li class="contact_item footer_contact-item">
+					<a
+					  href="#"
+					  class="contact_link  footer_contact-link footer_contact-ig"
+					  aria-labelledby="Ссылка на инстаграм"
+					></a>
+				  </li>
+				  <li class="contact_item footer_contact-item">
+					<a
+					  href="#"
+					  class="contact_link  footer_contact-link footer_contact-ws"
+					  aria-labelledby="Ссылка на whatsapp"
+					></a>
+				  </li>
+				</ul>
+			  </div>
+            <p class="footer_copyright">© 2021 YUM-YUM coffee</p>
+            <a href="#" class="footer_politic">Политика конфиденциальности</a>
+		</section>
+          <section class="footer_menu">
+            <p class="footer_menu-title">Гостю</p>
+			<ul class="footer_menu-list">
+				<li class="footer_menu-item"><a href="#about" class="footer_menu-link">О нас</a></li>
+				<li class="footer_menu-item"><a href="#content-menu" class="footer_menu-link">Меню</a></li>
+				<li class="footer_menu-item"><a href="#vacancies" class="footer_menu-link">Вакансии</a></li>
+				<li class="footer_menu-item"><a href="#blog" class="footer_menu-link">Блог</a></li>
+			</ul>
+		  </section> 
+          <section class="footer_contacts">
+			<p class="footer_tel-text">
+				<a href="tel:8-(3412)-99-88-22" class="footer_tel">+7 (3412) 99-88-22</a><br>
+			  для звонков из России и других стран</p>
+			  <a href="mailto:yum-yum.coffee@gmail.com" class="footer_mail">yum-yum.coffee@gmail.com</a>
+			  <a href="#" class="footer_button button">Перейти к франшизе</a>
+		</section> 
+        </footer>
       </div>
-    </div>
+	</div>
   </body>
 </html>

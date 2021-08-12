@@ -28,7 +28,7 @@ body {
 }
 .container {
   padding: 0px 110px;
-  max-width: 1440px;
+  width: 1220px;
 }
 
 /* Header */
@@ -37,7 +37,6 @@ header {
   padding-top: 30px;
   margin-bottom: 100px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -62,31 +61,19 @@ header {
   color: #fba902;
 }
 
-@media screen and (max-width: 690px) {
-  .content_text {
-    font-size: 28px;
-    line-height: 38px;
-  }
-  header {
-    margin-bottom: 50px;
-  }
-}
-
 /* Choice section */
 .choice {
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 70px;
-  justify-content: center;
 }
 .choice_block {
-  flex: 1 1 32%;
   padding: 50px;
-  min-width: 200px;
-  margin: 0 12px;
+  width: 600px;
   border: 1px solid #351c0e;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+}
+.choice_block + .choice_block {
+  margin-left: 24px;
 }
 
 .left_block {
@@ -119,10 +106,10 @@ header {
 }
 
 .choice_button {
-  width: 80%;
-  max-width: 288px;
+  width: 232px;
+  /* max-width: 288px; */
   /* height: 20px; */
-  margin: auto auto 0 auto;
+  margin: 0 auto;
   padding: 15px 32px;
   font-family: "Raleway_bold";
   text-align: center;
