@@ -623,7 +623,12 @@
           </section>
           <section class="add-form">
             <div class="add-form_blocks">
-              <form method="POST" action="" class="add-form_form form">
+              <form
+                method="POST"
+                action=""
+                class="add-form_form form"
+                novalidate
+              >
                 <input
                   type="text"
                   name="name"
@@ -635,6 +640,7 @@
                 <input
                   type="tel"
                   name="number"
+                  id="number"
                   class="form_number"
                   required="required"
                 />
@@ -852,7 +858,7 @@
           </section>
         </footer>
 
-        <div class="vacancy-form hidden">
+        <div class="vacancy-form popup hidden invisible">
           <form action="" method="post" class="form">
             <h3 class="vacancy-form_title">введи свои <span>данные</span></h3>
             <input type="text" name="vacancy-name" id="vacancy-name" required />
@@ -897,7 +903,7 @@
             <input type="submit" value="Отправить" class="form_submit" />
           </form>
         </div>
-        <div class="announce add popup-barista hidden">
+        <div class="announce add popup-barista popup hidden invisible">
           <h3 class="announce_title"><span>ммм...</span>звучит очень вкусно</h3>
           <p class="announce_text">
             Благодарим вас за предложенную идею - мы обязательно рассмотрим ее и
@@ -906,7 +912,7 @@
           </p>
           <button class="announce_button button orange_button">закрыть</button>
         </div>
-        <div class="announce apply hidden">
+        <div class="announce apply popup hidden invisible">
           <h3 class="announce_title"><span>благодарим</span> тебя за заявку</h3>
           <p class="announce_text">
             Мы обязательно рассмотрим твою кандидатуру и наш менеджер свяжется с
@@ -915,9 +921,8 @@
           <button class="announce_button button">закрыть</button>
         </div>
       </div>
-      <div class="overlay hidden"></div>
+      <div class="overlay hidden invisible"></div>
     </div>
-
     <script src="js/script.js"></script>
   </body>
 </html>

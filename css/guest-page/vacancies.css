@@ -13,12 +13,6 @@
   left: -350px;
   background: #fcf8f1 url('../../images/design/vacancies.png');
 }
-@media screen and (max-width: 1440px) {
-  .vacancies::before {
-    width: 940px;
-    left: -110px;
-  }
-}
 .vacancies_title {
   font-size: 36px;
   line-height: 47px;

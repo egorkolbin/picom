@@ -1,14 +1,18 @@
 /* Popup Styles */
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
   width: 1920px;
   height: 100%;
+  top: 0;
+  left: 0;
   background-color: #493326;
   opacity: 0.8;
   z-index: 5;
   backdrop-filter: blur(10px);
+  transition: opacity 0.1s;
+}
+.overlay.invisible {
+  opacity: 0;
 }
 /* .noscroll {
     overflow-x: hidden;
@@ -31,10 +35,29 @@ form textarea {
   outline: none;
   caret-color: #fba902;
 }
-input.invalid,
+form input.invalid,
 textarea.invalid {
   color: #fba902;
   border: 1px solid #fba902;
+  animation-name: invalid;
+  transition: color 0.4s;
+  animation-duration: 0.2s;
+  animation-iteration-count: 2;
+}
+form input.invalid ~ label {
+  color: #fba902;
+}
+input:-webkit-autofill {
+  box-shadow: none;
+  -webkit-box-shadow: 0 0 0 30px #f9f0d8 inset !important;
+}
+@keyframes invalid {
+  30% {
+    transform: translateX(5px);
+  }
+  70% {
+    transform: translateX(-5px);
+  }
 }
 form textarea {
   height: 113px;
@@ -81,6 +104,11 @@ form .submit {
   margin-left: -300px;
   z-index: 6;
   position: fixed;
+  border-radius: 15px;
+  transition: opacity 0.2s;
+}
+.vacancy-form.invisible {
+  opacity: 0;
 }
 .vacancy-form form {
   width: 440px;
@@ -152,6 +180,9 @@ form .submit {
   color: #fcf8f1;
   background-color: #493326;
 }
+.popup-guest_title {
+  color: #fcf8f1;
+}
 .popup-guest form {
   background-color: #493326;
 }
@@ -181,6 +212,10 @@ form .submit {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: opacity 0.2s;
+}
+.announce.invisible {
+  opacity: 0;
 }
 .announce_title {
   text-align: center;

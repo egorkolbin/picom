@@ -14,14 +14,6 @@
   left: -350px;
   background: #fcf8f1 url('../../images/design/actions.png') 100% 100%;
 }
-
-@media screen and (max-width: 1440px) {
-  .actions::before {
-    width: 1440px;
-    left: -110px;
-  }
-}
-
 .actions_title {
   font-size: 36px;
   margin: 0;

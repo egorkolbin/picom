@@ -74,3 +74,16 @@
   display: block;
   margin: 0 auto;
 }
+.shake-img {
+  animation-name: shake;
+  animation-duration: 3s;
+}
+
+@keyframes shake {
+  20% {
+    transform: rotate(8deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+}

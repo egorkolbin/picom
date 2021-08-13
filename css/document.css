@@ -26,27 +26,15 @@ section * {
   margin: 0 auto;
   overflow-x: visible;
 }
-/* .container::before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  right: calc((100vw - 1440px) / -2);
-  top: 0;
-  width: calc((100vw - 1440px) / 2 + 540px);
-  height: 810px;
-  opacity: 0.7;
-  background: url('../images/design/ellipse_2.png') left 150px no-repeat,
-    url('../images/design/ellipse_1.png') 50px 238px no-repeat,
-    url('../images/design/header_design.png') 120px 100% no-repeat;
-} */
-/* @media screen and (max-width: 1440px) {
-  .container::before {
-    right: 0;
-    width: 540px;
-  }
-} */
 .title {
   font-family: 'Raleway_bold';
   color: #351c0e;
   text-transform: uppercase;
+}
+main section {
+  transition: transform 1s, opacity 1s;
+}
+.section-hidden {
+  opacity: 0;
+  transform: translateY(6rem);
 }
