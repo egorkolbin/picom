@@ -1,0 +1,52 @@
+/* Общее */
+
+html,
+body {
+  background-color: #fffdfb;
+  font-family: 'Raleway';
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  font-weight: normal;
+}
+div.hidden {
+  display: none;
+}
+.wrapper {
+  width: 100%;
+}
+section * {
+  z-index: 2;
+}
+.container {
+  padding: 0px 350px;
+  width: 1220px;
+  position: relative;
+  margin: 0 auto;
+  overflow-x: visible;
+}
+/* .container::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  right: calc((100vw - 1440px) / -2);
+  top: 0;
+  width: calc((100vw - 1440px) / 2 + 540px);
+  height: 810px;
+  opacity: 0.7;
+  background: url('../images/design/ellipse_2.png') left 150px no-repeat,
+    url('../images/design/ellipse_1.png') 50px 238px no-repeat,
+    url('../images/design/header_design.png') 120px 100% no-repeat;
+} */
+/* @media screen and (max-width: 1440px) {
+  .container::before {
+    right: 0;
+    width: 540px;
+  }
+} */
+.title {
+  font-family: 'Raleway_bold';
+  color: #351c0e;
+  text-transform: uppercase;
+}

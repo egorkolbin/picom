@@ -1,0 +1,61 @@
+/* Map Section */
+.map {
+  margin-bottom: 120px;
+}
+.map_title {
+  margin-bottom: 75px;
+  position: relative;
+  font-size: 36px;
+  line-height: 46.8px;
+}
+.map_title span {
+  color: #fba902;
+}
+.map-flex {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.map_places {
+  padding-right: 5px;
+  /* margin-right: 100px; */
+}
+.map_city {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: 'Raleway';
+}
+.map_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.map_list-item {
+  margin-bottom: 25px;
+  color: #3f342f;
+  font-family: 'Raleway';
+}
+.place {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+.place::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 1px;
+  width: 103px;
+  background-color: #fba902;
+}
+.place_time {
+  font-size: 14px;
+  line-height: 12.5px;
+  margin: 0;
+}

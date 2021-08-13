@@ -1,0 +1,66 @@
+/* Main */
+
+.content_text {
+  font-family: 'Raleway_bold';
+  color: #351c0e;
+  font-size: 36px;
+  line-height: 57.6px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 98px;
+}
+.content_text_yellow {
+  color: #fba902;
+}
+
+/* Choice section */
+.choice {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.choice_block {
+  padding: 50px;
+  border: 1px solid #351c0e;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.left_block {
+  background-color: #faf5ec;
+  -moz-border-radius: 7em 3px 0em;
+  -webkit-border-radius: 1em 3px 5em;
+  border-radius: 7em 3px 0em;
+}
+
+.right_block {
+  background-color: #351c0e;
+  -moz-border-radius: 0em 3px 7em;
+  -webkit-border-radius: 1em 3px 5em;
+  border-radius: 0em 3px 7em;
+}
+
+.choice_text {
+  font-size: 24px;
+  line-height: 38.4px;
+  margin-bottom: 40px;
+  font-family: 'Raleway_bold';
+  text-align: center;
+}
+.choice_text span {
+  color: #fba902;
+}
+
+.block_text_left {
+  color: #351c0e;
+}
+.block_text_right {
+  color: #fcf8f1;
+}
+.choice_button {
+  width: 232px;
+  margin: 0 auto;
+  padding: 15px 32px;
+}

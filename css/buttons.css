@@ -1,0 +1,65 @@
+/* Кнопки */
+.button {
+  display: block;
+  font-family: 'Raleway_bold';
+  text-align: center;
+  cursor: pointer;
+}
+
+.orange_button {
+  background-color: #fba902;
+  border: 1px solid #fba902;
+  color: #fcf8f1;
+}
+.orange_button:hover {
+  border: 1px solid #3f342f;
+}
+.orange_button:active {
+  border: 1px solid #3f342f;
+  background-color: #351c0e;
+}
+input[type='button'].button {
+  border-width: 1px;
+}
+
+.white_button {
+  background-color: #ffffff;
+  color: #351c0e;
+  border: 1px solid #3f342f;
+}
+.white_button:hover {
+  color: #faf5ec;
+  border: 1px solid #fba902;
+  background-color: #351c0e;
+}
+.white_button:active {
+  border: 1px solid #3f342f;
+  background-color: #fba902;
+  color: #faf5ec;
+}
+.white_button-dark {
+  background-color: #faf5ec;
+  color: #351c0e;
+  border: 1px solid #faf5ec;
+}
+.white_button-dark:hover {
+  border: 1px solid #fba902;
+}
+.white_button-dark:active {
+  border: 1px solid #fba902;
+  background-color: #fba902;
+  color: #faf5ec;
+}
+
+.dark_button {
+  color: #faf5ec;
+  border: 1px solid #faf5ec;
+  background-color: #351c0e;
+}
+.dark_button:hover {
+  background-color: #fba902;
+}
+.dark_button:active {
+  border: 1px solid #fba902;
+  background-color: #351c0e;
+}

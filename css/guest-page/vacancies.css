@@ -1,0 +1,127 @@
+/* Vacancies section */
+.vacancies {
+  padding-top: 170px;
+  margin-bottom: 170px;
+  position: relative;
+}
+.vacancies::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1180px;
+  height: 1587px;
+  left: -350px;
+  background: #fcf8f1 url('../../images/design/vacancies.png');
+}
+@media screen and (max-width: 1440px) {
+  .vacancies::before {
+    width: 940px;
+    left: -110px;
+  }
+}
+.vacancies_title {
+  font-size: 36px;
+  line-height: 47px;
+  color: #493326;
+  margin: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+.vacancies_text {
+  font-family: 'Raleway';
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #351c0e;
+  margin: 0;
+  margin-bottom: 81px;
+  position: relative;
+}
+.vacancies_text span {
+  color: #fba902;
+}
+.vacancies_blocks {
+  display: flex;
+  justify-content: stretch;
+}
+.vacancy_block {
+  padding: 50px 104px;
+  display: flex;
+  flex-direction: column;
+}
+.vacancy_title {
+  font-size: 24px;
+  line-height: 38.4px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: 'Raleway_bold';
+  position: relative;
+}
+.vacancy_title::after {
+  content: '';
+  height: 1px;
+  width: 103px;
+  position: absolute;
+  background-color: #fba902;
+  left: 0;
+  bottom: -10px;
+}
+.barista {
+  padding-right: 50px;
+  background-color: #fcf8f1;
+}
+.barista_title {
+  color: #351c0e;
+}
+.barista_text {
+  /* font-family: 'Raleway'; */
+  color: #351c0e;
+  line-height: 25.6px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 66px;
+  padding-right: 100px;
+}
+.barista_text span {
+  color: #fba902;
+  text-transform: uppercase;
+}
+.vacancy_button {
+  width: 232px;
+  padding: 16px 53px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18.2px;
+  margin-top: auto;
+}
+.guest {
+  background-color: #351c0e;
+  border-radius: 0em 7em 7em 0;
+  padding-right: 66px;
+}
+.guest_title {
+  color: #fcf8f1;
+}
+.guest p {
+  line-height: 25.6px;
+  font-size: 16px;
+  font-weight: 500;
+  /* font-family: 'Raleway'; */
+  padding-right: 57px;
+}
+.guest_text {
+  color: #fba902;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.guest_text2 {
+  color: #fcf8f1;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.guest_button {
+  padding: 16px 31px;
+  font-size: 14px;
+}
