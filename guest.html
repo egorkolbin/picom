@@ -65,7 +65,7 @@
                 Кофейня формата to go с уникальной подачей <br />
                 и стремлением изменить мир к лучшему
               </p>
-              <a href="#" class="intro_button orange_button">Посмотреть меню</a>
+              <a href="#content-menu" class="intro_button orange_button button">Посмотреть меню</a>
             </div>
             <img
               class="intro_cup"
@@ -132,7 +132,7 @@
                 <input
                   type="button"
                   value="Присоединиться"
-                  class="about_button orange_button"
+                  class="about_button orange_button button"
                 />
               </div>
             </div>
@@ -628,7 +628,7 @@
                   cols="10"
                   name="comment"
                   id="comment"
-                  class="form_comment"
+                  class="form_comment" required
                 >Напишите ваш вариант напитка...</textarea>
                 <p class="add-form_copyright">
                   Нажимая кнопку «Отправить идею» вы соглашаетесь с обработкой
@@ -637,7 +637,7 @@
                 <input
                   type="submit"
                   name="submit"
-                  class="add-form_submit orange_button"
+                  class="add-form_submit orange_button button"
                   value="Отправить идею"
                 />
               </form>
@@ -668,7 +668,7 @@
                   и вкусный кофе, заботишься о природе,<br />то скорее вливайся
                   в наш дружный коллектив!
 				</p>
-                <input type="button" class="barista_button vacancy_button" value="Стать баристой">
+                <input type="button" class="barista_button vacancy_button white_button button" value="Стать баристой">
               </div>
               <div class="guest vacancy_block">
                 <h3 class="guest_title vacancy_title">Тайный гость</h3>
@@ -679,7 +679,7 @@
                   Готов повлиять на качество продукта и сервиса?<br />Отправляй
                   заявку, получай указания<br />и начинай миссию!
 				</p>
-                <input type="button" class="guest_button vacancy_button" value="Стать тайным гостем">
+                <input type="button" class="guest_button vacancy_button dark_button button" value="Стать тайным гостем">
               </div>
             </div>
 		  </section>
@@ -713,28 +713,31 @@
 			</div>
 			<img src="images/map.png" width="805" height="444" />
 			</div>
-			</section>
+			    </section>
           <section class="blog" id="blog">
             <h2 class="blog_title title"><span>Эко</span>-блог</h2>
-			<a href="#" class="button blog_button-read">Читать все статьи</a>
+			      <a href="#" class="button blog_button-read white_button">Читать все статьи</a>
             <div class="blog_blocks">
               <div class="blog_block blog_1">
                 <p class="blog_text text_1">
                   Забота о природе <br />как <span>образ жизни</span>
-				</p>
+			        	</p>
+                <a href="#" class="blog_button button white_button">Читать статью</a>
               </div>
               <div class="blog_block blog_2">
                 <p class="blog_text text_2">
                   Выпил кофе, съел посуду.<br>
                   <span>Съедобная чашка-печенье</span> Cookie Cup для
                   Lavazza
-				</p>
+			        	</p>
+                <a href="#" class="blog_button button white_button">Читать статью</a>
               </div>
               <div class="blog_block blog_3">
                 <p class="blog_text text_3">
                   <span>Экология в тренде.</span><br> Как стать самым<br> модным на
                   планете?
-				</p>
+				        </p>
+                <a href="#" class="blog_button button white_button">Читать статью</a>
               </div>
             </section> 
         </main>
@@ -742,55 +745,55 @@
         <footer>
           <section class="footer_main-info">
             <div class="footer_logo">
-              <img src="images/logo.svg" class="footer_logo-img"  height="40" alt = "Логотип YUM-YUM coffee"/>
+              <img src="images/footer-logo.svg" class="footer_logo-img"  height="40" alt = "Логотип YUM-YUM coffee"/>
             </div>
             <div class="contacts footer_contacts">
-				<ul class="contact_links footer_contact-links">
-				  <li class="contact_item footer_contact-item">
-					<a
-					  href="https://vk.com/yumcoffee"
-					  class="contact_link footer_contact-link footer_contact-vk"
-					  aria-labelledby="Ссылка на вконтакте"
-					></a>
-				  </li>
-				  <li class="contact_item footer_contact-item">
-					<a
-					  href="https://www.instagram.com/yumyum_coffee/"
-					  class="contact_link  footer_contact-link footer_contact-ig"
-					  aria-labelledby="Ссылка на инстаграм"
-					></a>
-				  </li>
-				  <li class="contact_item footer_contact-item">
-					<a
-					  href="#"
-					  class="contact_link  footer_contact-link footer_contact-ws"
-					  aria-labelledby="Ссылка на whatsapp"
-					></a>
-				  </li>
-				</ul>
-			  </div>
+				      <ul class="contact_links footer_contact-links">
+                <li class="contact_item footer_contact-item">
+                <a
+                  href="https://vk.com/yumcoffee"
+                  class="contact_link footer_contact-link footer_contact-vk"
+                  aria-labelledby="Ссылка на вконтакте"
+                ></a>
+                </li>
+                <li class="contact_item footer_contact-item">
+                <a
+                  href="https://www.instagram.com/yumyum_coffee/"
+                  class="contact_link  footer_contact-link footer_contact-ig"
+                  aria-labelledby="Ссылка на инстаграм"
+                ></a>
+                </li>
+				        <li class="contact_item footer_contact-item">
+                <a
+                  href="#"
+                  class="contact_link  footer_contact-link footer_contact-ws"
+                  aria-labelledby="Ссылка на whatsapp"
+                ></a>
+                </li>
+				      </ul>
+			      </div>
             <p class="footer_copyright">© 2021 YUM-YUM coffee</p>
             <a href="#" class="footer_politic">Политика конфиденциальности</a>
-		</section>
+		      </section>
           <section class="footer_menu">
             <p class="footer_menu-title">Гостю</p>
-			<ul class="footer_menu-list">
-				<li class="footer_menu-item"><a href="#about" class="footer_menu-link">О нас</a></li>
-				<li class="footer_menu-item"><a href="#content-menu" class="footer_menu-link">Меню</a></li>
-				<li class="footer_menu-item"><a href="#vacancies" class="footer_menu-link">Вакансии</a></li>
-				<li class="footer_menu-item"><a href="#blog" class="footer_menu-link">Блог</a></li>
-			</ul>
-		  </section> 
+            <ul class="footer_menu-list">
+              <li class="footer_menu-item"><a href="#about" class="footer_menu-link">О нас</a></li>
+              <li class="footer_menu-item"><a href="#content-menu" class="footer_menu-link">Меню</a></li>
+              <li class="footer_menu-item"><a href="#vacancies" class="footer_menu-link">Вакансии</a></li>
+              <li class="footer_menu-item"><a href="#blog" class="footer_menu-link">Блог</a></li>
+            </ul>
+          </section> 
           <section class="footer_contacts">
-			<p class="footer_tel-text">
-				<a href="tel:8-(3412)-99-88-22" class="footer_tel">+7 (3412) 99-88-22</a><br>
-			  для звонков из России и других стран</p>
-			  <a href="mailto:yum-yum.coffee@gmail.com" class="footer_mail">yum-yum.coffee@gmail.com</a>
-			  <a href="#" class="footer_button button">Перейти к франшизе</a>
-		</section> 
+			      <p class="footer_tel-text">
+            <a href="tel:8-(3412)-99-88-22" class="footer_tel">+7 (3412) 99-88-22</a><br>
+            для звонков из России и других стран</p>
+            <a href="mailto:yum-yum.coffee@gmail.com" class="footer_mail">yum-yum.coffee@gmail.com</a>
+            <a href="#" class="footer_button button dark_button">Перейти к франшизе</a>
+	    	  </section> 
         </footer>
       </div>
-	</div>
+  	</div>
   </body>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </html>

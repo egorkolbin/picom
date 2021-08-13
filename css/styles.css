@@ -31,6 +31,55 @@ body {
   width: 1220px;
 }
 
+/* Кнопки */
+.button {
+  display: block;
+  font-family: 'Raleway_bold';
+  text-align: center;
+  cursor: pointer;
+}
+
+.orange_button {
+  background-color: #fba902;
+  border: 1px solid #fba902;
+  color: #fcf8f1;
+}
+.orange_button:hover {
+  border: 1px solid #3f342f;
+}
+.orange_button:active {
+  border: 1px solid #3f342f;
+  background-color: #351c0e;
+}
+
+.white_button {
+  background-color: #faf5ec;
+  color: #351c0e;
+}
+.white_button:hover {
+  color: #faf5ec;
+  border: 1px solid #fba902;
+  background-color: #351c0e;
+}
+.white_button:active {
+  border: 1px solid #3f342f;
+  background-color: #fba902;
+  color: #faf5ec;
+}
+.white_button-dark {
+  background-color: #faf5ec;
+  color: #351c0e;
+  border: 1px solid #faf5ec;
+}
+.white_button-dark:hover {
+  border: 1px solid #fba902;
+}
+.white_button-dark:active {
+  border: 1px solid #fba902;
+  background-color: #fba902;
+  color: #faf5ec;
+}
+
 /* Header */
 header {
   padding-top: 30px;
@@ -103,7 +152,6 @@ header {
 }
 .choice_block {
   padding: 50px;
-  /* width: 600px; */
   border: 1px solid #351c0e;
   display: inline-flex;
   flex-direction: column;
@@ -140,37 +188,8 @@ header {
 .block_text_right {
   color: #fcf8f1;
 }
-
 .choice_button {
   width: 232px;
-  /* max-width: 288px; */
-  /* height: 20px; */
   margin: 0 auto;
   padding: 15px 32px;
-  font-family: 'Raleway_bold';
-  text-align: center;
-}
-
-.block_button_left {
-  background-color: #fba902;
-  border: 1px solid #fba902;
-  color: #fcf8f1;
-}
-.block_button_right {
-  background-color: #faf5ec;
-  color: #351c0e;
-}
-
-.choice_button:hover {
-  cursor: pointer;
-}
-.block_button_left:hover {
-  color: #fba902;
-  border: 1px solid #fba902;
-  background-color: #faf5ec;
-}
-.block_button_right:hover {
-  color: #faf5ec;
-  border: 1px solid #faf5ec;
-  background-color: #351c0e;
 }
