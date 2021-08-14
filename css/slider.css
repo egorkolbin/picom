@@ -31,6 +31,7 @@
   display: block;
   padding: 15px 50px;
   border-bottom: 1px solid #351c0e;
+  cursor: pointer;
 }
 .slider_menu-item.active {
   font-weight: 700;

@@ -1,0 +1,92 @@
+.content{
+	margin-top: 100px;
+}
+h2{
+	font-family: 'Raleway_bold';
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #493326;
+}
+h2 span{
+	color: #FBA902;
+}
+.back_button{
+	position: absolute;
+	width: 184px;
+	height: 50px;
+	margin: -88px 0px 0px 1036px;
+	cursor: pointer;
+	outline: none;
+	background-color: transparent;
+}
+.blog_row{
+	display: flex;
+	margin-bottom: 50px;
+	justify-content: space-between;
+	width: 1220px;
+}
+.blog_card{
+	width: 390px;
+	height: 500px;
+}
+.card_img{
+	position: absolute;
+}
+.card_view{
+	position: absolute;
+	padding: 44px 0px 0px 37px;
+}
+.card_time{
+	position: absolute;
+	padding: 74px 0px 0px 38px;
+}
+.card_info_view{
+	font-family: 'Raleway';
+	color: #FCF8F1;
+	font-size: 12px;
+	position: relative;
+	opacity: 0.7;
+	padding: 44px 0px 0px 69px;
+}
+.card_info_time{
+	font-family: 'Raleway';
+	color: #FCF8F1;
+	font-size: 12px;
+	position: relative;
+	opacity: 0.7;
+	padding: 20px 0px 0px 69px;
+}
+.card_text{
+	color: #fcf8f1;
+	font-family: 'Raleway_bold';
+	position: relative;
+	line-height: 38.4px;
+	font-size: 24px;
+	padding: 300px 0px 0px 35px;
+}
+.card_text span{
+	color: #FBA902;
+}
+.card_text_2{
+	padding: 260px 0px 0px 35px;
+}
+.blog_card:hover{
+	cursor: pointer;
+}
+.blog_card:hover .card_img{
+	filter: blur(3px);
+	transition: 0.2s;
+}
+.more_button{
+	width: 232px;
+	height: 50px;
+	cursor: pointer;
+	outline: none;
+	background-color: transparent;	
+	margin: 50px 0px 0px 494px;
+	text-transform: uppercase;
+	margin-bottom: 120px;
+}
+.footer_contacts_blog{
+	margin-left: 762px;
+}
