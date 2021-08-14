@@ -1,0 +1,57 @@
+/* Actions section */
+.actions {
+  padding: 100px 0;
+  margin-bottom: 176px;
+  position: relative;
+}
+.actions::before {
+  content: '';
+  width: 1920px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -350px;
+  background: #fcf8f1 url('../../images/design/actions.png') 100% 100%;
+}
+.actions_title {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 70px;
+  color: #fba902;
+  line-height: 36.8px;
+  position: relative;
+}
+.actions_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.actions_item {
+  display: flex;
+  width: 390px;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+.action_1 {
+  background-image: url(../../images/actions1.png);
+}
+.action_2 {
+  background-image: url(../../images/actions2.png);
+}
+.action_3 {
+  background-image: url(../../images/actions3.png);
+}
+.actions_item_text {
+  color: white;
+  font-size: 24px;
+  line-height: 38.4px;
+  font-family: 'Raleway_bold';
+  margin: auto 33px 40px 33px;
+}
+.actions_item_text span {
+  color: #fba902;
+}

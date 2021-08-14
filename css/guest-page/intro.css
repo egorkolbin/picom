@@ -1,0 +1,63 @@
+/* Intro Section */
+.intro {
+  display: flex;
+  margin-bottom: 111px;
+  position: relative;
+}
+.intro::after {
+  content: '';
+  position: absolute;
+  right: -350px;
+  top: -78px;
+  width: 677px;
+  height: 810px;
+  border-radius: 0 0 0 15em;
+  background: #fcf8f1 url('../../images/design/header.png');
+}
+.intro-flex {
+  width: 600px;
+  margin-right: 128px;
+}
+.intro_cup {
+  padding-top: 87px;
+}
+.intro_title {
+  font-size: 50px;
+  line-height: 65px;
+  margin-bottom: 40px;
+  margin-top: 133px;
+  position: relative;
+}
+.intro_title span {
+  color: #fba902;
+}
+.intro_title::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 103px;
+  height: 2px;
+  background-color: #fba902;
+}
+.intro_text {
+  color: #3f342f;
+  font-family: 'Raleway_bold';
+  font-size: 24px;
+  opacity: 0.8;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+.intro_button {
+  width: 146px;
+  padding: 20px 72px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+.intro_cup {
+  z-index: 2;
+  margin: 0;
+}

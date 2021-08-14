@@ -1,0 +1,40 @@
+/* Общее */
+
+html,
+body {
+  background-color: #fffdfb;
+  font-family: 'Raleway';
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  font-weight: normal;
+}
+div.hidden {
+  display: none;
+}
+.wrapper {
+  width: 100%;
+}
+section * {
+  z-index: 2;
+}
+.container {
+  padding: 0px 350px;
+  width: 1220px;
+  position: relative;
+  margin: 0 auto;
+  overflow-x: visible;
+}
+.title {
+  font-family: 'Raleway_bold';
+  color: #351c0e;
+  text-transform: uppercase;
+}
+main section {
+  transition: transform 1s, opacity 1s;
+}
+.section-hidden {
+  opacity: 0;
+  transform: translateY(6rem);
+}
