@@ -36,6 +36,12 @@
   background-repeat: no-repeat;
   height: 450px;
 }
+.actions_item:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
 .action_1 {
   background-image: url(../../images/actions1.png);
 }
