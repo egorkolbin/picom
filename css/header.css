@@ -75,29 +75,29 @@ header {
   height: 22px;
 }
 .contact_vk {
-  background-image: url('../images/vk.svg');
+  background-image: url('../images/svg/vk.svg');
 }
 .contact_vk:hover {
-  background-image: url('../images/vk-hover.svg');
+  background-image: url('../images/svg/vk-hover.svg');
 }
 .contact_vk:active {
-  background-image: url('../images/vk-active.svg');
+  background-image: url('../images/svg/vk-active.svg');
 }
 .contact_ig {
-  background-image: url('../images/ig.svg');
+  background-image: url('../images/svg/ig.svg');
 }
 .contact_ig:hover {
-  background-image: url('../images/ig-hover.svg');
+  background-image: url('../images/svg/ig-hover.svg');
 }
 .contact_ig:active {
-  background-image: url('../images/ig-active.svg');
+  background-image: url('../images/svg/ig-active.svg');
 }
-.contact_ws {
-  background-image: url('../images/ws.svg');
+.contact_fb {
+  background-image: url('../images/svg/fb.svg');
 }
-.contact_ws:hover {
-  background-image: url('../images/ws-hover.svg');
+.contact_fb:hover {
+  background-image: url('../images/svg/fb-hover.svg');
 }
-.contact_ws:active {
-  background-image: url('../images/ws-active.svg');
+.contact_fb:active {
+  background-image: url('../images/svg/fb-active.svg');
 }

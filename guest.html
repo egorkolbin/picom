@@ -7,13 +7,21 @@
     <title>YUM YUM coffee</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/guest.css" />
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=20b5d4b6-7489-401f-ae84-898620bb781c&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript" src="js/map.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <header>
           <div class="logo">
-            <img src="images/logo.svg" alt="Логотип YUM YUM coffee" />
+            <a href="#"
+              ><img src="images/svg/logo.svg" alt="Логотип YUM YUM coffee"
+            /></a>
           </div>
           <nav class="menu">
             <ul class="menu_list">
@@ -35,24 +43,27 @@
             <a href="tel:8(3412)99-88-22" class="contact">+7 (3412) 99-88-22</a>
             <ul class="contact_links">
               <li class="contact_item">
-                <a target="blank" 
+                <a
+                  target="blank"
                   href="https://vk.com/yumcoffee"
                   class="contact_link contact_vk"
                   aria-labelledby="Ссылка на вконтакте"
                 ></a>
               </li>
               <li class="contact_item">
-                <a target="blank" 
+                <a
+                  target="blank"
                   href="https://www.instagram.com/yumyum_coffee/"
                   class="contact_link contact_ig"
                   aria-labelledby="Ссылка на инстаграм"
                 ></a>
               </li>
               <li class="contact_item">
-                <a target="blank"  
+                <a
+                  target="blank"
                   href="#"
-                  class="contact_link contact_ws"
-                  aria-labelledby="Ссылка на whatsapp"
+                  class="contact_link contact_fb"
+                  aria-labelledby="Ссылка на фейсбук"
                 ></a>
               </li>
             </ul>
@@ -61,10 +72,10 @@
 
         <main>
           <div class="header_design">
-            <img src="images/design/header-el1.png">
+            <img src="images/design/header-el1.png" />
           </div>
           <div class="header_design2">
-            <img src="images/design/header-el2.png">
+            <img src="images/design/header-el2.png" />
           </div>
           <section class="intro">
             <div class="intro-flex">
@@ -90,11 +101,23 @@
           <section class="about" id="about">
             <h2 class="about_title title slide_title">О нас</h2>
             <ul class="about_menu slider_menu">
-              <li class="about_menu-item slider_menu-item active">Концепция</li>
-              <li class="about_menu-item slider_menu-item">Франшиза</li>
+              <li
+                class="about_menu-item slider_menu-item active"
+                tabindex="0"
+                data-nav="0"
+              >
+                Концепция
+              </li>
+              <li
+                class="about_menu-item slider_menu-item"
+                tabindex="0"
+                data-nav="1"
+              >
+                Франшиза
+              </li>
             </ul>
             <div class="about-slides">
-              <div class="slick-slide" data-slide="1">
+              <div class="slick-slide" data-slide="0" tabindex="0">
                 <div class="about_slide slide">
                   <img
                     src="images/about1.png"
@@ -122,7 +145,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slick-slide" data-slide="2">
+              <div class="slick-slide" data-slide="1" tabindex="0">
                 <div class="about_slide slide">
                   <img
                     src="images/about2.png"
@@ -157,12 +180,12 @@
             </div>
           </section>
           <section class="advantages">
-             <div class="advantages_design">
-            <img src="images/design/advantages1.png">
-          </div>
-          <div class="advantages_design2">
-            <img src="images/design/advantages2.png">
-          </div>
+            <div class="advantages_design">
+              <img src="images/design/advantages1.png" />
+            </div>
+            <div class="advantages_design2">
+              <img src="images/design/advantages2.png" />
+            </div>
             <h2 class="advantages_title title">
               Преимущества съедобных <span>стаканчиков</span>
             </h2>
@@ -207,12 +230,12 @@
             </div>
           </section>
           <section class="actions">
-             <div class="actions_design">
-            <img src="images/design/actions1.png">
-          </div>
-          <div class="actions_design2">
-            <img src="images/design/actions2.png">
-          </div>
+            <div class="actions_design">
+              <img src="images/design/actions1.png" />
+            </div>
+            <div class="actions_design2">
+              <img src="images/design/actions2.png" />
+            </div>
             <h2 class="actions_title title">Акции</h2>
             <ul class="actions_list">
               <li class="actions_item action_1">
@@ -236,435 +259,468 @@
               </li>
             </ul>
           </section>
-          <section class="content-menu" id="content-menu">
-             <div class="menu_design">
-            <img src="images/design/menu1.png">
-          </div>
-          <div class="menu_design2">
-            <img src="images/design/menu2.png">
-          </div>
-          <div class="menu_design3">
-            <img src="images/design/menu3.png">
-          </div>
-          <div class="menu_design4">
-            <img src="images/design/menu4.png">
-          </div>
+          <!-- <section class="content-menu" id="content-menu">
+            <div class="menu_design">
+              <img src="images/design/menu1.png" />
+            </div>
+            <div class="menu_design2">
+              <img src="images/design/menu2.png" />
+            </div>
+            <div class="menu_design3">
+              <img src="images/design/menu3.png" />
+            </div>
+            <div class="menu_design4">
+              <img src="images/design/menu4.png" />
+            </div>
             <h2 class="content-menu_title title slide_title">Меню</h2>
             <ul class="content-menu_nav slider_menu">
-              <li class="content-menu_item slider_menu-item active menu-author">
+              <li
+                class="content-menu_item slider_menu-item active menu-author"
+                tabindex="0"
+                data-nav="0"
+              >
                 Авторское
               </li>
-              <li class="content-menu_item slider_menu-item menu-classic">
+              <li
+                class="content-menu_item slider_menu-item menu-classic"
+                tabindex="0"
+                data-nav="1"
+              >
                 Классическое
               </li>
-              <li class="content-menu_item slider_menu-item menu-dessert">
+              <li
+                class="content-menu_item slider_menu-item menu-dessert"
+                tabindex="0"
+                data-nav="2"
+              >
                 Десертное
               </li>
             </ul>
-            <div class="content-menu_slide slide content-menu_author">
-              <ul class="content-menu_list">
-                <li class="author-menu_item author_1">
-                  <figure>
-                    <img
-                      src="images/menu/author-1.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_properties">
-                      <p class="item_volume">220мл/330мл</p>
-                      <p class="item_definition">
-                        Энергетическая и пищевая ценность:
-                      </p>
-                      <dl class="item_energy">
-                        <dt>Ккал</dt>
-                        <dd>325/401</dd>
-                        <br />
-                        <dt>Белки, г</dt>
-                        <dd>8.1/10.3</dd>
-                        <br />
-                        <dt>Жиры, г</dt>
-                        <dd>8.25/10.5</dd>
-                        <br />
-                        <dt>Углеводы, г</dt>
-                        <dd>30/42</dd>
-                      </dl>
-                    </figcaption>
-                  </figure>
-                  <div class="item_description">
-                    <h3 class="item_name">
-                      <span>капучино</span> клубника-шоколад
-                    </h3>
-                    <p class="item_text">
-                      Авторский кофейно-молочный напиток в вафельном стаканчике
-                      с добавлением варенья "клубника" и шоколадной стружки
-                    </p>
-                    <p class="item_compound">
-                      Состав напитка:<span>
-                        эспрессо, молоко, варенье “клубника”, сироп “шоколад”,
-                        шоколадная стружка
-                      </span>
-                    </p>
-                  </div>
-                </li>
-                <li class="author-menu_item author_2">
-                  <figure>
-                    <img
-                      src="images/menu/author-2.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_properties">
-                      <p class="item_volume">220мл/330мл</p>
-                      <p class="item_definition">
-                        Энергетическая и пищевая ценность:
-                      </p>
-                      <dl class="item_energy">
-                        <dt>Ккал</dt>
-                        <dd>327/393</dd>
-                        <br />
-                        <dt>Белки, г</dt>
-                        <dd>8/10.3</dd>
-                        <br />
-                        <dt>Жиры, г</dt>
-                        <dd>8.25/10.5</dd>
-                        <br />
-                        <dt>Углеводы, г</dt>
-                        <dd>30.8/40.1</dd>
-                      </dl>
-                    </figcaption>
-                  </figure>
-                  <div class="item_description">
-                    <h3 class="item_name">
-                      <span>латте</span> арахисовое печенье
-                    </h3>
-                    <p class="item_text">
-                      Авторский кофейно-молочный напиток в вафельном стаканчике
-                      с добавлением арахисового сиропа и ореховой посыпки
-                    </p>
-                    <p class="item_compound">
-                      Состав напитка:<span>
-                        эспрессо, молоко, сироп “арахис”, сироп “печенье”</span
-                      >
-                    </p>
-                  </div>
-                </li>
-                <li class="author-menu_item author_3">
-                  <figure>
-                    <img
-                      src="images/menu/author-3.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_properties">
-                      <p class="item_volume">220мл/330мл</p>
-                      <p class="item_definition">
-                        Энергетическая и пищевая ценность:
-                      </p>
-                      <dl class="item_energy">
-                        <dt>Ккал</dt>
-                        <dd>329/407</dd>
-                        <br />
-                        <dt>Белки, г</dt>
-                        <dd>8.3/10.6</dd>
-                        <br />
-                        <dt>Жиры, г</dt>
-                        <dd>8.8/11.2</dd>
-                        <br />
-                        <dt>Углеводы, г</dt>
-                        <dd>28.8/40.3</dd>
-                      </dl>
-                    </figcaption>
-                  </figure>
-                  <div class="item_description">
-                    <h3 class="item_name">
-                      <span>капучино</span> ликерная конфета
-                    </h3>
-                    <p class="item_text">
-                      Авторский кофейно-молочный напиток в вафельном стаканчике
-                      с добавлением сиропа "ирландский крем" и украшения из
-                      пудры какао
-                    </p>
-                    <p class="item_compound">
-                      Состав напитка:<span>
-                        эспрессо, молоко, варенье “клубника”, сироп “шоколад”,
-                        шоколадная стружка</span
-                      >
-                    </p>
-                  </div>
-                </li>
-              </ul>
+            <div class="menu-slides">
+              <div class="menu-slide" tabindex="0">
+                <div class="content-menu_slide slide content-menu_author">
+                  <ul class="content-menu_list">
+                    <li class="author-menu_item author_1">
+                      <figure>
+                        <img
+                          src="images/menu/author-1.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_properties">
+                          <p class="item_volume">220мл/330мл</p>
+                          <p class="item_definition">
+                            Энергетическая и пищевая ценность:
+                          </p>
+                          <dl class="item_energy">
+                            <dt>Ккал</dt>
+                            <dd>325/401</dd>
+                            <br />
+                            <dt>Белки, г</dt>
+                            <dd>8.1/10.3</dd>
+                            <br />
+                            <dt>Жиры, г</dt>
+                            <dd>8.25/10.5</dd>
+                            <br />
+                            <dt>Углеводы, г</dt>
+                            <dd>30/42</dd>
+                          </dl>
+                        </figcaption>
+                      </figure>
+                      <div class="item_description">
+                        <h3 class="item_name">
+                          <span>капучино</span> клубника-шоколад
+                        </h3>
+                        <p class="item_text">
+                          Авторский кофейно-молочный напиток в вафельном
+                          стаканчике с добавлением варенья "клубника" и
+                          шоколадной стружки
+                        </p>
+                        <p class="item_compound">
+                          Состав напитка:<span>
+                            эспрессо, молоко, варенье “клубника”, сироп
+                            “шоколад”, шоколадная стружка
+                          </span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="author-menu_item author_2">
+                      <figure>
+                        <img
+                          src="images/menu/author-2.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_properties">
+                          <p class="item_volume">220мл/330мл</p>
+                          <p class="item_definition">
+                            Энергетическая и пищевая ценность:
+                          </p>
+                          <dl class="item_energy">
+                            <dt>Ккал</dt>
+                            <dd>327/393</dd>
+                            <br />
+                            <dt>Белки, г</dt>
+                            <dd>8/10.3</dd>
+                            <br />
+                            <dt>Жиры, г</dt>
+                            <dd>8.25/10.5</dd>
+                            <br />
+                            <dt>Углеводы, г</dt>
+                            <dd>30.8/40.1</dd>
+                          </dl>
+                        </figcaption>
+                      </figure>
+                      <div class="item_description">
+                        <h3 class="item_name">
+                          <span>латте</span> арахисовое печенье
+                        </h3>
+                        <p class="item_text">
+                          Авторский кофейно-молочный напиток в вафельном
+                          стаканчике с добавлением арахисового сиропа и ореховой
+                          посыпки
+                        </p>
+                        <p class="item_compound">
+                          Состав напитка:<span>
+                            эспрессо, молоко, сироп “арахис”, сироп
+                            “печенье”</span
+                          >
+                        </p>
+                      </div>
+                    </li>
+                    <li class="author-menu_item author_3">
+                      <figure>
+                        <img
+                          src="images/menu/author-3.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_properties">
+                          <p class="item_volume">220мл/330мл</p>
+                          <p class="item_definition">
+                            Энергетическая и пищевая ценность:
+                          </p>
+                          <dl class="item_energy">
+                            <dt>Ккал</dt>
+                            <dd>329/407</dd>
+                            <br />
+                            <dt>Белки, г</dt>
+                            <dd>8.3/10.6</dd>
+                            <br />
+                            <dt>Жиры, г</dt>
+                            <dd>8.8/11.2</dd>
+                            <br />
+                            <dt>Углеводы, г</dt>
+                            <dd>28.8/40.3</dd>
+                          </dl>
+                        </figcaption>
+                      </figure>
+                      <div class="item_description">
+                        <h3 class="item_name">
+                          <span>капучино</span> ликерная конфета
+                        </h3>
+                        <p class="item_text">
+                          Авторский кофейно-молочный напиток в вафельном
+                          стаканчике с добавлением сиропа "ирландский крем" и
+                          украшения из пудры какао
+                        </p>
+                        <p class="item_compound">
+                          Состав напитка:<span>
+                            эспрессо, молоко, варенье “клубника”, сироп
+                            “шоколад”, шоколадная стружка</span
+                          >
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-slide" tabindex="0">
+                <div class="content-menu_slide slide content-menu_classic">
+                  <ul class="classic-menu_list">
+                    <li class="classic-menu_item classic_1">
+                      <figure>
+                        <img
+                          src="images/menu/classic-1.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name"><span>Американо</span></h3>
+                          <p class="item_text">
+                            Черный кофе на основе эспрессо с добавлением горячей
+                            воды
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span> эспрессо, вода</span>
+                          </p>
+                          <p class="item_volume">220мл/330мл</p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="classic-menu_item classic_2">
+                      <figure>
+                        <img
+                          src="images/menu/classic-2.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name">
+                            <span>капучино</span>
+                          </h3>
+                          <p class="item_text">
+                            Классический кофейный напиток на основе эспресо и
+                            взбитого молока
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span> эспрессо, молоко</span>
+                          </p>
+                          <p class="item_volume">
+                            220/330 мл
+                            <span>Ккал 99.7/156.7</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="classic-menu_item classic_3">
+                      <figure>
+                        <img
+                          src="images/menu/classic-3.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name">
+                            <span>Латте</span>
+                          </h3>
+                          <p class="item_text">
+                            Кофейно-молочный напиток на основе эспрессо, с
+                            меньшим содержанием кофеина
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span> эспрессо, молоко</span>
+                          </p>
+                          <p class="item_volume">
+                            220мл/330мл<span>Ккал 99.7/156.7</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="classic-menu_item classic_4">
+                      <figure>
+                        <img
+                          src="images/menu/classic-4.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name"><span>Раф</span>-кофе</h3>
+                          <p class="item_text">
+                            Кофе на основе эспрессо с добавлением ванильного
+                            сиропа, молока и сливок
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span>
+                              эспрессо, молоко, сливки, сироп</span
+                            >
+                          </p>
+                          <p class="item_volume">
+                            220мл/330мл<span>Ккал 267.6/368</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-slide" tabindex="0">
+                <div class="content-menu_slide slide content-menu_dessert">
+                  <ul class="dessert-menu_list">
+                    <li class="dessert-menu_item dessert_1">
+                      <figure>
+                        <img
+                          src="images/menu/dessert-1.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name"><span>Какао</span></h3>
+                          <p class="item_text">
+                            Согревающий напиток на основе молока и молочного
+                            шоколада
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span>
+                              молоко, молочный шоколад</span
+                            >
+                          </p>
+                          <p class="item_volume">
+                            220мл/330мл<span>Ккал 303.7/461.3</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="dessert-menu_item dessert_2">
+                      <figure>
+                        <img
+                          src="images/menu/dessert-2.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name">
+                            Горячий <span>шоколад</span>
+                          </h3>
+                          <p class="item_text">
+                            Согревающий напиток на основе молока и темного
+                            шоколада
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span> молоко, темный шоколад</span>
+                          </p>
+                          <p class="item_volume">
+                            220мл/330мл
+                            <span>Ккал 303.7/461.3</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="dessert-menu_item dessert_3">
+                      <figure>
+                        <img
+                          src="images/menu/dessert-3.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name">Матча <span>латте</span></h3>
+                          <p class="item_text">
+                            Японский зеленый чай, приготовленный на молоке с
+                            капелькой ванильного сиропа
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span>
+                              матча, молоко, ванильный сироп</span
+                            >
+                          </p>
+                          <p class="item_volume">
+                            220мл/330мл<span>Ккал 97.3/164.5</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="dessert-menu_item dessert_4">
+                      <figure>
+                        <img
+                          src="images/menu/dessert-4.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name">Анчан <span>латте</span></h3>
+                          <p class="item_text">
+                            Тайский голубой чай, приготовленный на молоке с
+                            добавлением меда
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span> анчан, молоко, мед</span>
+                          </p>
+                          <p class="item_volume">
+                            220мл/330мл<span>Ккал 99.7/156.7</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="dessert-menu_item dessert_5">
+                      <figure>
+                        <img
+                          src="images/menu/dessert-5.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name">
+                            Молочный<span> коктейль</span>
+                          </h3>
+                          <p class="item_text">
+                            Нежный освежающий напиток на основе молока и
+                            мороженого. По желанию добавьте сироп
+                          </p>
+                          <p class="item_compound">
+                            Состав напитка:<span>
+                              молоко, мороженое, сироп</span
+                            >
+                          </p>
+                          <p class="item_volume">
+                            220мл/330мл<span>Ккал 392/524</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="dessert-menu_item dessert_6">
+                      <figure>
+                        <img
+                          src="images/menu/dessert-6.png"
+                          alt="Изображение напитка"
+                          class="item_image"
+                          width="280"
+                          height="300"
+                        />
+                        <figcaption class="item_description">
+                          <h3 class="item_name">
+                            <span>мороженое</span> в стаканчике
+                          </h3>
+                          <p class="item_text">
+                            Яркое сочетание холодного шарика мороженого и
+                            хрустящего песочного стаканчика с шоколадной
+                            прослойкой
+                          </p>
+                          <p class="item_compound">
+                            Состав:<span> мороженое, топпинг (по желанию)</span>
+                          </p>
+                          <p class="item_volume">
+                            220мл/330мл<span>Ккал 329/407</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="content-menu_slide slide content-menu_classic hidden">
-              <ul class="classic-menu_list">
-                <li class="classic-menu_item classic_1">
-                  <figure>
-                    <img
-                      src="images/menu/classic-1.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name"><span>Американо</span></h3>
-                      <p class="item_text">
-                        Черный кофе на основе эспрессо с добавлением горячей
-                        воды
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span> эспрессо, вода</span>
-                      </p>
-                      <p class="item_volume">220мл/330мл</p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li class="classic-menu_item classic_2">
-                  <figure>
-                    <img
-                      src="images/menu/classic-2.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name">
-                        <span>капучино</span>
-                      </h3>
-                      <p class="item_text">
-                        Классический кофейный напиток на основе эспресо и
-                        взбитого молока
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span> эспрессо, молоко</span>
-                      </p>
-                      <p class="item_volume">
-                        220/330 мл
-                        <span>Ккал 99.7/156.7</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li class="classic-menu_item classic_3">
-                  <figure>
-                    <img
-                      src="images/menu/classic-3.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name">
-                        <span>Латте</span>
-                      </h3>
-                      <p class="item_text">
-                        Кофейно-молочный напиток на основе эспрессо, с меньшим
-                        содержанием кофеина
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span> эспрессо, молоко</span>
-                      </p>
-                      <p class="item_volume">
-                        220мл/330мл<span>Ккал 99.7/156.7</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li class="classic-menu_item classic_4">
-                  <figure>
-                    <img
-                      src="images/menu/classic-4.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name"><span>Раф</span>-кофе</h3>
-                      <p class="item_text">
-                        Кофе на основе эспрессо с добавлением ванильного сиропа,
-                        молока и сливок
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span>
-                          эспрессо, молоко, сливки, сироп</span
-                        >
-                      </p>
-                      <p class="item_volume">
-                        220мл/330мл<span>Ккал 267.6/368</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-              </ul>
-            </div>
-            <div class="content-menu_slide slide content-menu_dessert hidden">
-              <ul class="dessert-menu_list">
-                <li class="dessert-menu_item dessert_1">
-                  <figure>
-                    <img
-                      src="images/menu/dessert-1.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name"><span>Какао</span></h3>
-                      <p class="item_text">
-                        Согревающий напиток на основе молока и молочного
-                        шоколада
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span> молоко, молочный шоколад</span>
-                      </p>
-                      <p class="item_volume">
-                        220мл/330мл<span>Ккал 303.7/461.3</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li class="dessert-menu_item dessert_2">
-                  <figure>
-                    <img
-                      src="images/menu/dessert-2.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name">Горячий <span>шоколад</span></h3>
-                      <p class="item_text">
-                        Согревающий напиток на основе молока и темного шоколада
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span> молоко, темный шоколад</span>
-                      </p>
-                      <p class="item_volume">
-                        220мл/330мл
-                        <span>Ккал 303.7/461.3</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li class="dessert-menu_item dessert_3">
-                  <figure>
-                    <img
-                      src="images/menu/dessert-3.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name">Матча <span>латте</span></h3>
-                      <p class="item_text">
-                        Японский зеленый чай, приготовленный на молоке с
-                        капелькой ванильного сиропа
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span>
-                          матча, молоко, ванильный сироп</span
-                        >
-                      </p>
-                      <p class="item_volume">
-                        220мл/330мл<span>Ккал 97.3/164.5</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li class="dessert-menu_item dessert_4">
-                  <figure>
-                    <img
-                      src="images/menu/dessert-4.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name">Анчан <span>латте</span></h3>
-                      <p class="item_text">
-                        Тайский голубой чай, приготовленный на молоке с
-                        добавлением меда
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span> анчан, молоко, мед</span>
-                      </p>
-                      <p class="item_volume">
-                        220мл/330мл<span>Ккал 99.7/156.7</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li class="dessert-menu_item dessert_5">
-                  <figure>
-                    <img
-                      src="images/menu/dessert-5.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name">Молочный<span> коктейль</span></h3>
-                      <p class="item_text">
-                        Нежный освежающий напиток на основе молока и мороженого.
-                        По желанию добавьте сироп
-                      </p>
-                      <p class="item_compound">
-                        Состав напитка:<span> молоко, мороженое, сироп</span>
-                      </p>
-                      <p class="item_volume">
-                        220мл/330мл<span>Ккал 392/524</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li class="dessert-menu_item dessert_6">
-                  <figure>
-                    <img
-                      src="images/menu/dessert-6.png"
-                      alt="Изображение напитка"
-                      class="item_image"
-                      width="280"
-                      height="300"
-                    />
-                    <figcaption class="item_description">
-                      <h3 class="item_name">
-                        <span>мороженое</span> в стаканчике
-                      </h3>
-                      <p class="item_text">
-                        Яркое сочетание холодного шарика мороженого и хрустящего
-                        песочного стаканчика с шоколадной прослойкой
-                      </p>
-                      <p class="item_compound">
-                        Состав:<span> мороженое, топпинг (по желанию)</span>
-                      </p>
-                      <p class="item_volume">
-                        220мл/330мл<span>Ккал 329/407</span>
-                      </p>
-                    </figcaption>
-                  </figure>
-                </li>
-              </ul>
-            </div>
-          </section>
+          </section> -->
           <section class="add-form">
             <div class="add_design">
-            <img src="images/design/add.png">
-          </div>
-          <div class="add_design2">
-            <img src="images/design/add2.png">
-          </div>
+              <img src="images/design/add.png" />
+            </div>
+            <div class="add_design2">
+              <img src="images/design/add2.png" />
+            </div>
             <div class="add-form_blocks">
               <form
                 method="POST"
@@ -728,11 +784,11 @@
           </section>
           <section class="vacancies" id="vacancies">
             <div class="vacanci_design">
-            <img src="images/design/vacanci.png">
-          </div>
-          <div class="vacanci_design2">
-            <img src="images/design/vacanci2.png">
-          </div>
+              <img src="images/design/vacanci.png" />
+            </div>
+            <div class="vacanci_design2">
+              <img src="images/design/vacanci2.png" />
+            </div>
             <h2 class="vacancies_title title">Вакансии</h2>
             <p class="vacancies_text">
               Начни свой путь <span>в нашей команде</span>, поддержи экологию!
@@ -796,18 +852,19 @@
                   </li>
                 </ul>
               </div>
-              <img src="images/map.png" width="805" height="444" />
+              <div id="map" width="805" height="444"></div>
+              <!-- <img src="images/map.png" /> -->
             </div>
           </section>
           <section class="blog" id="blog">
             <div class="blog_design">
-            <img src="images/design/blog-design-guest.png">
-          </div>
-          <div class="blog_design2">
-            <img src="images/design/blog-design-guest2.png">
-          </div>
+              <img src="images/design/blog-design-guest.png" />
+            </div>
+            <div class="blog_design2">
+              <img src="images/design/blog-design-guest2.png" />
+            </div>
             <h2 class="blog_title title"><span>Эко</span>-блог</h2>
-            <a href="blog.html" class="button blog_button-read white_button"
+            <a href="#" class="button blog_button-read white_button"
               >Читать все статьи</a
             >
             <div class="blog_blocks">
@@ -846,7 +903,7 @@
           <section class="footer_main-info">
             <div class="footer_logo">
               <img
-                src="images/footer-logo.svg"
+                src="images/svg/footer-logo.svg"
                 class="footer_logo-img"
                 height="40"
                 alt="Логотип YUM-YUM coffee"
@@ -859,6 +916,7 @@
                     href="https://vk.com/yumcoffee"
                     class="contact_link footer_contact-link footer_contact-vk"
                     aria-labelledby="Ссылка на вконтакте"
+                    target="blank"
                   ></a>
                 </li>
                 <li class="contact_item footer_contact-item">
@@ -866,13 +924,15 @@
                     href="https://www.instagram.com/yumyum_coffee/"
                     class="contact_link footer_contact-link footer_contact-ig"
                     aria-labelledby="Ссылка на инстаграм"
+                    target="blank"
                   ></a>
                 </li>
                 <li class="contact_item footer_contact-item">
                   <a
                     href="#"
-                    class="contact_link footer_contact-link footer_contact-ws"
-                    aria-labelledby="Ссылка на whatsapp"
+                    class="contact_link footer_contact-link footer_contact-fb"
+                    aria-labelledby="Ссылка на фейсбук"
+                    target="blank"
                   ></a>
                 </li>
               </ul>

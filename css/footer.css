@@ -37,22 +37,22 @@ footer::before {
   height: 28px;
 }
 .footer_contact-vk {
-  background-image: url('../images/footer-vk.svg');
+  background-image: url('../images/svg/footer-vk.svg');
 }
 .footer_contact-vk:active {
-  background-image: url('../images/footer-vk-active.svg');
+  background-image: url('../images/svg/footer-vk-active.svg');
 }
 .footer_contact-ig {
-  background-image: url('../images/footer-ig.svg');
+  background-image: url('../images/svg/footer-ig.svg');
 }
 .footer_contact-ig:active {
-  background-image: url('../images/footer-ig-active.svg');
+  background-image: url('../images/svg/footer-ig-active.svg');
 }
-.footer_contact-ws {
-  background-image: url('../images/footer-ws.svg');
+.footer_contact-fb {
+  background-image: url('../images/svg/footer-fb.svg');
 }
-.footer_contact-ws:active {
-  background-image: url('../images/footer-ws-active.svg');
+.footer_contact-fb:active {
+  background-image: url('../images/svg/footer-fb-active.svg');
 }
 .footer_copyright {
   color: #fcf8f1;
