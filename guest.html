@@ -24,6 +24,12 @@
         const center = new ymaps.Placemark([56.8527389, 53.2072039]);
         const lenina = new ymaps.Placemark([56.8451609, 53.2888013]);
         const kirova = new ymaps.Placemark([56.8611039, 53.1747429]);
+        myMap.geoObjects
+          .add(petrova)
+          .add(berRoscha)
+          .add(center)
+          .add(lenina)
+          .add(kirova);
       }
     </script>
   </head>
@@ -726,7 +732,7 @@
                 </div>
               </div>
             </div>
-          </section> 
+          </section>
           <section class="add-form">
             <div class="add_design">
               <img src="images/design/add.png" />
