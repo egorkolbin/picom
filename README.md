@@ -1,2 +1,1 @@
-https://egorkolbin.github.io/picom/
-https://an-nett.github.io/picom/
+Предпросмотр: https://hardcore-saha-402d03.netlify.app
