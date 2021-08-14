@@ -45,10 +45,10 @@
   height: 100%;
   position: absolute;
   background-color: #faf5ec;
-  width: 1570px;
   top: 0;
-  left: 0;
-  width: calc(100% + 350px);
+  right: -350px;
+  width: 350px;
+  z-index: 999;
 }
 .classic-menu_item:first-child::after,
 .dessert-menu_item:first-child::after {

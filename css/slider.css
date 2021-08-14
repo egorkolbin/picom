@@ -43,3 +43,19 @@
 .slider_menu-item:active {
   color: #fba902;
 }
+.slick-slide:focus-visible,
+.menu-slide:focus-visible {
+  border: 1px transparent;
+  outline: transparent;
+}
+.menu-slides {
+  width: 1920px !important;
+  position: absolute;
+  left: -350px;
+}
+
+.menu-slides .slick-slide {
+  width: 1220px !important;
+  margin-right: 350px;
+  margin-left: 350px;
+}
