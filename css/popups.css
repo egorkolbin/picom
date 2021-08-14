@@ -37,12 +37,13 @@ form textarea {
 }
 form input.invalid,
 textarea.invalid {
-  color: #fba902;
-  border: 1px solid #fba902;
+  color: #fba902 !important;
+  border: 1px solid #fba902 !important;
   animation-name: invalid;
   transition: color 0.4s;
   animation-duration: 0.2s;
   animation-iteration-count: 2;
+  animation-direction: normal;
 }
 form input.invalid ~ label {
   color: #fba902;

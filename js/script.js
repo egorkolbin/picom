@@ -1,5 +1,10 @@
-'use strict';
+import $ from 'jquery';
 
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+$('.about-slides').slick({});
 // Scrolling To Sections
 
 const navigation = document.querySelector('nav .menu_list');
@@ -67,19 +72,45 @@ const addReceiptPhone = addReceiptForm.querySelector('#number');
 
 const receiptInputs = addReceiptForm.querySelectorAll('input');
 
-const inputsToFill = Array.from(receiptInputs).filter(
+let isWrongData;
+let sendData;
+
+//Form to apply
+const applyFormPopup = document.querySelector('.vacancy-form');
+const applyForm = document.querySelector('.vacancy-form form');
+const applyInputs = applyForm.querySelectorAll('input');
+const applyText = applyForm.querySelector('textarea');
+const buttonApply = applyForm.querySelector('.form_submit');
+
+//Popups
+const addReceiptPopup = document.querySelector('.announce.add');
+const applyPopup = document.querySelector('.announce.apply');
+
+const popupCloseButtons = document.querySelectorAll('.announce_button');
+const buttonCloseApply = applyPopup.querySelector('.announce_button');
+
+//Выбирает все инпуты, кроме кнопки отправить
+const receiptInputsToFill = Array.from(receiptInputs).filter(
+  (input) => input.type !== 'submit'
+);
+const applyInputsToFill = Array.from(applyInputs).filter(
   (input) => input.type !== 'submit'
 );
 
+// Автозаполнение
 try {
-  inputsToFill.forEach((input) => {
-    const localName = input.type[0].toUpperCase + input.type.slice(1);
-    input.value = localStorage.getItem(`receipt${localName}`);
-  });
+  receiptInputsToFill.forEach((input) => setToLocalStorage(input, 'receipt'));
 } catch (err) {
   console.error(err);
 }
 
+try {
+  applyInputsToFill.forEach((input) => setToLocalStorage(input, 'apply'));
+} catch (err) {
+  console.error(err);
+}
+
+// При фокусе убирает текстозаполнитель из поля добавить вариант напитка
 addReceiptText.addEventListener('focus', () => {
   if (
     addReceiptText.value &&
@@ -88,116 +119,144 @@ addReceiptText.addEventListener('focus', () => {
     return;
 
   addReceiptText.value = '';
-  addReceiptText.classList.contains('invalid')
-    ? addReceiptText.classList.remove('invalid')
-    : '';
+  removeInvalid(addReceiptText);
 });
 
+applyText.addEventListener('focus', () => {
+  if (applyText.value && applyText.value !== 'Напишите о себе...') return;
+  console.log('setting value');
+  applyText.value = '';
+  removeInvalid(applyText);
+});
+
+// При потере фокуса возвращает заполнитель
 addReceiptText.addEventListener('blur', () => {
   if (addReceiptText.value) return;
   addReceiptText.value = 'Напишите ваш вариант напитка...';
 });
 
-addReceiptForm.addEventListener('submit', (evt) => {
-  evt.preventDefault();
-  inputsToFill.forEach((input) => {
+applyText.addEventListener('blur', () => {
+  if (applyText.value) return;
+  applyText.value = 'Напишите о себе...';
+});
+
+// Отправка формы через AJAX
+
+window.addEventListener('load', function () {
+  sendData = function (form, popup) {
+    const XHR = new XMLHttpRequest();
+
+    const FD = new FormData(form);
+
+    XHR.addEventListener('load', function (event) {
+      console.log(event.target.responseText);
+    });
+
+    XHR.addEventListener('error', (error) => {
+      console.log('error while loading');
+      //   showPopup(popup-error);
+    });
+
+    try {
+      XHR.open('POST', 'http://yum-yum-coffee.picom.su/');
+      XHR.send(FD);
+      showPopup(popup);
+    } catch (err) {
+      console.log('error while sending');
+    }
+  };
+});
+
+//Вспомогательные функции
+function addInvalid(el) {
+  setTimeout(() => {
+    el.classList.add('invalid');
+  }, 0);
+}
+function removeInvalid(el) {
+  if (!el.classList.contains('invalid')) return;
+  el.classList.remove('invalid');
+}
+function setToLocalStorage(input, prefix) {
+  const localName = input.type[0].toUpperCase + input.type.slice(1);
+  localStorage.setItem(`${prefix}${localName}`, input.value);
+}
+function checkData(inputs, text, defaultText) {
+  isWrongData = false;
+
+  inputs.forEach((input) => {
     if (!input.value) {
-      //   evt.preventDefault();
-      input.classList.add('invalid');
-      return;
+      isWrongData = true;
+      addInvalid(input);
     }
   });
 
-  if (
-    addReceiptText.value === 'Напишите ваш вариант напитка...' ||
-    addReceiptText.value === ''
-  ) {
-    // evt.preventDefault();
-    addReceiptText.classList.add('invalid');
-    return;
+  if (text.value === defaultText || text.value === '') {
+    isWrongData = true;
+    addInvalid(text);
   }
-
+}
+function processForm(inputs, text, defaultText, prefix) {
+  inputs.forEach((input) => removeInvalid(input));
+  removeInvalid(text);
+  checkData(inputs, text, defaultText);
+  if (isWrongData) return;
   try {
-    inputsToFill.forEach((input) => {
-      const localName = input.type[0].toUpperCase + input.type.slice(1);
-      localStorage.setItem(`receipt${localName}`, input.value);
-    });
+    inputs.forEach((input) => setToLocalStorage(input, prefix));
   } catch (err) {
     console.error(err);
   }
+}
 
+// При отправке формы
+
+addReceiptForm.addEventListener('submit', function (evt) {
+  evt.preventDefault();
+  processForm(
+    receiptInputsToFill,
+    addReceiptText,
+    'Напишите ваш вариант напитка...',
+    'receipt'
+  );
+  if (isWrongData) return;
+
+  //Показывает попап
   addReceiptPopup.classList.add('popup-barista');
-  showPopup(addReceiptPopup);
+  sendData(this, addReceiptPopup);
 });
 
-inputsToFill.forEach((input) =>
-  input.addEventListener('focus', () => {
-    if (!input.classList.contains('invalid')) return;
-    input.classList.remove('invalid');
-  })
-);
+applyForm.addEventListener('submit', function (evt) {
+  evt.preventDefault();
+  processForm(applyInputsToFill, applyText, 'Напишите о себе...', 'apply');
+  if (isWrongData) return;
 
-// vacancyFormPopup.classList.add('popup-barista');
-// addReceiptForm.addEventListener('submit', (event) => {
-//   event.preventDefault();
-// });
+  const popupStyle = applyFormPopup.classList.contains('popup-barista')
+    ? 'popup-barista'
+    : 'popup-guest';
+  const buttonStyle =
+    popupStyle === 'popup-barista' ? 'orange_button' : 'white_button-dark';
+
+  closeAllPopups();
+
+  applyPopup.classList.add(popupStyle);
+  buttonCloseApply.classList.add(buttonStyle);
+
+  sendData(this, applyPopup);
+});
+
+//Убирает обозначение неверно при фокусе для инпутов
+receiptInputsToFill.forEach((input) => {
+  input.addEventListener('focus', () => removeInvalid(input));
+});
+applyInputsToFill.forEach((input) => {
+  input.addEventListener('focus', () => removeInvalid(input));
+});
 
 // Popups
 const popups = document.querySelectorAll('.popup');
-const addReceiptPopup = document.querySelector('.announce.add');
 const overlay = document.querySelector('.overlay');
 
-const vacancyFormPopup = document.querySelector('.vacancy-form');
-const buttonApply = vacancyFormPopup.querySelector('.form_submit');
-
-overlay.addEventListener('click', closeAllPopups);
-document.addEventListener('keydown', (evt) => {
-  if (evt.key !== 'Escape') return;
-  closeAllPopups();
-});
-
-function closeAllPopups() {
-  popups.forEach((popup) => {
-    console.log(popup);
-    if (popup.classList.contains('hidden')) return;
-    popup.classList.add('invisible');
-
-    if (popup.classList.contains('popup-barista')) {
-      popup.classList.remove('popup-barista');
-      buttonApply.classList.remove('orange_button');
-    }
-
-    if (popup.classList.contains('popup-guest')) {
-      popup.classList.remove('popup-guest');
-      buttonApply.classList.remove('white_button-dark');
-    }
-
-    setTimeout(() => {
-      popup.classList.add('hidden');
-      overlay.classList.add('invisible');
-    }, 200);
-    setTimeout(() => {
-      overlay.classList.add('hidden');
-    }, 300);
-  });
-}
-
-// Barista Popup
-const buttonBarista = document.querySelector('.barista_button');
-const buttonGuest = document.querySelector('.guest_button');
-
-buttonBarista.addEventListener('click', () => {
-  vacancyFormPopup.classList.add('popup-barista');
-  buttonApply.classList.add('orange_button');
-  showPopup(vacancyFormPopup);
-});
-
-buttonGuest.addEventListener('click', () => {
-  vacancyFormPopup.classList.add('popup-guest');
-  buttonApply.classList.add('white_button-dark');
-  showPopup(vacancyFormPopup);
-});
-
+//Показывает попап
 function showPopup(popup) {
   popup.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -206,3 +265,64 @@ function showPopup(popup) {
     popup.classList.remove('invisible');
   }, 0);
 }
+
+//Закрывает все попапы
+overlay.addEventListener('click', closeAllPopups);
+
+document.addEventListener('keydown', (evt) => {
+  if (evt.key !== 'Escape') return;
+  closeAllPopups();
+});
+
+popupCloseButtons.forEach((button) =>
+  button.addEventListener('click', closeAllPopups)
+);
+
+function closeAllPopups() {
+  popups.forEach((popup) => {
+    if (popup.classList.contains('hidden')) return;
+    popup.classList.add('invisible');
+    clearPopupStyles(popup);
+
+    overlay.classList.add('invisible');
+    overlay.classList.add('hidden');
+    setTimeout(() => {
+      popup.classList.add('hidden');
+    }, 200);
+  });
+}
+
+function clearPopupStyles(el) {
+  if (el === addReceiptPopup) return;
+  const stylePrefix = 'popup-';
+  el.classList.forEach((className) => {
+    if (className.startsWith(stylePrefix)) el.classList.remove(className);
+  });
+  const buttonInputToClear = el.querySelector('.form_submit');
+  const buttonToClear = el.querySelector('button');
+  if (buttonInputToClear) clearButtonStyle(buttonInputToClear);
+  if (buttonToClear) clearButtonStyle(buttonToClear);
+}
+
+function clearButtonStyle(button) {
+  if (button.classList.contains('orange_button'))
+    button.classList.remove('orange_button');
+  if (button.classList.contains('white_button-dark'))
+    button.classList.remove('white_button-dark');
+}
+
+// Barista Popup
+const buttonBarista = document.querySelector('.barista_button');
+const buttonGuest = document.querySelector('.guest_button');
+
+buttonBarista.addEventListener('click', () => {
+  applyFormPopup.classList.add('popup-barista');
+  buttonApply.classList.add('orange_button');
+  showPopup(applyFormPopup);
+});
+
+buttonGuest.addEventListener('click', () => {
+  applyFormPopup.classList.add('popup-guest');
+  buttonApply.classList.add('white_button-dark');
+  showPopup(applyFormPopup);
+});
