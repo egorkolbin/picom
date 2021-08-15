@@ -36,7 +36,7 @@ function createMark(coords) {
     {},
     {
       iconLayout: 'default#image',
-      iconImageHref: 'https://ibb.co/42Sv3kk',
+      iconImageHref: 'https://github.com/An-nett/picom/raw/adaptive/images/svg/cart-mark.png',
       iconImageSize: [26, 37],
     }
   );
