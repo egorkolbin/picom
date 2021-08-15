@@ -207,7 +207,7 @@ window.addEventListener('load', function () {
     });
 
     try {
-      XHR.open('POST', 'http://yum-yum-coffee.picom.su/');
+      XHR.open('POST', 'https://yum-yum-coffee.picom.su/');
       XHR.send(FD);
       showPopup(popup);
     } catch (err) {

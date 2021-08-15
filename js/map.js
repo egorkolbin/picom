@@ -36,7 +36,8 @@ function createMark(coords) {
     {},
     {
       iconLayout: 'default#image',
-      iconImageHref: '../images/svg/cart-mark.svg',
+      iconImageHref:
+        'file:///C:/Users/azaza/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/picom/picom/images/svg/cart-mark.svg',
       iconImageSize: [26, 37],
     }
   );
