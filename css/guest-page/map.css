@@ -2,6 +2,9 @@
 .map {
   margin-bottom: 120px;
 }
+#map {
+  background: url(../../images/map.png);
+}
 .map_title {
   margin-bottom: 75px;
   position: relative;
@@ -49,7 +52,7 @@
   right: -60px;
   top: -12px;
   z-index: -1;
-  transition: width 0.7s;
+  transition: width 0.9s;
 }
 .map_list-item.active::after {
   width: 820px;

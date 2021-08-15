@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "jquery": "^3.6.0",
+    "mask-input": "^1.0.3",
     "slick-carousel": "^1.8.1"
   }
 }

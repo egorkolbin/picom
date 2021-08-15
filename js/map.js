@@ -28,7 +28,23 @@ const stores = [
 
 const zoom = 13;
 
-ymaps.ready(init);
+const mapStyle = `[
+  {
+  "featureType" : "string",
+  "stylers" : {
+    "hue" : "0.5",
+    "saturation" : "double",
+    "lightness" : "double"
+    }
+  }
+]`;
+
+try {
+  ymaps.ready(init);
+} catch (err) {
+  console.log("Couldn't load map");
+  window.addEventListener('load', init);
+}
 
 function createMark(coords) {
   return new ymaps.Placemark(
@@ -36,7 +52,9 @@ function createMark(coords) {
     {},
     {
       iconLayout: 'default#image',
-      iconImageHref: 'https://ibb.co/42Sv3kk',
+      iconImageHref:
+        'https://github.com/An-nett/picom/raw/adaptive/images/svg/cart-mark.png',
+      //Костыль! Заменить на реальный абсолютный адрес
       iconImageSize: [26, 37],
     }
   );
@@ -47,11 +65,13 @@ let addressList;
 
 function init() {
   mapList = document.querySelector('.map_list');
-
-  myMap = new ymaps.Map('map', {
-    center: stores[1].coords.split(','),
-    zoom: zoom,
-  });
+  try {
+    myMap = new ymaps.Map('map', {
+      center: stores[1].coords.split(','),
+      zoom: zoom,
+    });
+  } catch (err) {}
+  clearStoresList();
   for (const store of stores) {
     createStore(store);
   }
@@ -64,7 +84,8 @@ function init() {
     const storeEl = stores.find((store) => {
       if (store.address === storeName) return store;
     });
-    myMap.setCenter(storeEl.coords.split(','), zoom, { duration: 700 });
+    if (myMap)
+      myMap.setCenter(storeEl.coords.split(','), zoom, { duration: 700 });
   });
 }
 
@@ -75,21 +96,22 @@ function createStore(store) {
 </li>`;
   mapList.insertAdjacentHTML('beforeend', storeItem);
   addressList = mapList.querySelectorAll('.place');
+  try {
+    const newMark = createMark(store.coords.split(','));
 
-  const newMark = createMark(store.coords.split(','));
+    newMark.events.add('mouseenter', function () {
+      const coords = newMark.geometry.getCoordinates();
+      const activeLi = findLiEl(coords);
+      addActiveClass(activeLi);
+    });
+    newMark.events.add('mouseleave', function () {
+      const coords = newMark.geometry.getCoordinates();
+      const activeLi = findLiEl(coords);
+      removeActiveClass(activeLi);
+    });
 
-  newMark.events.add('mouseenter', function () {
-    const coords = newMark.geometry.getCoordinates();
-    const activeLi = findLiEl(coords);
-    addActiveClass(activeLi);
-  });
-  newMark.events.add('mouseleave', function () {
-    const coords = newMark.geometry.getCoordinates();
-    const activeLi = findLiEl(coords);
-    removeActiveClass(activeLi);
-  });
-
-  myMap.geoObjects.add(newMark);
+    myMap.geoObjects.add(newMark);
+  } catch (err) {}
 }
 
 function removeActiveClass(el) {
@@ -108,4 +130,9 @@ function findLiEl(coords) {
     (text) => text.textContent === activeStoreEl[0].address
   );
   return activeAddress;
+}
+
+function clearStoresList() {
+  addressList = mapList.querySelectorAll('.place');
+  addressList.innerHTML = '';
 }

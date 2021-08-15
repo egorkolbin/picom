@@ -20,13 +20,32 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin-bottom: 77px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.choice::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -350px;
+  left: -300px;
+  background: url('../../images/design/index-left.png');
+}
+.right_block::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: -180px;
+  top: -20px;
+  background: url('../../images/design/index-right.png');
 }
 .choice_block {
   padding: 50px;
-  border: 1px solid #351c0e;
   display: inline-flex;
   flex-direction: column;
+  position: relative;
 }
 
 .left_block {
@@ -37,7 +56,7 @@
 }
 
 .right_block {
-  background-color: #351c0e;
+  background-color: #493326;
   -moz-border-radius: 0em 3px 7em;
   -webkit-border-radius: 1em 3px 5em;
   border-radius: 0em 3px 7em;
@@ -47,8 +66,18 @@
   font-size: 24px;
   line-height: 38.4px;
   margin-bottom: 40px;
-  font-family: 'Raleway_bold';
+  font-family: 'Raleway';
   text-align: center;
+  position: relative;
+}
+.content_text::before {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  width: 600px;
+  height: 500px;
+  background: url('../../images/design/index-center.png') no-repeat;
 }
 .choice_text span {
   color: #fba902;
@@ -64,4 +93,5 @@
   width: 232px;
   margin: 0 auto;
   padding: 15px 32px;
+  text-transform: uppercase;
 }

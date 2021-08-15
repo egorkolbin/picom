@@ -4,6 +4,7 @@ html,
 body {
   background-color: #fffdfb;
   font-family: 'Raleway';
+  height: 100%;
 }
 a:link,
 a:visited {
@@ -14,7 +15,7 @@ div.hidden {
   display: none;
 }
 .wrapper {
-  width: 100%;
+  height: 100%;
 }
 section * {
   z-index: 2;
@@ -25,6 +26,9 @@ section * {
   position: relative;
   margin: 0 auto;
   overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .title {
   font-family: 'Raleway_bold';
@@ -37,4 +41,7 @@ main section {
 .section-hidden {
   opacity: 0;
   transform: translateY(6rem);
+}
+span.number {
+  font-family: 'Noto-Sans';
 }

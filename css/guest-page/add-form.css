@@ -11,7 +11,7 @@
   left: -350px;
   width: 1920px;
   height: 100%;
-  background: #493326;
+  background: #493326 url('../../images/design/add.png') 500px 250px no-repeat;
 }
 .add-form_blocks {
   display: grid;
@@ -37,6 +37,7 @@
   top: 95px;
   left: 90px;
   font-size: 12px;
+  opacity: 1;
 }
 .add-form_form label {
   left: 106px;
@@ -48,6 +49,7 @@
 .label_phone {
   top: 130px;
   pointer-events: none;
+  opacity: 0;
 }
 .add-form_form input.form_submit {
   width: 232px;
@@ -85,4 +87,8 @@
 }
 .add-form_text-little span {
   color: #fba902;
+}
+.add-form .button {
+  text-transform: uppercase;
+  font-size: 14px;
 }

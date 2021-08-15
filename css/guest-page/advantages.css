@@ -3,15 +3,7 @@
   padding-bottom: 97px;
   position: relative;
 }
-.advantages::before {
-  content: '';
-  position: absolute;
-  height: 873px;
-  bottom: 0;
-  left: -350px;
-  background: url('../../images/design/advantages.png') 100% 50% no-repeat;
-  width: 966px;
-}
+
 .advantages_title {
   font-family: 'Raleway_bold';
   font-size: 36px;
@@ -43,6 +35,10 @@
   border: 1px solid #3f342f;
   border-radius: 10px;
   padding: 24px 42px;
+  height: 100px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
 }
 .advantages_item + .advantages_item {
   margin-top: 20px;
@@ -62,7 +58,6 @@
   bottom: -10px;
   position: absolute;
   left: 0;
-  /* z-index: 5; */
 }
 .advantage_text {
   font-weight: 300;
@@ -70,20 +65,26 @@
   line-height: 24px;
   margin: 0;
 }
+.advantages_cup {
+  position: relative;
+}
 .advantages_cup img {
   display: block;
   margin: 0 auto;
+  position: relative;
 }
 .shake-img {
   animation-name: shake;
   animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes shake {
   20% {
-    transform: rotate(8deg);
+    transform: rotate(5deg);
   }
   80% {
-    transform: rotate(-8deg);
+    transform: rotate(-5deg);
   }
 }

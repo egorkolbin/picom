@@ -1,12 +1,13 @@
 /* Menu Section */
 
 .content-menu {
-  margin-bottom: 172px;
+  /* margin-bottom: 172px; */
   position: relative;
 }
 .content-menu_title {
   color: #fba902;
   margin-bottom: 77px;
+  position: relative;
 }
 .content-menu_nav {
   position: absolute;
@@ -64,13 +65,19 @@
 .dessert-menu_item:last-child {
   border-radius: 0 0 90px 0;
 }
-
-.author-menu_item figure,
-.dessert-menu_item-big figure {
+.author-menu_item figure {
   display: flex;
   margin: 0;
   padding: 0;
   margin-right: 79px;
+}
+.author-menu_item:last-child figure,
+.author-menu_item:first:child figure {
+  position: relative;
+}
+.classic-menu_item img,
+.dessert-menu_item img {
+  position: absolute;
 }
 
 .item_properties {
@@ -160,7 +167,7 @@
 }
 .classic-menu_item,
 .dessert-menu_item {
-  padding: 35px;
+  padding: 31px;
   padding-right: 30px;
   padding-left: 0;
   background-color: #faf5ec;
@@ -174,7 +181,8 @@
 }
 .classic-menu_item .item_description,
 .dessert-menu_item .item_description {
-  margin-left: -20px;
+  margin-left: 236px;
+  margin-top: 0;
 }
 .classic-menu_item .item_volume,
 .dessert-menu_item .item_volume {

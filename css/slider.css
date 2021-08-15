@@ -53,9 +53,11 @@
   position: absolute;
   left: -350px;
 }
-
 .menu-slides .slick-slide {
   width: 1220px !important;
   margin-right: 350px;
   margin-left: 350px;
+}
+.menu-slide {
+  margin-bottom: 172px;
 }

@@ -14,9 +14,6 @@
 .overlay.invisible {
   opacity: 0;
 }
-/* .noscroll {
-    overflow-x: hidden;
-  } */
 
 /* Form Styles */
 form {
@@ -46,6 +43,9 @@ textarea.invalid {
   animation-direction: normal;
 }
 form input.invalid ~ label {
+  color: #fba902;
+}
+form input.invalid::placeholder {
   color: #fba902;
 }
 input:-webkit-autofill {
@@ -154,10 +154,12 @@ form .submit {
 .vacancy_phone-label {
   top: 223px;
   left: 104px;
+  opacity: 0;
 }
 .vacancy_email-label {
   top: 223px;
   left: 336px;
+  opacity: 0;
 }
 #vacancy-name:focus ~ .vacancy_name-label,
 #vacancy-name:valid ~ .vacancy_name-label {
@@ -170,16 +172,23 @@ form .submit {
   font-size: 12px;
   top: 190px;
   left: 90px;
+  opacity: 1;
 }
 #vacancy-email:focus ~ .vacancy_email-label,
 #vacancy-email:valid ~ .vacancy_email-label {
   font-size: 12px;
   top: 190px;
   left: 320px;
+  opacity: 1;
 }
 .popup-guest {
   color: #fcf8f1;
   background-color: #493326;
+}
+.popup-guest input::placeholder {
+  color: #fcf8f1;
+  opacity: 0.7;
+  font-size: 14px;
 }
 .popup-guest_title {
   color: #fcf8f1;

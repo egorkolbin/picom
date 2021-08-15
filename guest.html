@@ -12,14 +12,13 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=20b5d4b6-7489-401f-ae84-898620bb781c&lang=ru_RU"
       type="text/javascript"
     ></script>
-    <script type="text/javascript" src="js/map.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <header>
           <div class="logo">
-            <a href="#"
+            <a href="index.html"
               ><img src="images/svg/logo.svg" alt="Логотип YUM YUM coffee"
             /></a>
           </div>
@@ -40,14 +39,16 @@
             </ul>
           </nav>
           <div class="contacts">
-            <a href="tel:8(3412)99-88-22" class="contact">+7 (3412) 99-88-22</a>
+            <a href="tel:8(3412)99-88-22" class="contact"
+              ><span class="number">+7 (3412) 99-88-22</span></a
+            >
             <ul class="contact_links">
               <li class="contact_item">
                 <a
                   target="blank"
                   href="https://vk.com/yumcoffee"
                   class="contact_link contact_vk"
-                  aria-labelledby="Ссылка на вконтакте"
+                  aria-label="Ссылка на вконтакте"
                 ></a>
               </li>
               <li class="contact_item">
@@ -55,7 +56,7 @@
                   target="blank"
                   href="https://www.instagram.com/yumyum_coffee/"
                   class="contact_link contact_ig"
-                  aria-labelledby="Ссылка на инстаграм"
+                  aria-label="Ссылка на инстаграм"
                 ></a>
               </li>
               <li class="contact_item">
@@ -63,7 +64,7 @@
                   target="blank"
                   href="#"
                   class="contact_link contact_fb"
-                  aria-labelledby="Ссылка на фейсбук"
+                  aria-label="Ссылка на фейсбук"
                 ></a>
               </li>
             </ul>
@@ -71,12 +72,6 @@
         </header>
 
         <main>
-          <div class="header_design">
-            <img src="images/design/header-el1.png" />
-          </div>
-          <div class="header_design2">
-            <img src="images/design/header-el2.png" />
-          </div>
           <section class="intro">
             <div class="intro-flex">
               <h2 class="intro_title title">
@@ -91,8 +86,8 @@
               >
             </div>
             <img
-              class="intro_cup"
-              src="images/main-cup.png"
+              class="intro_cup lazy"
+              src="images/lazy-cup.png"
               alt="Изображение напитка в съедобном стаканчике"
               width="378"
               height="447"
@@ -138,9 +133,9 @@
                       примерно треть этого напитка из-за динамичных будней
                       подается в одноразовых чашках. Наша кофейня за сокращение
                       использования одноразовой пластиковой посуды! А это на
-                      сегодняшний день это 70% всего мусора, который
-                      скапливается в морях и океанах, нанося непоправимый вред
-                      всему окружающем миру.
+                      сегодняшний день это <span class="number">70%</span> всего
+                      мусора, который скапливается в морях и океанах, нанося
+                      непоправимый вред всему окружающем миру.
                     </p>
                   </div>
                 </div>
@@ -180,12 +175,6 @@
             </div>
           </section>
           <section class="advantages">
-            <div class="advantages_design">
-              <img src="images/design/advantages1.png" />
-            </div>
-            <div class="advantages_design2">
-              <img src="images/design/advantages2.png" />
-            </div>
             <h2 class="advantages_title title">
               Преимущества съедобных <span>стаканчиков</span>
             </h2>
@@ -230,17 +219,12 @@
             </div>
           </section>
           <section class="actions">
-            <div class="actions_design">
-              <img src="images/design/actions1.png" />
-            </div>
-            <div class="actions_design2">
-              <img src="images/design/actions2.png" />
-            </div>
             <h2 class="actions_title title">Акции</h2>
             <ul class="actions_list">
               <li class="actions_item action_1">
                 <div class="actions_item_text">
-                  Постоянная<span> скидка 10%</span><br />
+                  Постоянная<span> скидка <span class="number">10%</span></span
+                  ><br />
                   на все напитки при<br />
                   покупке нашего термоса
                 </div>
@@ -260,18 +244,6 @@
             </ul>
           </section>
           <section class="content-menu" id="content-menu">
-            <div class="menu_design">
-              <img src="images/design/menu1.png" />
-            </div>
-            <div class="menu_design2">
-              <img src="images/design/menu2.png" />
-            </div>
-            <div class="menu_design3">
-              <img src="images/design/menu3.png" />
-            </div>
-            <div class="menu_design4">
-              <img src="images/design/menu4.png" />
-            </div>
             <h2 class="content-menu_title title slide_title">Меню</h2>
             <ul class="content-menu_nav slider_menu">
               <li
@@ -316,16 +288,13 @@
                           </p>
                           <dl class="item_energy">
                             <dt>Ккал</dt>
-                            <dd>325/401</dd>
-                            <br />
+                            <dd><span class="number">325/401</span><br /></dd>
                             <dt>Белки, г</dt>
-                            <dd>8.1/10.3</dd>
-                            <br />
+                            <dd><span class="number">8.1/10.3</span><br /></dd>
                             <dt>Жиры, г</dt>
-                            <dd>8.25/10.5</dd>
-                            <br />
+                            <dd><span class="number">8.25/10.5</span><br /></dd>
                             <dt>Углеводы, г</dt>
-                            <dd>30/42</dd>
+                            <dd><span class="number">30/42</span></dd>
                           </dl>
                         </figcaption>
                       </figure>
@@ -356,22 +325,22 @@
                           height="300"
                         />
                         <figcaption class="item_properties">
-                          <p class="item_volume">220мл/330мл</p>
+                          <p class="item_volume">
+                            <span class="number">220мл/330мл</span>
+                          </p>
                           <p class="item_definition">
                             Энергетическая и пищевая ценность:
                           </p>
                           <dl class="item_energy">
                             <dt>Ккал</dt>
-                            <dd>327/393</dd>
-                            <br />
+                            <dd><span class="number">327/393</span><br /></dd>
                             <dt>Белки, г</dt>
-                            <dd>8/10.3</dd>
-                            <br />
+                            <dd><span class="number">8/10.3</span><br /></dd>
                             <dt>Жиры, г</dt>
-                            <dd>8.25/10.5</dd>
+                            <dd><span class="number">8.25/10.5</span><br /></dd>
                             <br />
                             <dt>Углеводы, г</dt>
-                            <dd>30.8/40.1</dd>
+                            <dd><span class="number">30.8/40.1</span></dd>
                           </dl>
                         </figcaption>
                       </figure>
@@ -408,16 +377,14 @@
                           </p>
                           <dl class="item_energy">
                             <dt>Ккал</dt>
-                            <dd>329/407</dd>
-                            <br />
+                            <dd><span class="number">329/407</span><br /></dd>
+
                             <dt>Белки, г</dt>
-                            <dd>8.3/10.6</dd>
-                            <br />
+                            <dd><span class="number">8.3/10.6</span><br /></dd>
                             <dt>Жиры, г</dt>
-                            <dd>8.8/11.2</dd>
-                            <br />
+                            <dd><span class="number">8.8/11.2</span><br /></dd>
                             <dt>Углеводы, г</dt>
-                            <dd>28.8/40.3</dd>
+                            <dd><span class="number">28.8/40.3</span></dd>
                           </dl>
                         </figcaption>
                       </figure>
@@ -462,7 +429,9 @@
                           <p class="item_compound">
                             Состав напитка:<span> эспрессо, вода</span>
                           </p>
-                          <p class="item_volume">220мл/330мл</p>
+                          <p class="item_volume">
+                            <span class="number">220мл/330мл</span>
+                          </p>
                         </figcaption>
                       </figure>
                     </li>
@@ -487,8 +456,10 @@
                             Состав напитка:<span> эспрессо, молоко</span>
                           </p>
                           <p class="item_volume">
-                            220/330 мл
-                            <span>Ккал 99.7/156.7</span>
+                            <span class="number">220/330 мл</span>
+                            <span
+                              >Ккал <span class="number">99.7/156.7</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -514,7 +485,10 @@
                             Состав напитка:<span> эспрессо, молоко</span>
                           </p>
                           <p class="item_volume">
-                            220мл/330мл<span>Ккал 99.7/156.7</span>
+                            <span class="number">220мл/330мл</span
+                            ><span
+                              >Ккал <span class="number">99.7/156.7</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -540,7 +514,10 @@
                             >
                           </p>
                           <p class="item_volume">
-                            220мл/330мл<span>Ккал 267.6/368</span>
+                            <span class="number">220мл/330мл</span
+                            ><span
+                              >Ккал <span class="number">267.6/368</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -572,7 +549,11 @@
                             >
                           </p>
                           <p class="item_volume">
-                            220мл/330мл<span>Ккал 303.7/461.3</span>
+                            <span class="number">220мл/330мл</span
+                            ><span
+                              >Ккал
+                              <span class="number">303.7/461.3</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -598,8 +579,11 @@
                             Состав напитка:<span> молоко, темный шоколад</span>
                           </p>
                           <p class="item_volume">
-                            220мл/330мл
-                            <span>Ккал 303.7/461.3</span>
+                            <span class="number">220мл/330мл</span>
+                            <span
+                              >Ккал
+                              <span class="number">303.7/461.3</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -625,7 +609,10 @@
                             >
                           </p>
                           <p class="item_volume">
-                            220мл/330мл<span>Ккал 97.3/164.5</span>
+                            <span class="number">220мл/330мл</span
+                            ><span
+                              >Ккал <span class="number">97.3/164.5</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -649,7 +636,10 @@
                             Состав напитка:<span> анчан, молоко, мед</span>
                           </p>
                           <p class="item_volume">
-                            220мл/330мл<span>Ккал 99.7/156.7</span>
+                            <span class="number">220мл/330мл</span
+                            ><span
+                              >Ккал <span class="number">99.7/156.7</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -677,7 +667,10 @@
                             >
                           </p>
                           <p class="item_volume">
-                            220мл/330мл<span>Ккал 392/524</span>
+                            <span class="number">220мл/330мл</span
+                            ><span
+                              >Ккал <span class="number">392/524</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -704,7 +697,10 @@
                             Состав:<span> мороженое, топпинг (по желанию)</span>
                           </p>
                           <p class="item_volume">
-                            220мл/330мл<span>Ккал 329/407</span>
+                            <span class="number">220мл/330мл</span
+                            ><span
+                              >Ккал <span class="number">329/407</span></span
+                            >
                           </p>
                         </figcaption>
                       </figure>
@@ -714,14 +710,7 @@
               </div>
             </div>
           </section>
-          -->
           <section class="add-form">
-            <div class="add_design">
-              <img src="images/design/add.png" />
-            </div>
-            <div class="add_design2">
-              <img src="images/design/add2.png" />
-            </div>
             <div class="add-form_blocks">
               <form
                 method="POST"
@@ -743,6 +732,7 @@
                   id="number"
                   class="form_number"
                   required="required"
+                  placeholder="+7 (900) 000-00-00"
                 />
                 <label for="number" class="label_phone">Номер телефона</label>
                 <textarea
@@ -784,12 +774,6 @@
             </div>
           </section>
           <section class="vacancies" id="vacancies">
-            <div class="vacanci_design">
-              <img src="images/design/vacanci.png" />
-            </div>
-            <div class="vacanci_design2">
-              <img src="images/design/vacanci2.png" />
-            </div>
             <h2 class="vacancies_title title">Вакансии</h2>
             <p class="vacancies_text">
               Начни свой путь <span>в нашей команде</span>, поддержи экологию!
@@ -805,7 +789,7 @@
                 <input
                   type="button"
                   class="barista_button vacancy_button white_button button"
-                  value="Стать баристой"
+                  value="Стать бариста"
                 />
               </div>
               <div class="guest vacancy_block">
@@ -836,12 +820,6 @@
             </div>
           </section>
           <section class="blog" id="blog">
-            <div class="blog_design">
-              <img src="images/design/blog-design-guest.png" />
-            </div>
-            <div class="blog_design2">
-              <img src="images/design/blog-design-guest2.png" />
-            </div>
             <h2 class="blog_title title"><span>Эко</span>-блог</h2>
             <a href="#" class="button blog_button-read white_button"
               >Читать все статьи</a
@@ -881,12 +859,14 @@
         <footer>
           <section class="footer_main-info">
             <div class="footer_logo">
-              <img
-                src="images/svg/footer-logo.svg"
-                class="footer_logo-img"
-                height="40"
-                alt="Логотип YUM-YUM coffee"
-              />
+              <a href="index.html">
+                <img
+                  src="images/svg/footer-logo.svg"
+                  class="footer_logo-img"
+                  height="40"
+                  alt="Логотип YUM-YUM coffee"
+                />
+              </a>
             </div>
             <div class="contacts footer_contacts">
               <ul class="contact_links footer_contact-links">
@@ -894,7 +874,7 @@
                   <a
                     href="https://vk.com/yumcoffee"
                     class="contact_link footer_contact-link footer_contact-vk"
-                    aria-labelledby="Ссылка на вконтакте"
+                    aria-label="Ссылка на вконтакте"
                     target="blank"
                   ></a>
                 </li>
@@ -902,7 +882,7 @@
                   <a
                     href="https://www.instagram.com/yumyum_coffee/"
                     class="contact_link footer_contact-link footer_contact-ig"
-                    aria-labelledby="Ссылка на инстаграм"
+                    aria-label="Ссылка на инстаграм"
                     target="blank"
                   ></a>
                 </li>
@@ -910,13 +890,15 @@
                   <a
                     href="#"
                     class="contact_link footer_contact-link footer_contact-fb"
-                    aria-labelledby="Ссылка на фейсбук"
+                    aria-label="Ссылка на фейсбук"
                     target="blank"
                   ></a>
                 </li>
               </ul>
             </div>
-            <p class="footer_copyright">© 2021 YUM-YUM coffee</p>
+            <p class="footer_copyright">
+              © <span class="number">2021</span> YUM-YUM coffee
+            </p>
             <a href="#" class="footer_politic">Политика конфиденциальности</a>
           </section>
           <section class="footer_menu">
@@ -939,7 +921,7 @@
           <section class="footer_contacts">
             <p class="footer_tel-text">
               <a href="tel:8-(3412)-99-88-22" class="footer_tel"
-                >+7 (3412) 99-88-22</a
+                ><span class="number">+7 (3412) 99-88-22</span></a
               ><br />
               для звонков из России и других стран
             </p>
@@ -966,6 +948,7 @@
                 name="vacancy-phone"
                 id="vacancy-phone"
                 required
+                placeholder="+7 (900) 000-00-00"
               />
               <label for="vacancy-phone" class="vacancy_phone-label"
                 >Номер телефона</label
@@ -975,6 +958,7 @@
                 name="vacancy-email"
                 id="vacancy-email"
                 required
+                placeholder="E-mail"
               />
               <label for="vacancy-email" class="vacancy_email-label"
                 >E-mail</label
@@ -1001,8 +985,9 @@
           <h3 class="announce_title"><span>ммм...</span>звучит очень вкусно</h3>
           <p class="announce_text">
             Благодарим вас за предложенную идею - мы обязательно рассмотрим ее и
-            в случае ввода нового вкуса в наше меню вы получите скидку 30% на
-            ваш напиток в течении всего сезона.*
+            в случае ввода нового вкуса в наше меню вы получите скидку
+            <span class="number">30%</span> на ваш напиток в течении всего
+            сезона.*
           </p>
           <button class="announce_button button orange_button">закрыть</button>
         </div>
@@ -1014,6 +999,14 @@
           </p>
           <button class="announce_button button">закрыть</button>
         </div>
+      </div>
+      <div class="announce error popup hidden invisible">
+        <h3 class="announce_title">упс... произошла <span>ошибка</span></h3>
+        <p class="announce_text">
+          При отправке ваших данных произошла ошибка, перезагрузите страницу и
+          попробуйте ввести данные снова
+        </p>
+        <button class="announce_button button">закрыть</button>
       </div>
       <div class="overlay hidden invisible"></div>
     </div>

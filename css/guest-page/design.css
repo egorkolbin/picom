@@ -1,85 +1,109 @@
-.header_design {
+.intro::after {
+  content: '';
   position: absolute;
-  margin: 0px 0px 0px 700px;
-  z-index: 1;
+  right: -350px;
+  top: -78px;
+  width: 660px;
+  height: 810px;
+  border-radius: 0 0 0 15em;
+  background: linear-gradient(
+        119.77deg,
+        rgba(245, 220, 175, 0.2) 11.15%,
+        rgba(223, 185, 115, 0.2) 75.97%
+      )
+      no-repeat,
+    linear-gradient(0deg, #fcf8f1, #fcf8f1) no-repeat;
 }
-.header_design2 {
+.intro-flex::after {
+  content: '';
   position: absolute;
-  margin: 150px 0px 0px 800px;
-  z-index: 1;
+  top: 40px;
+  right: -690px;
+  width: 570px;
+  height: 600px;
+  background: url('../../images/design/main-shadow.png') no-repeat;
 }
-.advantages_design {
+
+.advantages::before {
+  content: '';
   position: absolute;
-  z-index: 1;
-  margin: -76px 0px 0px -119px;
+  height: 873px;
+  bottom: 0;
+  left: -360px;
+  background: #493326 no-repeat;
+  width: 975px;
+  border-radius: 0 300px 0 0;
 }
-.advantages_design2 {
+.advantages_cup::after {
+  content: '';
   position: absolute;
-  z-index: 1;
-  margin: -50px 0px 0px -82px;
+  top: 240px;
+  left: -90px;
+  width: 400px;
+  height: 300px;
+  background: url('../../images/design/advantages-shadow.png');
 }
-.actions_design {
+.author-menu_item:last-child figure::before {
+  content: '';
   position: absolute;
-  z-index: 1;
-  margin: 0px 0px 0px 793px;
+  width: 376px;
+  height: 200px;
+  bottom: 50%;
+  left: 0;
+  background: url('../../images/design/author-menu-last.png') 0 -150px no-repeat;
 }
-.actions_design2 {
+.author-menu_item:first-child figure::before {
+  content: '';
   position: absolute;
-  z-index: 1;
-  margin: 63px 0px 0px 869px;
+  width: 587px;
+  height: 323px;
+  bottom: 0;
+  left: 80px;
+  background: url('../../images/design/author-menu-first.png') 0 -50px no-repeat;
 }
-.menu_design {
+.dessert-menu_item:last-child::before {
+  content: '';
   position: absolute;
-  z-index: 3;
-  margin: 135px 0px 0px 188px;
-  opacity: 0.15;
+  width: 460px;
+  height: 405px;
+  left: -110px;
+  top: -35px;
+  background: url('../../images/design/dessert-last-item.png') 0 -50px no-repeat;
 }
-.menu_design2 {
+.vacancies::after {
+  content: '';
   position: absolute;
-  z-index: 3;
-  margin: 145px 0px 0px 230px;
-  opacity: 0.15;
+  top: -280px;
+  right: -350px;
+  width: 603px;
+  height: 646px;
+  background: url('../../images/design/vacancies-main.png') -50px 0 no-repeat;
 }
-.menu_design3 {
+.barista.vacancy_block::before {
+  content: '';
   position: absolute;
-  z-index: 3;
-  margin: 713px 0px 0px 75px;
-  opacity: 0.15;
+  display: block;
+  bottom: -100px;
+  right: -150px;
+  width: 270px;
+  height: 175px;
+  background: url('../../images/design/vacancies-little.png') 0 -50px no-repeat;
 }
-.menu_design4 {
+.map_title::before {
+  content: '';
   position: absolute;
-  z-index: 3;
-  margin: 735px 0px 0px 100px;
-  opacity: 0.15;
+  width: 400px;
+  height: 220px;
+  left: -250px;
+  top: -20px;
+  background: url('../../images/design/map-ellipse.png');
 }
-.add_design {
+.blog::after {
+  content: '';
   position: absolute;
-  z-index: 1;
-  margin: 167px 0px 0px 150px;
-}
-.add_design2 {
-  position: absolute;
-  z-index: 1;
-  margin: 245px 0px 0px 250px;
-}
-.vacanci_design {
-  position: absolute;
-  z-index: 1;
-  margin: -210px 0px 0px 1100px;
-}
-.vacanci_design2 {
-  position: absolute;
-  z-index: 1;
-  margin: -150px 0px 0px 1150px;
-}
-.blog_design {
-  position: absolute;
-  z-index: 1;
-  margin: -50px 0px 0px 777px;
-  opacity: 0.2;
-}
-.blog_design2 {
-  position: absolute;
-  z-index: 1;
-  margin: 30px 0px 0px 820px;
+  right: -50px;
+  top: -150px;
+  width: 700px;
+  height: 1000px;
+  background: url('../../images/design/blog-ellipse.png');
 }
