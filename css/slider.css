@@ -45,7 +45,7 @@
 }
 .slick-slide:focus-visible,
 .menu-slide:focus-visible {
-  border: 1px transparent;
+  border: 2px transparent;
   outline: transparent;
 }
 .menu-slides {

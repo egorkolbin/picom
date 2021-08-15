@@ -12,34 +12,7 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=20b5d4b6-7489-401f-ae84-898620bb781c&lang=ru_RU"
       type="text/javascript"
     ></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init() {
-        const myMap = new ymaps.Map('map', {
-          center: [56.870831, 53.2900639],
-          zoom: 17,
-        });
-        const petrova = new ymaps.Placemark(
-          [56.870831, 53.2900639],
-          {},
-          {
-            iconLayout: 'default#image',
-            iconImageHref: 'images/svg/cart-mark.svg',
-            iconImageSize: [26, 37],
-          }
-        );
-        const berRosha = new ymaps.Placemark([56.8585089, 53.2284074]);
-        const center = new ymaps.Placemark([56.8530084, 53.2090089]);
-        const lenina = new ymaps.Placemark([56.8451609, 53.2888013]);
-        const kirova = new ymaps.Placemark([56.8611039, 53.1747429]);
-        myMap.geoObjects
-          .add(petrova)
-          .add(berRosha)
-          .add(center)
-          .add(lenina)
-          .add(kirova);
-      }
-    </script>
+    <script type="text/javascript" src="js/map.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -741,6 +714,7 @@
               </div>
             </div>
           </section>
+          -->
           <section class="add-form">
             <div class="add_design">
               <img src="images/design/add.png" />
@@ -856,31 +830,9 @@
             <div class="map-flex">
               <div class="map_places">
                 <h3 class="map_city" data-city="izhevsk">г. Ижевск</h3>
-                <ul class="map_list">
-                  <li class="map_list-item">
-                    <p class="place">ул. Михаила Петрова, 29</p>
-                    <p class="place_time">Ежедневно с 9:00 до 23:00</p>
-                  </li>
-                  <li class="map_list-item">
-                    <p class="place">Березовая роща</p>
-                    <p class="place_time">Ежедневно с 9:00 до 23:00</p>
-                  </li>
-                  <li class="map_list-item">
-                    <p class="place">Центральная площадь, павильон 4</p>
-                    <p class="place_time">Ежедневно с 9:00 до 23:00</p>
-                  </li>
-                  <li class="map_list-item">
-                    <p class="place">ул. Ленина, 140</p>
-                    <p class="place_time">Ежедневно с 9:00 до 23:00</p>
-                  </li>
-                  <li class="map_list-item">
-                    <p class="place">ул. Кирова, 8д</p>
-                    <p class="place_time">Ежедневно с 9:00 до 23:00</p>
-                  </li>
-                </ul>
+                <ul class="map_list"></ul>
               </div>
-              <div id="map" width="805" height="444" crossorigin></div>
-              <!-- <img src="images/map.png" /> -->
+              <div id="map" style="width: 805px; height: 444px"></div>
             </div>
           </section>
           <section class="blog" id="blog">
