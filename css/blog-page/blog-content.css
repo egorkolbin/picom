@@ -77,6 +77,22 @@ h2 span{
 	filter: blur(3px);
 	transition: 0.2s;
 }
+.blog_card:hover .card_info_time{
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 14px;
+	padding: 18px 0px 0px 69px;
+}
+.blog_card:hover .card_info_view{
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 14px;
+	padding: 42px 0px 0px 69px;
+}
+.blog_card:hover .card_text{
+	font-size: 26px;
+	transition: 0.2s;
+}
 .more_button{
 	width: 232px;
 	height: 50px;
