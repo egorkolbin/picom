@@ -1,0 +1,23 @@
+/* Section footer */
+@import url('../../../css/footer.css');
+
+/* Section header */
+@import url('../../../css/header.css');
+
+/* Section buttons */
+@import url('../../../css/buttons.css');
+
+/* Section fonts  */
+@import url('../../../css/fonts.css');
+
+/* Section normalize */
+@import url('../../../css/normalize.css');
+
+/* Section document */
+@import url('../../../css/document.css');
+
+@import url('content.css');
+
+@import url('design.css');
+
+@import url('map.css');
