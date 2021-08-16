@@ -16,3 +16,8 @@
   src: url(../fonts/Raleway-Light.ttf);
   font-family: 'Raleway-Light';
 }
+
+@font-face {
+  src: url(../fonts/NotoSans-Regular.ttf);
+  font-family: 'Noto-Sans';
+}

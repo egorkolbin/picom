@@ -12,7 +12,15 @@
   position: absolute;
   top: 0;
   left: -350px;
-  background: #fcf8f1 url('../../images/design/actions.png') 100% 100%;
+  background: url('../../images/design/actions-ellipse.png') top -50px right 100px
+      no-repeat,
+    linear-gradient(
+        119.77deg,
+        rgba(245, 220, 175, 0.2) 11.15%,
+        rgba(223, 185, 115, 0.2) 75.97%
+      )
+      100% 100%,
+    linear-gradient(0deg, #fcf8f1, #fcf8f1) 100% 100%;
 }
 .actions_title {
   font-size: 36px;
@@ -35,8 +43,9 @@
   width: 390px;
   background-repeat: no-repeat;
   height: 450px;
+  transition: transform 0.5s;
 }
-.actions_item:hover{
+.actions_item:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);

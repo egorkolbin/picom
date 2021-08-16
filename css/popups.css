@@ -14,9 +14,6 @@
 .overlay.invisible {
   opacity: 0;
 }
-/* .noscroll {
-    overflow-x: hidden;
-  } */
 
 /* Form Styles */
 form {
@@ -37,14 +34,18 @@ form textarea {
 }
 form input.invalid,
 textarea.invalid {
-  color: #fba902;
-  border: 1px solid #fba902;
+  color: #fba902 !important;
+  border: 1px solid #fba902 !important;
   animation-name: invalid;
   transition: color 0.4s;
   animation-duration: 0.2s;
   animation-iteration-count: 2;
+  animation-direction: normal;
 }
 form input.invalid ~ label {
+  color: #fba902;
+}
+form input.invalid::placeholder {
   color: #fba902;
 }
 input:-webkit-autofill {
@@ -99,9 +100,10 @@ form .submit {
 
 /* Vacancy-form Popup */
 .vacancy-form {
-  top: 98px;
+  top: 50%;
   left: 50%;
   margin-left: -300px;
+  margin-top: -300px;
   z-index: 6;
   position: fixed;
   border-radius: 15px;
@@ -139,6 +141,9 @@ form .submit {
   justify-content: space-between;
   width: 440px;
 }
+#vacancy-phone {
+  font-family: 'Noto-Sans';
+}
 #vacancy-phone,
 #vacancy-email {
   width: 160px;
@@ -157,6 +162,7 @@ form .submit {
 .vacancy_email-label {
   top: 223px;
   left: 336px;
+  opacity: 0;
 }
 #vacancy-name:focus ~ .vacancy_name-label,
 #vacancy-name:valid ~ .vacancy_name-label {
@@ -165,7 +171,8 @@ form .submit {
   left: 90px;
 }
 #vacancy-phone:focus ~ .vacancy_phone-label,
-#vacancy-phone:valid ~ .vacancy_phone-label {
+#vacancy-phone:valid ~ .vacancy_phone-label,
+#vacancy-phone:hover ~ .vacancy_phone-label {
   font-size: 12px;
   top: 190px;
   left: 90px;
@@ -175,10 +182,16 @@ form .submit {
   font-size: 12px;
   top: 190px;
   left: 320px;
+  opacity: 1;
 }
 .popup-guest {
   color: #fcf8f1;
   background-color: #493326;
+}
+.popup-guest input::placeholder {
+  color: #fcf8f1;
+  opacity: 0.7;
+  font-size: 14px;
 }
 .popup-guest_title {
   color: #fcf8f1;

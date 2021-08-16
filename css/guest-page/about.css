@@ -5,13 +5,14 @@
 .about_slide {
   margin-top: 75px;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .about_img {
   margin-right: 123px;
 }
 .about_description {
   padding: 40px 5px 0 5px;
-  flex: 1 3 23%;
   display: flex;
   flex-direction: column;
 }

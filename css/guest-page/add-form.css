@@ -11,7 +11,7 @@
   left: -350px;
   width: 1920px;
   height: 100%;
-  background: #493326;
+  background: #493326 url('../../images/design/add.png') 500px 250px no-repeat;
 }
 .add-form_blocks {
   display: grid;
@@ -33,10 +33,14 @@
   font-size: 12px;
 }
 .form_number:focus ~ .label_phone,
-.form_number:valid ~ .label_phone {
+.form_number:valid ~ .label_phone,
+.form_number:hover ~ .label_phone {
   top: 95px;
   left: 90px;
   font-size: 12px;
+}
+.form_number {
+  font-family: 'Noto-Sans';
 }
 .add-form_form label {
   left: 106px;
@@ -85,4 +89,8 @@
 }
 .add-form_text-little span {
   color: #fba902;
+}
+.add-form .button {
+  text-transform: uppercase;
+  font-size: 14px;
 }
