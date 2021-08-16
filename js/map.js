@@ -93,7 +93,7 @@ function init() {
 function createStore(store) {
   const storeItem = `<li class="map_list-item">
   <p class="place">${store.address}</p>
-  <p class="place_time">Ежедневно ${store.time}</p>
+  <p class="place_time">Ежедневно <span class="number">${store.time}</span></p>
 </li>`;
   mapList.insertAdjacentHTML('beforeend', storeItem);
   addressList = mapList.querySelectorAll('.place');

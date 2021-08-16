@@ -39,6 +39,9 @@
   left: 90px;
   font-size: 12px;
 }
+.form_number {
+  font-family: 'Noto-Sans';
+}
 .add-form_form label {
   left: 106px;
 }

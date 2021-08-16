@@ -40,17 +40,26 @@ footer::before {
 .footer_contact-vk {
   background-image: url('../images/svg/footer-vk.svg');
 }
+.footer_contact-vk:hover {
+  background-image: url('../images/svg/footer-vk-hover.svg');
+}
 .footer_contact-vk:active {
   background-image: url('../images/svg/footer-vk-active.svg');
 }
 .footer_contact-ig {
   background-image: url('../images/svg/footer-ig.svg');
 }
+.footer_contact-ig:hover {
+  background-image: url('../images/svg/footer-ig-hover.svg');
+}
 .footer_contact-ig:active {
   background-image: url('../images/svg/footer-ig-active.svg');
 }
 .footer_contact-fb {
   background-image: url('../images/svg/footer-fb.svg');
+}
+.footer_contact-fb:hover {
+  background-image: url('../images/svg/footer-fb-hover.svg');
 }
 .footer_contact-fb:active {
   background-image: url('../images/svg/footer-fb-active.svg');

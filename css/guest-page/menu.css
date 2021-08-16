@@ -1,7 +1,6 @@
 /* Menu Section */
 
 .content-menu {
-  /* margin-bottom: 172px; */
   position: relative;
 }
 .content-menu_title {
@@ -91,6 +90,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 25px;
+  font-weight: 700;
 }
 .item_volume::after {
   content: '';
@@ -120,6 +120,7 @@
   display: inline-block;
   margin: 0;
   margin-bottom: 5px;
+  margin-right: 10px;
 }
 .item_description {
   display: flex;
@@ -142,6 +143,7 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 .item_compound {
   margin: 0;

@@ -61,6 +61,15 @@
   left: 80px;
   background: url('../../images/design/author-menu-first.png') 0 -50px no-repeat;
 }
+.dessert-menu_item:first-child h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 350px;
+  height: 420px;
+  background: url('../../images/design/dessert-menu-main.png');
+}
 .dessert-menu_item:last-child::before {
   content: '';
   position: absolute;

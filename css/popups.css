@@ -141,6 +141,9 @@ form .submit {
   justify-content: space-between;
   width: 440px;
 }
+#vacancy-phone {
+  font-family: 'Noto-Sans';
+}
 #vacancy-phone,
 #vacancy-email {
   width: 160px;
