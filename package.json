@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "guest page ",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel *.html",
+    "build": "parcel build *.html",
+    "export": "next build && next export"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,9 @@
   "homepage": "https://github.com/An-nett/picom#readme",
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0",
-    "parcel-plugin-svg-sprite": "^1.4.1"
+    "parcel": "^2.0.0-rc.0"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@types/inputmask": "^5.0.1",
-=======
->>>>>>> 93f48eac1e93ce5e2db460fe235f5c57b2f35442
     "inputmask": "^5.0.6",
     "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1"
