@@ -22,7 +22,10 @@
     "parcel-plugin-svg-sprite": "^1.4.1"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@types/inputmask": "^5.0.1",
+=======
+>>>>>>> 93f48eac1e93ce5e2db460fe235f5c57b2f35442
     "inputmask": "^5.0.6",
     "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1"
