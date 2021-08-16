@@ -1,108 +1,129 @@
-.content{
-	margin-top: 100px;
+.blog_content {
+  margin-top: 100px;
+  z-index: 2;
+  position: relative;
 }
-h2{
-	font-family: 'Raleway_bold';
-	font-size: 36px;
-	text-transform: uppercase;
-	color: #493326;
+h2 {
+  font-family: 'Raleway_bold';
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #493326;
 }
-h2 span{
-	color: #FBA902;
+h2 span {
+  color: #fba902;
 }
-.back_button{
-	position: absolute;
-	width: 184px;
-	height: 50px;
-	margin: -88px 0px 0px 1036px;
-	cursor: pointer;
-	outline: none;
-	background-color: transparent;
+.back_button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  cursor: pointer;
+  outline: none;
+  z-index: 3;
+  text-transform: uppercase;
+  padding: 16px 60px;
 }
-.blog_row{
-	display: flex;
-	margin-bottom: 50px;
-	justify-content: space-between;
-	width: 1220px;
+.blog_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 50px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  list-style-type: none;
 }
-.blog_card{
-	width: 390px;
-	height: 500px;
+.blog_item {
+  padding: 40px 35px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
 }
-.card_img{
-	position: absolute;
+.blog_item-1 {
+  background-image: url('../../images/blog1.png');
 }
-.card_view{
-	position: absolute;
-	padding: 44px 0px 0px 37px;
+.blog_item-2 {
+  background-image: url('../../images/blog2.png');
 }
-.card_time{
-	position: absolute;
-	padding: 74px 0px 0px 38px;
+.blog_item-3 {
+  background-image: url('../../images/blog3.png');
 }
-.card_info_view{
-	font-family: 'Raleway';
-	color: #FCF8F1;
-	font-size: 12px;
-	position: relative;
-	opacity: 0.7;
-	padding: 44px 0px 0px 69px;
+.blog_item-4 {
+  background-image: url('../../images/blog4.png');
 }
-.card_info_time{
-	font-family: 'Raleway';
-	color: #FCF8F1;
-	font-size: 12px;
-	position: relative;
-	opacity: 0.7;
-	padding: 20px 0px 0px 69px;
+.blog_item-5 {
+  background-image: url('../../images/blog5.png');
 }
-.card_text{
-	color: #fcf8f1;
-	font-family: 'Raleway_bold';
-	position: relative;
-	line-height: 38.4px;
-	font-size: 24px;
-	padding: 300px 0px 0px 35px;
+.blog_item-6 {
+  background-image: url('../../images/blog6.png');
 }
-.card_text span{
-	color: #FBA902;
+
+.blog_item p {
+  color: #fcf8f1;
+  font-size: 12px;
+  position: relative;
+  opacity: 0.7;
+  margin-left: 30px;
+  margin-bottom: 15px;
 }
-.card_text_2{
-	padding: 260px 0px 0px 35px;
+.card_info_view::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 20px;
+  height: 14px;
+  background: url('../../images/svg/view.svg');
 }
-.blog_card:hover{
-	cursor: pointer;
+.card_info_time::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 17px;
+  height: 17px;
+  background: url('../../images/svg/time.svg');
 }
-.blog_card:hover .card_img{
-	filter: blur(3px);
-	transition: 0.2s;
+p.card_text {
+  color: #fcf8f1;
+  font-family: 'Raleway_bold';
+  position: relative;
+  line-height: 38.4px;
+  font-size: 24px;
+  margin: 0;
+  margin-top: auto;
+  opacity: 1;
 }
-.blog_card:hover .card_info_time{
-	opacity: 1;
-	transition: 0.2s;
-	font-size: 14px;
-	padding: 18px 0px 0px 69px;
+.card_text span {
+  color: #fba902;
 }
-.blog_card:hover .card_info_view{
-	opacity: 1;
-	transition: 0.2s;
-	font-size: 14px;
-	padding: 42px 0px 0px 69px;
+.blog_card:hover {
+  cursor: pointer;
 }
-.blog_card:hover .card_text{
-	font-size: 26px;
-	transition: 0.2s;
+.blog_item p.blog_text {
+  margin-top: auto;
+  opacity: 1;
+  font-family: 'Raleway_bold';
 }
-.more_button{
-	width: 232px;
-	height: 50px;
-	cursor: pointer;
-	outline: none;
-	background-color: transparent;	
-	margin: 50px 0px 0px 494px;
-	text-transform: uppercase;
-	margin-bottom: 120px;
+.blog_item:hover .card_info_time {
+  opacity: 1;
+  font-size: 16px;
+  transition: font-size 0.5s;
 }
-.footer_contacts_blog{
-	margin-left: 762px;
+.blog_item:hover .card_info_view {
+  opacity: 1;
+  transition: font-size 0.5s;
+  font-size: 16px;
+}
+
+.more_button {
+  padding: 16px 44px;
+  cursor: pointer;
+  outline: none;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 120px;
 }

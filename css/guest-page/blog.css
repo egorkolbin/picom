@@ -56,10 +56,10 @@
   background-image: url('../../images/blog1.png');
 }
 .blog_2 {
-  background-image: url('../../images/blog2.png');
+  background-image: url('../../images/blog5.png');
 }
 .blog_3 {
-  background-image: url('../../images/blog3.png');
+  background-image: url('../../images/blog2.png');
 }
 .blog_block:hover .blog_button {
   display: block;
@@ -71,7 +71,8 @@
 .blog_block:last-child {
   margin-right: 0;
 }
-.blog_text {
+
+p.blog_text {
   margin: 0;
   color: #fcf8f1;
   font-size: 24px;

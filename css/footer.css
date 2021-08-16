@@ -24,16 +24,16 @@ footer::before {
 .footer_contacts {
   margin-bottom: 45px;
 }
-.footer_contact-links {
+ul.footer_contact-links {
   padding: 0;
 }
-.footer_contact-item {
+li.footer_contact-item {
   margin: 0;
 }
 .footer_contact-item:not(:last-child) {
   margin-right: 49px;
 }
-.footer_contact-link {
+a.footer_contact-link {
   width: 28px;
   height: 28px;
 }
@@ -126,6 +126,7 @@ a.footer_politic {
 .footer_contacts {
   position: relative;
   padding-top: 15px;
+  grid-column: 3;
 }
 .footer_tel {
   color: #fcf8f1;

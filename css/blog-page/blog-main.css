@@ -1,6 +1,3 @@
-/* Section footer */
-@import url('../../css/footer.css');
-
 /* Section header */
 @import url('../../css/header.css');
 
@@ -19,3 +16,8 @@
 @import url('blog-content.css');
 
 @import url('blog-design.css');
+
+@import url('../guest-page/blog.css');
+
+/* Section footer */
+@import url('../../css/footer.css');
