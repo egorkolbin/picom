@@ -50,7 +50,7 @@
 }
 .menu-slides {
   width: 1920px !important;
-  position: absolute;
+  /* position: absolute; */
   left: -350px;
 }
 .menu-slides .slick-slide {
