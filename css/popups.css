@@ -154,7 +154,6 @@ form .submit {
 .vacancy_phone-label {
   top: 223px;
   left: 104px;
-  opacity: 0;
 }
 .vacancy_email-label {
   top: 223px;
@@ -168,11 +167,11 @@ form .submit {
   left: 90px;
 }
 #vacancy-phone:focus ~ .vacancy_phone-label,
-#vacancy-phone:valid ~ .vacancy_phone-label {
+#vacancy-phone:valid ~ .vacancy_phone-label,
+#vacancy-phone:hover ~ .vacancy_phone-label {
   font-size: 12px;
   top: 190px;
   left: 90px;
-  opacity: 1;
 }
 #vacancy-email:focus ~ .vacancy_email-label,
 #vacancy-email:valid ~ .vacancy_email-label {

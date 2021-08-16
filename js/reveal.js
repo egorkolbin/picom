@@ -25,23 +25,13 @@ const mainCup = document.querySelector('.intro_cup');
 const introSection = document.querySelector('section.intro');
 
 //Костыль для сборщика! Посмотреть адрес картинки на сервере
-const oldSrc = mainCup.src;
-console.log(oldSrc);
 const src = 'https://github.com/An-nett/picom/raw/adaptive/images/main-cup.png';
+mainCup.src = src;
 
-try {
-  Promise(
-    (mainCup.src =
-      'https://github.com/An-nett/picom/raw/adaptive/images/main-cup.png')
-  );
-  mainCup.addEventListener('load', function () {
-    mainCup.classList.remove('lazy');
-    mainCupObserver.observe(introSection);
-  });
-} catch (err) {
-  console.log("Couldn't load image");
-  mainCup.src = oldSrc;
-}
+mainCup.addEventListener('load', function () {
+  mainCup.classList.remove('lazy');
+  mainCupObserver.observe(introSection);
+});
 
 const mainCupObserver = new IntersectionObserver(animateCup, {
   root: null,

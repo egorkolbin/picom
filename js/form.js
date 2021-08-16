@@ -13,9 +13,9 @@ import {
   addReceiptText,
   applyText,
   processForm,
+  setToLocalStorage,
 } from './form-helpers.js';
 import { buttonCloseApply, buttonCloseError } from './popups.js';
-import { createTelTemplate } from './phone-input.js';
 
 let sendData;
 
@@ -46,14 +46,19 @@ window.addEventListener('load', function () {
 
 addReceiptForm.addEventListener('submit', function (evt) {
   evt.preventDefault();
-  processForm(
+  const isWrongData = processForm(
     receiptInputsToFill,
     addReceiptText,
-    'Напишите ваш вариант напитка...',
-    'receipt'
+    'Напишите ваш вариант напитка...'
   );
+  console.log(isWrongData);
   if (isWrongData) return;
 
+  try {
+    receiptInputsToFill.forEach((input) => setToLocalStorage(input, 'receipt'));
+  } catch (err) {
+    console.error(err);
+  }
   //Показывает попап
   addReceiptPopup.classList.add('popup-barista');
   errorPopup.classList.add('popup-barista');
@@ -63,9 +68,17 @@ addReceiptForm.addEventListener('submit', function (evt) {
 
 applyForm.addEventListener('submit', function (evt) {
   evt.preventDefault();
-  processForm(applyInputsToFill, applyText, 'Напишите о себе...', 'apply');
+  const isWrongData = processForm(
+    applyInputsToFill,
+    applyText,
+    'Напишите о себе...'
+  );
   if (isWrongData) return;
-
+  try {
+    applyInputsToFill.forEach((input) => setToLocalStorage(input, 'apply'));
+  } catch (err) {
+    console.error(err);
+  }
   const popupStyle = applyFormPopup.classList.contains('popup-barista')
     ? 'popup-barista'
     : 'popup-guest';

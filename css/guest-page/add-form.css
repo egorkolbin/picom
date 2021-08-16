@@ -33,11 +33,11 @@
   font-size: 12px;
 }
 .form_number:focus ~ .label_phone,
-.form_number:valid ~ .label_phone {
+.form_number:valid ~ .label_phone,
+.form_number:hover ~ .label_phone {
   top: 95px;
   left: 90px;
   font-size: 12px;
-  opacity: 1;
 }
 .add-form_form label {
   left: 106px;
@@ -49,7 +49,6 @@
 .label_phone {
   top: 130px;
   pointer-events: none;
-  opacity: 0;
 }
 .add-form_form input.form_submit {
   width: 232px;

@@ -92,7 +92,7 @@ export function setToLocalStorage(input, prefix) {
 
 //Проверяет валидность данных в форме
 export function checkData(inputs, text, defaultText) {
-  isWrongData = false;
+  let isWrongData = false;
 
   inputs.forEach((input) => {
     if (!input.value) {
@@ -110,16 +110,12 @@ export function checkData(inputs, text, defaultText) {
     isWrongData = true;
     addInvalid(text);
   }
+  return isWrongData;
 }
 //Обрабатывает данные в форме при попытке отправки
-export function processForm(inputs, text, defaultText, prefix) {
+export function processForm(inputs, text, defaultText) {
   inputs.forEach((input) => removeInvalid(input));
   removeInvalid(text);
-  checkData(inputs, text, defaultText);
-  if (isWrongData) return;
-  try {
-    inputs.forEach((input) => setToLocalStorage(input, prefix));
-  } catch (err) {
-    console.error(err);
-  }
+  const isWrongData = checkData(inputs, text, defaultText);
+  return isWrongData;
 }
