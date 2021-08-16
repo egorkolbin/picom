@@ -27,18 +27,23 @@ window.addEventListener('load', function () {
 
     const FD = new FormData(form);
 
+    //Вставить реальный адрес!
     XHR.open('POST', 'https://yum-yum-coffee.picom.su/');
-    XHR.send(FD);
+    XHR.timeout = 3000;
 
-    XHR.addEventListener('load', function (event) {
-      closeAllPopups();
-      if (XHR.status != 200) showPopup(errorPopup);
-      else showPopup(popup);
+    XHR.addEventListener('load', function () {
+      if (XHR.status === 200) showPopup(popup);
+      else showPopup(errorPopup);
     });
-
     XHR.addEventListener('error', () => {
       showPopup(errorPopup);
     });
+    XHR.addEventListener('timeout', () => {
+      showPopup(errorPopup);
+      console.log('Timed out!');
+    });
+
+    XHR.send(FD);
   };
 });
 
@@ -51,7 +56,6 @@ addReceiptForm.addEventListener('submit', function (evt) {
     addReceiptText,
     'Напишите ваш вариант напитка...'
   );
-  console.log(isWrongData);
   if (isWrongData) return;
 
   try {
@@ -85,12 +89,11 @@ applyForm.addEventListener('submit', function (evt) {
   const buttonStyle =
     popupStyle === 'popup-barista' ? 'orange_button' : 'white_button-dark';
 
-  closeAllPopups();
-
   applyPopup.classList.add(popupStyle);
   buttonCloseApply.classList.add(buttonStyle);
   errorPopup.classList.add(popupStyle);
   buttonCloseError.classList.add(buttonStyle);
+  closeAllPopups();
 
   sendData(this, applyPopup);
 });
