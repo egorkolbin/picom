@@ -42,7 +42,7 @@ h2 span {
   flex-direction: column;
   z-index: 3;
 }
-.blog_item-1 {
+/* .blog_item-1 {
   background-image: url('../../images/blog1.png');
 }
 .blog_item-2 {
@@ -59,7 +59,7 @@ h2 span {
 }
 .blog_item-6 {
   background-image: url('../../images/blog6.png');
-}
+} */
 
 .blog_item p {
   color: #fcf8f1;

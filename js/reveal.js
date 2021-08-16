@@ -26,6 +26,7 @@ const introSection = document.querySelector('section.intro');
 
 //Костыль для сборщика! Посмотреть адрес картинки на сервере
 const src = 'https://github.com/An-nett/picom/raw/adaptive/images/main-cup.png';
+const src1 = './images/main-cup.png';
 mainCup.src = src;
 
 mainCup.addEventListener('load', function () {
