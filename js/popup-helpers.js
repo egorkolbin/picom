@@ -3,7 +3,7 @@ import {
   applyInputsToFill,
   applyText,
   removeInvalid,
-} from './form-helpers';
+} from './form-helpers.js';
 
 export const overlay = document.querySelector('.overlay');
 // Popups
