@@ -1,0 +1,120 @@
+.right_block_2 {
+  position: relative;
+}
+h2 {
+  color: #452b42;
+  font-family: 'Raleway_bold';
+  font-size: 20px;
+  margin: 223px 0px 0px 184px;
+}
+.trenning_text {
+  font-family: 'Raleway';
+  line-height: 20.8px;
+  color: #452b42;
+  margin: 30px 0px 0px 184px;
+}
+.date_text {
+  color: #452b42;
+  font-family: 'Raleway_bold';
+  font-size: 20px;
+  margin: 50px 0px 30px 184px;
+  position: relative;
+}
+.date_text::after {
+  content: '';
+  width: 103px;
+  height: 2px;
+  background-color: #fba902;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+/* Добавлено! */
+.date-form {
+  margin-left: 184px;
+  padding: 0;
+  background-color: #fcf8f1;
+}
+/* Конец добавления */
+
+.check {
+  margin-bottom: 20px;
+}
+.check input {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  display: none;
+}
+.date-form label {
+  font-family: 'Rubik-Medium';
+  font-size: 16px;
+  color: #333333;
+  /* padding-left: 40px; */
+  font-weight: 400;
+}
+.custom_check + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom_check + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid black;
+  border-radius: 1em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom_check:checked + label::before {
+  box-shadow: inset 0 0 0 4px #ffffff;
+  background-color: #fba902;
+}
+.form_button {
+  width: 314px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  padding: 16px 69px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 40px;
+}
+.materials {
+  margin: 236px 0px 0px 184px;
+  color: #452b42;
+  font-family: 'Raleway_bold';
+  font-size: 24px;
+  margin: 236px 0px 0px 184px;
+}
+.materials span {
+  color: #fba902;
+}
+.materials_text {
+  color: #3f342f;
+  font-family: 'Raleway';
+  line-height: 25.6px;
+  margin: 20px 0px 0px 184px;
+}
+.check_text {
+  color: #3f342f;
+  font-family: 'Raleway';
+  line-height: 25.6px;
+  margin: 15px 0px 0px 184px;
+  width: 350px;
+}
+.download_button {
+  width: 314px;
+  cursor: pointer;
+  outline: none;
+  padding: 17px 77.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 47px 0px 0px 184px;
+}

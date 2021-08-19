@@ -1,0 +1,105 @@
+.training-bg {
+  position: relative;
+}
+.training-bg::before {
+  content: '';
+  position: absolute;
+  background: -o-linear-gradient(
+      330.23deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    #fcf8f1;
+  background: linear-gradient(
+      119.77deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    #fcf8f1;
+  top: 0;
+  left: -342px;
+  width: 1920px;
+  height: 100%;
+  z-index: -1;
+}
+.training__inner {
+  padding: 130px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.training__inner-info {
+  width: 350px;
+}
+.training__info-title {
+  margin-bottom: 40px;
+}
+.training__info-text {
+  text-align: left;
+  opacity: 0.7;
+}
+.training__item {
+  width: 392px;
+  height: 498px;
+  padding: 40px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.training__item:hover .training__item-link {
+  opacity: 1;
+}
+.training__item:hover .training__item-text {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.training-org {
+  background-image: url('../../../images/training-bg1.png');
+}
+.training-secret {
+  background-image: url('../../../images/training-bg2.png');
+}
+.training__item-text {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  color: #fcf8f1;
+  -webkit-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  transform: translateY(70px);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  -o-transition: transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+.training__item-link {
+  display: block;
+  width: 232px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #3f342f;
+  padding: 16px 72px;
+  cursor: pointer;
+  background-color: #fcf8f1;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+  margin-top: 20px;
+}

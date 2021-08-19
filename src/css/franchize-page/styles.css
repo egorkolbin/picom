@@ -1,0 +1,16 @@
+@import url('../fonts.css');
+@import url('global.css');
+@import url('header.css');
+@import url('apply-form.css');
+@import url('franchize/header-main.css');
+@import url('franchize/coffee.css');
+@import url('franchize/benefit.css');
+@import url('franchize/opening.css');
+@import url('franchize/work.css');
+@import url('franchize/training.css');
+@import url('franchize/cost.css');
+@import url('franchize/questions.css');
+@import url('franchize/blog.css');
+@import url('footer.css');
+
+@import url('popups.css');

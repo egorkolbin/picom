@@ -1,0 +1,114 @@
+.benefit {
+  color: #fcf8f1;
+  margin-bottom: 140px;
+}
+.benefit-bg {
+  position: relative;
+}
+.benefit-bg::before {
+  content: '';
+  position: absolute;
+  background: #493326;
+  border-radius: 0px 0px 0px 218.5px;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  top: 0;
+  left: -340px;
+  width: 960px;
+  height: 733px;
+  z-index: -2;
+}
+.benefit-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.benefit-title {
+  padding-top: 150px;
+  margin-bottom: 75px;
+}
+.benefit__subtitle {
+  width: 220px;
+}
+.benefit__subtitle-title {
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 20px;
+}
+.benefit__subtitle-item {
+  margin-bottom: 48px;
+}
+.benefit__business {
+  background-image: url('../../../images/coffee-bg.png');
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.benefit__business-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 90px 78px 75px 80px;
+}
+.benefit__business-text {
+  width: 415px;
+  height: 115px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.benefit__btn-box {
+  margin: auto 0;
+}
+.benefit__business-btn {
+  padding: 16px 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #493326;
+  border: 1px solid #493326;
+}
+.benefit__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+.benefit__info-item {
+  padding: 35px 75px 35px 35px;
+  background: #fcf8f1;
+  border-radius: 10px;
+}
+.benefit__info-title {
+  width: 100px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #493326;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fba902;
+}
+.benefit__info-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #3f342f;
+}

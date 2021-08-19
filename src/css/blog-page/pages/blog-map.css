@@ -1,0 +1,68 @@
+.map {
+  margin-top: 100px;
+  display: flex;
+}
+.map_design {
+  background-color: #fcf8f1;
+  width: 1920px;
+  height: 424px;
+  position: absolute;
+  margin-left: -350px;
+}
+h2 {
+  text-transform: uppercase;
+  color: #3f342f;
+  line-height: 46.8px;
+  font-size: 36px;
+  font-family: 'Raleway_bold';
+  position: relative;
+  padding-top: 100px;
+}
+h2 span {
+  color: #fba902;
+}
+.map_city {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: 'Raleway';
+  color: #3f342f;
+}
+.map_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.map_list-item {
+  margin-bottom: 25px;
+  color: #3f342f;
+  font-family: 'Raleway';
+}
+.place {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+.place::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 1px;
+  width: 103px;
+  background-color: #fba902;
+}
+.place_time {
+  font-size: 14px;
+  line-height: 12.5px;
+  margin: 0;
+}
+.map_block_2 {
+  margin: 135px 0px 0px 115px;
+}
+.map_block_3 {
+  margin: 130px 0px 0px 215px;
+}

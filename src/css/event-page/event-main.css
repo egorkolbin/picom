@@ -1,0 +1,24 @@
+@import url("../footer.css");
+
+/* Section header */
+@import url("../header.css");
+
+/* Section buttons */
+@import url("../buttons.css");
+
+/* Section fonts  */
+@import url("../fonts.css");
+
+/* Section normalize */
+@import url("../normalize.css");
+
+/* Section document */
+@import url("../document.css");
+
+@import url("event-content.css");
+
+@import url("event-design.css");
+
+@import url("event-form.css");
+
+@import url("../popups.css");

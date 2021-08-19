@@ -1,0 +1,136 @@
+.blog-bg {
+  position: relative;
+}
+.blog-bg::after {
+  content: '';
+  position: absolute;
+  background: -o-linear-gradient(
+      330.23deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    #fcf8f1;
+  background: linear-gradient(
+      119.77deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    #fcf8f1;
+  bottom: 0;
+  left: -342px;
+  width: 1920px;
+  height: 492px;
+  z-index: -1;
+}
+.blog__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.blog__top-title {
+  position: relative;
+}
+.blog__top-title::after {
+  content: '';
+  position: absolute;
+  right: -65px;
+  top: 2px;
+  width: 1px;
+  height: 40px;
+  background-color: #351c0e;
+}
+.blog__btn {
+  padding: 16px 45px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #3f342f;
+  color: #3f342f;
+}
+.blog__bottom {
+  padding-bottom: 170px;
+}
+.blog__list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.blog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 490px;
+  width: 392px;
+  padding: 40px 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0px 15px 15px rgba(73, 51, 38, 0.1);
+  box-shadow: 0px 15px 15px rgba(73, 51, 38, 0.1);
+}
+.blog__item:hover .blog__item-text {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.blog__item:hover .blog__item-btn {
+  opacity: 1;
+}
+.blog__item-text {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+  color: #fcf8f1;
+  -webkit-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  transform: translateY(70px);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  -o-transition: transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+.blog__item-btn {
+  display: block;
+  padding: 16px 40px;
+  width: 232px;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #3f342f;
+  background-color: #fcf8f1;
+  -webkit-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+.blog__item-trend {
+  background-image: url('../../../images/blog3.png');
+}
+.blog__item-coffee {
+  background-image: url('../../../images/blog5.png');
+}
+.blog__item-eco {
+  background-image: url('../../../images/blog6.png');
+}
