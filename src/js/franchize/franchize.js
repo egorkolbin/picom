@@ -6,3 +6,4 @@ import './popups-franchize.js';
 import './scroll-franchize.js';
 import './accordeon.js';
 import './phone-input';
+import './sticky-header.js';

@@ -25,13 +25,9 @@ export function clearVacancyForm() {
 
 // Автозаполнение
 try {
-  receiptInputsToFill.forEach((input) => setToLocalStorage(input, 'receipt'));
-} catch (err) {
-  console.error(err);
-}
-
-try {
-  applyInputsToFill.forEach((input) => setToLocalStorage(input, 'apply'));
+  receiptInputsToFill.forEach(
+    (input) => (input.value = getFromLocalStorage(input, 'receipt'))
+  );
 } catch (err) {
   console.error(err);
 }
@@ -86,8 +82,12 @@ export function removeInvalid(el) {
 }
 //Сохраняет введенные значения для автозаполнения
 export function setToLocalStorage(input, prefix) {
-  const localName = input.type[0].toUpperCase + input.type.slice(1);
+  const localName = input.type[0].toUpperCase() + input.type.slice(1);
   localStorage.setItem(`${prefix}${localName}`, input.value);
+}
+function getFromLocalStorage(input, prefix) {
+  const localName = input.type[0].toUpperCase() + input.type.slice(1);
+  return localStorage.getItem(`${prefix}${localName}`);
 }
 
 //Проверяет валидность данных в форме

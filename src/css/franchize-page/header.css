@@ -3,6 +3,13 @@ header {
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  z-index: 3;
+}
+header.sticky {
+  position: fixed;
+  background-color: #fcf8f1;
+  width: 1920px;
+  padding: 10px 350px;
 }
 .logo {
   padding-top: 1px;

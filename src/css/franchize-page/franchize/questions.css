@@ -52,7 +52,7 @@
   font-feature-settings: 'pnum' on, 'lnum' on;
   position: relative;
   cursor: pointer;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 .questions__item-title::after {
   content: '';
@@ -76,6 +76,7 @@
   transform: translateY(0);
   opacity: 1;
   height: 100px;
+  margin-top: 25px;
 }
 .questions__item:first-child.active .questions__item-text {
   height: 50px;
@@ -157,7 +158,7 @@
   font-family: 'Raleway';
 }
 .questions__form-data {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;

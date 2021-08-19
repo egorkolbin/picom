@@ -78,11 +78,7 @@ applyForm.addEventListener('submit', function (evt) {
     'Напишите о себе...'
   );
   if (isWrongData) return;
-  try {
-    applyInputsToFill.forEach((input) => setToLocalStorage(input, 'apply'));
-  } catch (err) {
-    console.error(err);
-  }
+
   const popupStyle = applyFormPopup.classList.contains('popup-barista')
     ? 'popup-barista'
     : 'popup-guest';

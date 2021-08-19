@@ -5,9 +5,15 @@ const articlesList = document.querySelector('ul.blog_grid');
 const loadButton = document.querySelector('.more_button');
 const onPage = 3;
 
+// const test = document.createElement('img');
+// test.src = '../../images/blog1.png';
+// articlesList.append(test);
+
 function templateArticle(article, index) {
   const articleNum = index + 1;
-  return `<li class="blog_item blog_block blog_item-${articleNum}">
+  const listItem = document.createElement('li');
+  listItem.classList.add('blog_item', 'blog_block', 'blog_item-${articleNum}');
+  listItem.innerHTML = `
   <p class="card_info_view">
     <span class="number">${article.views}</span>
   </p>
@@ -19,8 +25,9 @@ function templateArticle(article, index) {
   </p>
   <a href="blog1.html" class="blog_button button white_button"
     >Читать статью</a
-  >
-  </li>`;
+  >`;
+  listItem.style.background = `url(../../images/blog${articleNum}.png)`;
+  return listItem;
 }
 
 function renderArticles() {
@@ -42,21 +49,13 @@ function renderArticles() {
 
 function displayArticles() {
   const articlesForDisplay = renderArticles();
-  console.log(articles, articlesForDisplay);
   let currentArticlesNum = articlesList.querySelectorAll('li').length;
 
   articlesForDisplay.forEach((article, articleIndex) => {
     const realArticleIndex = articleIndex + currentArticlesNum;
     const newArticle = templateArticle(article, realArticleIndex);
-    console.log(currentArticlesNum, articleIndex, realArticleIndex);
 
-    articlesList.insertAdjacentHTML('beforeend', newArticle);
-    const newArticleEl = articlesList.querySelectorAll('li')[realArticleIndex];
-
-    //Разобраться с URL картинок! Тут костыль
-    newArticleEl.style.backgroundImage = `url(https://github.com/An-nett/picom/raw/adaptive/src/images/blog${
-      realArticleIndex + 1
-    }.png)`;
+    articlesList.appendChild(newArticle);
   });
 }
 

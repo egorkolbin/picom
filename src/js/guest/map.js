@@ -52,10 +52,7 @@ function createMark(coords) {
     {},
     {
       iconLayout: 'default#image',
-      iconImageHref:
-        'https://github.com/An-nett/picom/raw/adaptive/src/images/svg/cart-mark.png',
-      //Костыль! Заменить на реальный абсолютный адрес
-
+      iconImageHref: '../../images/svg/cart-mark.svg',
       iconImageSize: [26, 37],
     }
   );
@@ -86,7 +83,7 @@ function init() {
       if (store.address === storeName) return store;
     });
     if (myMap)
-      myMap.setCenter(storeEl.coords.split(','), zoom, { duration: 700 });
+      myMap.setCenter(storeEl.coords.split(','), zoom + 2, { duration: 700 });
   });
 }
 

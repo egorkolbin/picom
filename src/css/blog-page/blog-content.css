@@ -1,3 +1,6 @@
+main {
+  margin-bottom: 150px;
+}
 .blog_content {
   margin-top: 100px;
   z-index: 2;
@@ -42,24 +45,6 @@ h2 span {
   flex-direction: column;
   z-index: 3;
 }
-/* .blog_item-1 {
-  background-image: url('../../images/blog1.png');
-}
-.blog_item-2 {
-  background-image: url('../../images/blog2.png');
-}
-.blog_item-3 {
-  background-image: url('../../images/blog3.png');
-}
-.blog_item-4 {
-  background-image: url('../../images/blog4.png');
-}
-.blog_item-5 {
-  background-image: url('../../images/blog5.png');
-}
-.blog_item-6 {
-  background-image: url('../../images/blog6.png');
-} */
 
 .blog_item p {
   color: #fcf8f1;
@@ -125,5 +110,5 @@ p.card_text {
   outline: none;
   margin: 0 auto;
   text-transform: uppercase;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
