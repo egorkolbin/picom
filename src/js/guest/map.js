@@ -53,7 +53,7 @@ function createMark(coords) {
     {
       iconLayout: 'default#image',
       iconImageHref:
-        'https://github.com/An-nett/picom/raw/adaptive/images/svg/cart-mark.png',
+        'https://github.com/An-nett/picom/raw/adaptive/src/images/svg/cart-mark.png',
       //Костыль! Заменить на реальный абсолютный адрес
 
       iconImageSize: [26, 37],

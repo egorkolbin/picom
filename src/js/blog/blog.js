@@ -42,18 +42,19 @@ function renderArticles() {
 
 function displayArticles() {
   const articlesForDisplay = renderArticles();
-  let currentArticlesNum = articlesList.querySelectorAll('li').length - 1;
-  if (currentArticlesNum === -1) currentArticlesNum = 0;
+  console.log(articles, articlesForDisplay);
+  let currentArticlesNum = articlesList.querySelectorAll('li').length;
 
   articlesForDisplay.forEach((article, articleIndex) => {
     const realArticleIndex = articleIndex + currentArticlesNum;
     const newArticle = templateArticle(article, realArticleIndex);
+    console.log(currentArticlesNum, articleIndex, realArticleIndex);
 
     articlesList.insertAdjacentHTML('beforeend', newArticle);
     const newArticleEl = articlesList.querySelectorAll('li')[realArticleIndex];
 
-    //Разобраться с URL картинок! Тут костыль для сборщика
-    newArticleEl.style.backgroundImage = `url(https://github.com/An-nett/picom/raw/adaptive/images/blog${
+    //Разобраться с URL картинок! Тут костыль
+    newArticleEl.style.backgroundImage = `url(https://github.com/An-nett/picom/raw/adaptive/src/images/blog${
       realArticleIndex + 1
     }.png)`;
   });
