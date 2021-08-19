@@ -52,6 +52,7 @@
   width: 1920px !important;
   /* position: absolute; */
   left: -350px;
+  margin-top: 78px;
 }
 .menu-slides .slick-slide {
   width: 1220px !important;

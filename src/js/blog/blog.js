@@ -17,7 +17,7 @@ function templateArticle(article, index) {
   <p class="blog_text card_text">
    ${article.text}
   </p>
-  <a href="blog${articleNum}.html" class="blog_button button white_button"
+  <a href="blog1.html" class="blog_button button white_button"
     >Читать статью</a
   >
   </li>`;

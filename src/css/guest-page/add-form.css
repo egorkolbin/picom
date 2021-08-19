@@ -20,6 +20,7 @@
 }
 .add-form_form {
   width: 336px;
+  align-items: center;
 }
 .add-form_form input:not([type='submit']),
 .add-form_form textarea {

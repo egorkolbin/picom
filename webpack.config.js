@@ -15,6 +15,9 @@ module.exports = {
     blog1: './src/js/blog/blog1/blog1.js',
     event: './src/js/event/event.js',
   },
+  optimization: {
+    minimize: false,
+  },
   module: {
     rules: [
       {
@@ -27,7 +30,7 @@ module.exports = {
           'css-loader',
         ],
       },
-      { test: /\.(js)$/, use: 'babel-loader' },
+      { test: /\.(js)$/, use: 'babel-loader', exclude: /(node_modules)/ },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
