@@ -191,4 +191,11 @@ a.footer_button {
     padding-top: 50px;
     margin-bottom: 30px;
   }
+  .footer_contact-item:not(:last-child) {
+    margin-right: 23px;
+  }
+  .footer_logo-img {
+    height: 19px;
+    width: 70px;
+  }
 }

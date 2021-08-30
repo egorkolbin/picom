@@ -67,6 +67,9 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .about {
+    margin-bottom: 100px;
+  }
   .about_slide {
     margin-top: 40px;
     flex-direction: column;

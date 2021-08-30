@@ -14,7 +14,6 @@
       no-repeat,
     linear-gradient(0deg, #fcf8f1, #fcf8f1) no-repeat;
 }
-
 .intro_cup::after {
   content: '';
   position: absolute;
@@ -25,20 +24,15 @@
   height: 600px;
   background: url('../../images/design/main-shadow.png') no-repeat;
 }
-@media screen and (max-width: 1920px) {
-  .intro::after {
-    right: -10px;
-  }
-}
 
 .advantages::before {
   content: '';
   position: absolute;
   height: 873px;
   bottom: 0;
-  left: -360px;
+  left: calc((100vw - 1920px) / -2);
   background: #493326 no-repeat;
-  width: 975px;
+  width: 50vw;
   border-radius: 0 300px 0 0;
 }
 .advantages_cup::after {
@@ -49,6 +43,36 @@
   width: 400px;
   height: 300px;
   background: url('../../images/design/advantages-shadow.png');
+}
+.actions::before {
+  content: '';
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url('../../images/design/actions-ellipse.png') top -50px right 100px
+      no-repeat,
+    linear-gradient(
+        119.77deg,
+        rgba(245, 220, 175, 0.2) 11.15%,
+        rgba(223, 185, 115, 0.2) 75.97%
+      )
+      100% 100%,
+    linear-gradient(0deg, #fcf8f1, #fcf8f1) 100% 100%;
+}
+@media screen and (max-width: 1920px) {
+  .intro::after {
+    right: -10px;
+  }
+  .advantages::before {
+    left: -10px;
+  }
+  .actions::before {
+    left: -10px;
+    right: -10px;
+  }
 }
 .author-menu_item:last-child figure::before {
   content: '';

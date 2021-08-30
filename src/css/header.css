@@ -9,9 +9,14 @@ header {
 header.sticky {
   position: fixed;
   background-color: #fcf8f1;
-  width: 100vw;
-  /* padding: 10px 350px; */
-  left: 0;
+  width: calc(100vw - 35px);
+  padding: 0 10px;
+  left: calc((100vw - 1920px) / -2);
+}
+@media screen and (max-width: 1920px) {
+  header.sticky {
+    left: 0;
+  }
 }
 .logo {
   padding-top: 1px;

@@ -14,6 +14,7 @@
   object-fit: contain;
   flex-shrink: 1;
   margin-left: auto;
+  margin-right: auto;
   z-index: 2;
   min-width: 177px;
   /* max-height: 209px; */
@@ -91,6 +92,7 @@
   .intro_cup {
     padding-top: 0;
     width: 50%;
+    margin-right: 0;
   }
   .intro_button {
     position: absolute;
