@@ -5,15 +5,18 @@
   position: relative;
 }
 .intro-flex {
-  width: 600px;
   margin-right: auto;
   position: relative;
+  flex-shrink: 1;
 }
 .intro_cup {
   padding-top: 87px;
-  margin: 0;
-  margin-right: 65px;
+  object-fit: contain;
+  flex-shrink: 1;
+  margin-left: auto;
   z-index: 2;
+  min-width: 177px;
+  /* max-height: 209px; */
 }
 .intro_cup.animated {
   animation-name: scaleRotate;
@@ -70,4 +73,39 @@
   margin-right: auto;
   font-size: 14px;
   line-height: 18.2px;
+}
+.intro-flex-main {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 680px) {
+  .intro {
+    margin-bottom: 130px;
+  }
+  .intro-flex-main {
+    flex-direction: column;
+  }
+  .intro_cup {
+    padding-top: 0;
+    width: 50%;
+  }
+  .intro_button {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    bottom: -60vh;
+    padding: 16px 27px;
+    text-transform: none;
+  }
+  .intro_title {
+    font-size: 30px;
+    line-height: 39px;
+    margin-top: 37px;
+  }
+  .intro_text {
+    font-size: 14px;
+  }
 }

@@ -1,9 +1,9 @@
 .intro::after {
   content: '';
   position: absolute;
-  right: -350px;
+  right: 0;
   top: -78px;
-  width: 660px;
+  width: 32vw;
   height: 810px;
   border-radius: 0 0 0 15em;
   background: linear-gradient(
@@ -14,14 +14,21 @@
       no-repeat,
     linear-gradient(0deg, #fcf8f1, #fcf8f1) no-repeat;
 }
-.intro-flex::after {
+
+.intro_cup::after {
   content: '';
   position: absolute;
+  display: block;
   top: 40px;
-  right: -690px;
+  left: 0;
   width: 570px;
   height: 600px;
   background: url('../../images/design/main-shadow.png') no-repeat;
+}
+@media screen and (max-width: 1920px) {
+  .intro::after {
+    right: -10px;
+  }
 }
 
 .advantages::before {

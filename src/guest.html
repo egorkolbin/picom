@@ -63,29 +63,32 @@
               </li>
             </ul>
           </div>
+          <div class="burger-menu"></div>
         </header>
 
         <main>
           <section class="intro">
-            <div class="intro-flex">
-              <h2 class="intro_title title">
-                Кофе в <span>съедобных <br />стаканчиках</span>
-              </h2>
-              <p class="intro_text">
-                Кофейня формата to go с уникальной подачей <br />
-                и стремлением изменить мир к лучшему
-              </p>
-              <a href="#content-menu" class="intro_button orange_button button"
-                >Посмотреть меню</a
-              >
+            <div class="intro-flex-main">
+              <div class="intro-flex">
+                <h2 class="intro_title title">
+                  Кофе в <span>съедобных <br />стаканчиках</span>
+                </h2>
+                <p class="intro_text">
+                  Кофейня формата to go с уникальной подачей <br />
+                  и стремлением изменить мир к лучшему
+                </p>
+                <a
+                  href="#content-menu"
+                  class="intro_button orange_button button"
+                  >Посмотреть меню</a
+                >
+              </div>
+              <img
+                class="intro_cup lazy"
+                src="images/lazy-cup.png"
+                alt="Изображение напитка в съедобном стаканчике"
+              />
             </div>
-            <img
-              class="intro_cup lazy"
-              src="images/lazy-cup.png"
-              alt="Изображение напитка в съедобном стаканчике"
-              width="378"
-              height="447"
-            />
           </section>
           <section class="about" id="about">
             <h2 class="about_title title slide_title">О нас</h2>
@@ -122,17 +125,25 @@
                       У нас вы можете купить стаканчик кофе и внести свой вклад
                       в спасение мира от экологической катастрофы.
                     </p>
-                    <p class="about_text">
+                    <img
+                      src="images/about1.png"
+                      alt="Изображение кофе в съедобном стаканчике"
+                      class="about_img-hidden"
+                    />
+                    <p class="about_text text-inline">
                       Ежедневно в мире выпивают огромное количество кофе, и
                       около трети напитка из-за динамичных будней подается в
-                      одноразовых чашках. <br />Наша кофейня выступает за
-                      сокращения использования пластиковой одноразовой посуды! А
-                      на сегодняшний день пластик составляет
-                      <span class="number">70%</span> всего мусора в мире. Кроме
-                      того, что он скапливается в морях и океанах, нанося
-                      непоправимый вред всему окружающему миру, так ещё материал
-                      имеет свойство накапливаться в организмах всех живых
-                      существ на планете!
+                      одноразовых чашках.
+                    </p>
+                    <p class="about_text-more">Читать дальше...</p>
+                    <p class="about_text text-hidden">
+                      Наша кофейня выступает за сокращения использования
+                      пластиковой одноразовой посуды! А на сегодняшний день
+                      пластик составляет <span class="number">70%</span> всего
+                      мусора в мире. Кроме того, что он скапливается в морях и
+                      океанах, нанося непоправимый вред всему окружающему миру,
+                      так ещё материал имеет свойство накапливаться в организмах
+                      всех живых существ на планете!
                     </p>
                   </div>
                 </div>
@@ -147,17 +158,28 @@
                     height="365"
                   />
                   <div class="about_description">
-                    <p class="about_text">
-                      Все началось с мечты об улучшении жизни людей. Эта мечта
-                      стала навязчивой идеей, и теперь мы каждое утро
-                      просыпаемся с широкой улыбкой, чтобы бороться за эту
-                      мечту. Сейчас полный отказ от пластиковой посуды
-                      маловероятен. Но наша команда создала идеальный продукт,
-                      который позволил изменить представление о привычных нам
-                      вещах. Кофе с собой в съедобном стаканчике - это будущее
-                      уже сегодня...
+                    <p class="about_text-title text-inline">
+                      Все началось с мечты об улучшении жизни людей
                     </p>
-                    <p class="about_text">
+                    <img
+                      src="images/about2.png"
+                      alt="Интерьер кофейни"
+                      class="about_img-hidden"
+                      width="300"
+                    />
+                    <p class="about_text text-inline">
+                      Эта мечта стала навязчивой идеей, и теперь мы каждое утро
+                      просыпаемся с широкой улыбкой, чтобы бороться за эту
+                      мечту.
+                    </p>
+                    <p class="about_text-more">Читать дальше...</p>
+                    <p class="about_text text-hidden">
+                      Сейчас полный отказ от пластиковой посуды маловероятен. Но
+                      наша команда создала идеальный продукт, который позволил
+                      изменить представление о привычных нам вещах. Кофе с собой
+                      в съедобном стаканчике - это будущее уже сегодня...
+                    </p>
+                    <p class="about_text text-bold">
                       Мы призваны изменить этот мир к лучшему и ты можешь стать
                       частью нашей команды.
                     </p>
@@ -171,7 +193,7 @@
               </div>
             </div>
           </section>
-          <section class="advantages">
+          <!-- <section class="advantages">
             <h2 class="advantages_title title">
               Преимущества съедобных <span>стаканчиков</span>
             </h2>
@@ -854,48 +876,50 @@
                 >
               </div>
             </div>
-          </section>
+          </section> -->
         </main>
 
         <footer>
           <section class="footer_main-info">
-            <div class="footer_logo">
-              <a href="index.html">
-                <img
-                  src="images/svg/footer-logo.svg"
-                  class="footer_logo-img"
-                  height="40"
-                  alt="Логотип YUM-YUM coffee"
-                />
-              </a>
-            </div>
-            <div class="contacts footer_contacts">
-              <ul class="contact_links footer_contact-links">
-                <li class="contact_item footer_contact-item">
-                  <a
-                    href="https://vk.com/yumcoffee"
-                    class="contact_link footer_contact-link footer_contact-vk"
-                    aria-label="Ссылка на вконтакте"
-                    target="blank"
-                  ></a>
-                </li>
-                <li class="contact_item footer_contact-item">
-                  <a
-                    href="https://www.instagram.com/yumyum_coffee/"
-                    class="contact_link footer_contact-link footer_contact-ig"
-                    aria-label="Ссылка на инстаграм"
-                    target="blank"
-                  ></a>
-                </li>
-                <li class="contact_item footer_contact-item">
-                  <a
-                    href="https://www.facebook.com/yumcoffee"
-                    class="contact_link footer_contact-link footer_contact-fb"
-                    aria-label="Ссылка на фейсбук"
-                    target="blank"
-                  ></a>
-                </li>
-              </ul>
+            <div class="footer-flex">
+              <div class="footer_logo">
+                <a href="index.html">
+                  <img
+                    src="images/svg/footer-logo.svg"
+                    class="footer_logo-img"
+                    height="40"
+                    alt="Логотип YUM-YUM coffee"
+                  />
+                </a>
+              </div>
+              <div class="contacts footer_contacts">
+                <ul class="contact_links footer_contact-links">
+                  <li class="contact_item footer_contact-item">
+                    <a
+                      href="https://vk.com/yumcoffee"
+                      class="contact_link footer_contact-link footer_contact-vk"
+                      aria-label="Ссылка на вконтакте"
+                      target="blank"
+                    ></a>
+                  </li>
+                  <li class="contact_item footer_contact-item">
+                    <a
+                      href="https://www.instagram.com/yumyum_coffee/"
+                      class="contact_link footer_contact-link footer_contact-ig"
+                      aria-label="Ссылка на инстаграм"
+                      target="blank"
+                    ></a>
+                  </li>
+                  <li class="contact_item footer_contact-item">
+                    <a
+                      href="https://www.facebook.com/yumcoffee"
+                      class="contact_link footer_contact-link footer_contact-fb"
+                      aria-label="Ссылка на фейсбук"
+                      target="blank"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <p class="footer_copyright">
               © <span class="number">2021</span> YUM-YUM coffee
