@@ -1,0 +1,53 @@
+main {
+  display: flex;
+}
+section h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: 'Raleway_bold';
+  color: #3f342f;
+  line-height: 46.8px;
+  margin-top: 95px;
+}
+h1 span {
+  color: #fba902;
+}
+h1 .number {
+  font-family: 'Noto-Sans';
+  font-size: 40px;
+}
+.back_button {
+  position: absolute;
+  width: 184px;
+  height: 50px;
+  margin: -128px 0px 0px 1036px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.event_img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.event_text {
+  font-family: 'Raleway';
+  color: #3f342f;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+.event_text span {
+  font-family: 'Noto-Sans';
+  font-weight: 500;
+}
+.event_text_2 {
+  line-height: 25.6px;
+  font-family: 'Raleway_bold';
+  color: #fba902;
+  font-size: 16px;
+  margin-top: 40px;
+}
+footer {
+  margin-top: 102px;
+}

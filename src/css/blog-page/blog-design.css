@@ -1,0 +1,10 @@
+.blog_content h2::after {
+  content: '';
+  position: absolute;
+  width: 970px;
+  z-index: 1;
+  height: 650px;
+  right: -250px;
+  top: -120px;
+  background: url('../../images/design/blog-main.png');
+}

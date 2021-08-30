@@ -1,0 +1,64 @@
+/* Slider Styles */
+.slide_title {
+  font-family: 'Raleway_bold';
+  font-size: 40px;
+  color: #3f342f;
+  position: relative;
+  display: inline-block;
+  margin: 0 97px 0 0;
+}
+.slide_title::after {
+  content: '';
+  width: 2px;
+  height: 80%;
+  position: absolute;
+  right: -42px;
+  top: 10%;
+  background-color: #351c0e;
+  opacity: 0.5;
+}
+.slider_menu {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  list-style-type: none;
+  display: inline-flex;
+  transform: translateY(-10px);
+  font-size: 18px;
+  line-height: 23px;
+}
+.slider_menu-item {
+  display: block;
+  padding: 15px 50px;
+  border-bottom: 1px solid #351c0e;
+  cursor: pointer;
+}
+.slider_menu-item.active {
+  font-weight: 700;
+  border-bottom: 2px solid #351c0e;
+}
+.slider_menu-item:hover {
+  border-bottom: 2px solid #fba902;
+}
+.slider_menu-item:active {
+  color: #fba902;
+}
+.slick-slide:focus-visible,
+.menu-slide:focus-visible {
+  border: 2px transparent;
+  outline: transparent;
+}
+.menu-slides {
+  width: 1920px !important;
+  /* position: absolute; */
+  left: -350px;
+  margin-top: 78px;
+}
+.menu-slides .slick-slide {
+  width: 1220px !important;
+  margin-right: 350px;
+  margin-left: 350px;
+}
+.menu-slide {
+  margin-bottom: 172px;
+}

@@ -1,0 +1,18 @@
+/* Общее */
+@import url('normalize.css');
+@import url('document.css');
+
+/* Шрифты */
+@import url('fonts.css');
+
+/* Кнопки */
+@import url('buttons.css');
+
+/* Header */
+@import url('header.css');
+
+/* Popups */
+@import url('popups.css');
+
+/* Footer */
+@import url('footer.css');

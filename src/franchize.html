@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Франшиза</title>
+	<link rel="icon" href="./images/svg/favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+	<header>
+		<div class="container">
+		<a href="index.html">
+			<div class="logo">
+				   <img src="images/svg/logo-business.svg" alt="Логотип YUM YUM coffee" />
+			 </div>
+		 </a>
+		 <nav class="menu">
+            <ul class="menu_list">
+              <li class="menu_block">
+                <a href="#about" class="menu_link">О нас</a>
+              </li>
+              <li class="menu_block">
+                <a href="#benefit" class="menu_link">Результаты</a>
+              </li>
+              <li class="menu_block">
+                <a href="#work" class="menu_link">Процесс</a>
+              </li>
+              <li class="menu_block">
+                <a href="#blog" class="menu_link">Блог</a>
+              </li>
+            </ul>
+          </nav>
+		  <div class="contacts">
+			<ul class="contact_links">
+			  <li class="contact_item">
+				<a
+				  href="https://vk.com/yumcoffee"
+				  class="contact_link contact_vk"
+				  aria-label="Ссылка на вконтакте"
+				></a>
+			  </li>
+			  <li class="contact_item">
+				<a
+				  href="https://www.instagram.com/yumyum_coffee/"
+				  class="contact_link contact_ig"
+				  aria-label="Ссылка на инстаграм"
+				></a>
+			  </li>
+			  <li class="contact_item">
+				<a
+				  href="https://www.facebook.com/yumcoffee"
+				  class="contact_link contact_fb"
+				  aria-label="Ссылка на фейсбук"
+				></a>
+			  </li>
+			</ul>
+		  </div>
+		  </div>
+	</header>
+
+	<div class="overlay hidden invisible"></div>
+	<div class="announce apply popup hidden invisible">
+				<h3 class="announce_title"><span>благодарим</span> вас за заявку</h3>
+
+				<p class="announce_text">Наш менеджер свяжется с вами в ближайшее время!</p>
+
+				<button class="announce_button">закрыть</button>
+	</div>
+	<div class="announce question popup hidden invisible">
+		<h3 class="announce_title">Ваш вопрос <span>успешно отправлен!</span></h3>
+
+		<p class="announce_text">Ответ придет в ближайшее время, на указанную вами почту</p>
+
+		<button class="announce_button">закрыть</button>
+	</div>
+
+	<div class="announce error popup hidden invisible">
+	  <h3 class="announce_title">упс... произошла <span>ошибка</span></h3>
+	  <p class="announce_text">
+		При отправке ваших данных произошла ошибка, перезагрузите страницу и
+		попробуйте ввести данные снова
+	  </p>
+	  <button class="announce_button button">закрыть</button>
+	</div>
+	<div class="popup apply__popup-form apply-light hidden invisible">
+		<form class="apply-popup-form" action="" method="POST" novalidate>
+			<h4 class="apply__form-title">
+				ЗАЯВКА НА <span class="orange">ФРАНШИЗУ</span>
+			</h4>
+			<p class="apply__form-text">
+				ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ!
+			</p>
+			<input class="apply__form-name apply__form-input" type="text" id="name-apply-popup" name="name-apply" required>
+			<label for="name-apply-popup" class="apply__name-label">Ваше имя</label>
+			<input class="apply__form-phone apply__form-input" type="tel" id="tel-apply-popup" name="tel-apply" required>
+			<label for="tel-apply-popup" class="apply__tel-label">Телефон</label>
+			<input class="apply__form-mail apply__form-input" type="email" id="email-apply-popup" name="email-apply" required>
+			<label for="email-apply-popup" class="apply__email-label">Email</label>
+			<p class="apply__form-data">
+				Нажимая кнопку «Отправить» вы соглашаетесь с обработкой персональных данных.<br><a
+					class="apply__form-link" href="#">Подробнее о политике конфиденциальности</a>
+			</p>
+			<input class="apply__form-btn orange-btn" type="submit" value="Отправить">
+		</input>
+		</form>
+	</div>
+
+	<section class="header__main" id="about">
+	<div class="container">
+	<div class="header__info">
+		<h1 class="header__info-title">
+			Откройте
+			современную <span class="orange">эко-кофейню</span>
+		</h1>
+		<p class="header__info-text">
+			Cделайте шаг вперед <br>к спасению природы
+		</p>
+	</div>
+	<div class="apply__main-form apply-dark">
+		<form class="apply-form" action="" method="POST" novalidate>
+			<h4 class="apply__form-title">
+				ЗАЯВКА НА <span class="orange">ФРАНШИЗУ</span>
+			</h4>
+			<p class="apply__form-text">
+				ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ!
+			</p>
+			<input class="apply__form-name apply__form-input" type="text" id="name-apply" name="name-apply" required>
+			<label for="name-apply" class="apply__name-label">Ваше имя</label>
+			<input class="apply__form-phone apply__form-input" type="tel" id="tel-apply" name="tel-apply" required>
+			<label for="tel-apply" class="apply__tel-label">Телефон</label>
+			<input class="apply__form-mail apply__form-input" type="email" id="email-apply" name="email-apply" required>
+			<label for="email-apply" class="apply__email-label">Email</label>
+			<p class="apply__form-data">
+				Нажимая кнопку «Отправить» вы соглашаетесь с обработкой персональных данных.<br><a
+					class="apply__form-link" href="#">Подробнее о политике конфиденциальности</a>
+			</p>
+			<input class="apply__form-btn whitebg-btn" type="submit" value="Отправить">
+		</input>
+		</form>
+	</div>
+	</div>
+	</section>
+
+	<section class="coffee">
+	<div class="container">
+			<h2 class="coffee-title">
+				Что такое <span class="orange">yum-yum coffee?</span>
+			</h2>
+
+			<div class="coffee__info">
+				<div class="coffee__info-item">
+					<img class="coffee__item-img" src="images/svg/case.svg" alt="">
+
+					<p class="coffee__item-text">
+						Готовое бизнес-решение и конкурентное преимущество
+					</p>
+				</div>
+
+				<div class="coffee__info-item">
+					<img class="coffee__item-img" src="images/svg/seed.svg" alt="">
+
+					<p class="coffee__item-text">
+						Забота о природе в экологичной подаче продукта
+					</p>
+				</div>
+
+				<div class="coffee__info-item">
+					<img class="coffee__item-img" src="images/svg/cupcake.svg" alt="">
+
+					<p class="coffee__item-text">
+						Эксклюзивная подача<br> кофе в съедобном стакане
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="benefit" id="benefit">
+		<div class="container">
+			<div class="benefit-bg">
+				<h2 class="benefit-title">
+					Какие у нас <span class="orange">результаты?</span>
+				</h2>
+				<div class="benefit-inner">
+					<div class="benefit__subtitle">
+						<div class="benefit__subtitle-item">
+							<h2 class="benefit__subtitle-title">
+								<span class="orange number">1 200 000Р</span>
+							</h2>
+							<p class="benefit__subtitle-text">
+								среднемесячная выручка одной точки
+							</p>
+						</div>
+						<div class="benefit__subtitle-item">
+							<h2 class="benefit__subtitle-title">
+								<span class="orange number">600 000Р</span>
+							</h2>
+							<p class="benefit__subtitle-text">
+								средняя чистая прибыль одной точки
+							</p>
+						</div>
+					</div>
+					<div class="benefit__business">
+						<div class="benefit__business-inner">
+							<p class="benefit__business-text">
+								Получите <span class="orange">бизнес-план<br></span> с комплектом файлов<br>для расчета
+								прибыли кофейни
+							</p>
+							<div class="benefit__btn-box">
+								<button class="benefit__business-btn whitebg-btn">
+									скачать бизнес - план
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="benefit__info">
+					<div class="benefit__info-item">
+						<h3 class="benefit__info-title">
+							<span class="number">5</span>
+						</h3>
+						<p class="benefit__info-text">
+							открытых кофеен на конец <span class="number">2020</span> года
+						</p>
+					</div>
+					<div class="benefit__info-item">
+						<h3 class="benefit__info-title">
+							<span class="number">> 1 500</span>
+						</h3>
+						<p class="benefit__info-text">
+							гостей приходят к нам каждый месяц
+						</p>
+					</div>
+					<div class="benefit__info-item">
+						<h3 class="benefit__info-title">
+							<span class="number">с 2018</span>
+						</h3>
+						<p class="benefit__info-text">
+							года мы работаем и расширяемся
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="opening">
+		<div class="container">
+			<div class="opening__inner">
+				<div class="opening__info">
+					<h2 class="opening__info-title">
+						<span class="orange">Мы помогаем<br></span> с открытием
+					</h2>
+					<p class="opening__info-text">
+						Для избежания ошибок мы проведем<br> вас за руку по всем этапам открытия
+					</p>
+					<p class="opening__info-text">
+						Мы подготовили для вас полную базу<br> знаний по открытию и эффективному руководству кофейни
+					</p>
+				</div>
+				<div class="opening__info-box">
+					<div class="opening__info-left">
+						<div class="opening__info-item">
+							<img src="images/svg/img1.svg" alt="">
+							<p class="opening__item-text">
+								Весь процесс будет сопровождаться персональным менеджером
+							</p>
+						</div>
+						<div class="opening__info-item">
+							<img src="images/svg/img2.svg" alt="">
+							<p class="opening__item-text">
+								Комплект инструкций по ремонту помещения и подбору оборудования
+							</p>
+						</div>
+					</div>
+
+					<div class="opening__info-right">
+						<div class="opening__info-item">
+							<img src="images/svg/img3.svg" alt="">
+							<p class="opening__item-text">
+								Руководство по управлению, маркетингу, работе с персоналом
+							</p>
+						</div>
+						<div class="opening__info-item">
+							<img src="images/svg/img4.svg" alt="">
+							<p class="opening__item-text">
+								Библиотека макетов, банеров<br> и других полиграфических материалов
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="work" id="work">
+		<div class="container">
+
+			<div class="work-bg">
+				<div class="work__inner">
+					<div class="work__inner-item">
+						<h2 class="work__inner-title">
+							<span class="orange">Как</span> мы будем работать?
+						</h2>
+					</div>
+					<div class="work__inner-item">
+						<ul class="work__inner-list">
+							<li class="work__list-item">
+								<span class="orange number">01.</span>Вы оставляете заявку и получаете материалы для
+								ознакомления
+							</li>
+							<li class="work__list-item">
+								<span class="orange number">02.</span>Мы назначаем встречу по видеосвязи или лично
+							</li>
+							<li class="work__list-item">
+								<span class="orange number">03.</span>Вы ищете помещение по нашим чек-листам
+							</li>
+							<li class="work__list-item">
+								<span class="orange number">04.</span>Вы закупаете расходные материалы и
+								дополнительную<br> продукцию у наших
+								поставщиков
+							</li>
+							<li class="work__list-item">
+								<span class="orange number">05.</span>Вы открываетесь и получаете прибыль
+							</li>
+						</ul>
+						<div class="work__btn-box">
+							<button class="work__btn open-popup orange-btn">
+								Оставить заявку
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="training">
+		<div class="container">
+			<div class="training-bg">
+				<div class="training__inner">
+					<div class="training__inner-info">
+						<h2 class="training__info-title">
+							<span class="orange">мероприятия</span> <br> для франчайзи
+						</h2>
+						<p class="training__info-text">
+							Все франчайзи, которые начинают работать с нами, попадают в закрытый клуб <br> с
+							бизнес-тренингами,
+							презентациями,<br> вебинарами и другими, полезными<br> для ведения бизнеса, материалами
+						</p>
+					</div>
+					<div class="training__item training-org">
+						<p class="training__item-text">
+							Организация отдела продаж инструментами <span class="orange">Битрикс<span
+									class="number">24</span><span>
+						</p>
+						<a href="event.html" class="training__item-link white-btn">
+							Подробнее
+						</a>
+					</div>
+					<div class="training__item training-secret">
+						<p class="training__item-text">
+							<span class="orange">Секреты</span> предпринимателей
+						</p>
+						<a href="event.html" class="training__item-link white-btn">
+							Подробнее
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cost">
+		<div class="container">
+			<h2 class="cost__title">
+				<span class="orange">стоимость</span> франшизы
+			</h2>
+
+			<div class="cost__inner">
+				<div class="cost__img">
+					<img src="images/about2.png" alt="cost-img">
+				</div>
+
+				<div class="cost__info">
+					<ul class="cost__info-list">
+						<li class="cost__list-item">
+							Первоначальный взнос: <span class="opacity number">600 000₽</span>
+						</li>
+						<li class="cost__list-item">
+							Количество точек: <span class="opacity">любое</span>
+						</li>
+						<li class="cost__list-item">
+							Инвестиции: <span class="opacity number">от 800 000₽</span>
+						</li>
+						<li class="cost__list-item">
+							Роялти: <span class="opacity number">4,5%</span>
+						</li>
+						<li class="cost__list-item">
+							Срок открытия: <span class="opacity number">80 дней</span>
+						</li>
+					</ul>
+					<div class="cost__info-btnbox">
+						<button class="cost__info-btn open-popup orange-btn">
+							Оставить заявку
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="questions">
+		<div class="container">
+			<div class="questions__inner">
+				<div class="questions__inner-info">
+					<h2 class="questions__info-title">
+						часто задаваемые<br> <span class="orange">вопросы</span>
+					</h2>
+
+					<div class="questions__items">
+						<div class="questions__item questions__item--active">
+							<h4 class="questions__item-title">
+								Нужен ли опыт в ресторанном бизнесе?
+							</h4>
+
+							<p class="questions__item-text">
+								Опыт в ресторанном бизнесе не обязателен, для новичка это наоборот отличный шанс
+								получить опыт в данной сфере.
+							</p>
+						</div>
+
+						<div class="questions__item">
+							<h4 class="questions__item-title">
+								Выгодно ли открывать кофейню в <span class="nunber">2021</span> году?
+							</h4>
+
+							<p class="questions__item-text">
+								Кофе считается наиболее потребляемым напитком в мире. Поэтому открытие кофейни весьма
+								перспективная идея для бизнеса, ведь с каждым годом потребителей кофе становится больше,
+								значит и покупателей! А покупка франшизы убережет вас от всевозможных рисков.
+							</p>
+						</div>
+
+						<div class="questions__item">
+							<h4 class="questions__item-title">
+								Оказывает ли франчайзер постоянную поддержку?
+							</h4>
+
+							<p class="questions__item-text">
+								Франчайзер — это ваш старший коллега и товарищ, который подсказывает и показывает вам на
+								проверенных примерах, как сделать правильно и прибыльно. На протяжении всего времени
+								работы мы оказываем поддержку в бизнесе и развитии.
+							</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="questions__inner-form">
+					<form class="questions__form" method="POST" novalidate>
+						<h4 class="questions__form-title">
+							Остались вопросы?
+						</h4>
+
+						<input class="questions__form-name questions__form-input" id="name-question" name="name-question" type="text" required>
+						<label for="name-question" class="questions__form-label-name">Ваше имя</label>
+
+						<input class="questions__form-email questions__form-input" id="email-question" name="email-question" type="email" required>
+						<label for="email-question" class="questions__form-label-email">E-mail</label>
+
+						<textarea class="questions__form-text questions__form-input" cols="30" rows="10"
+							placeholder="Введите ваш вопрос" required></textarea>
+
+						<p class="questions__form-data">
+							Нажимая кнопку «Отправить» вы соглашаетесь с обработкой персональных данных.<br><a
+								class="questions-data-link" href="#">Подробнее о политике конфиденциальности</a>
+						</p>
+						<input type="submit" class="questions__form-btn whitebg-btn" value="Отправить вопрос">
+					
+					</input>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="blog" id="blog">
+		<div class="container">
+			<div class="blog-bg">
+				<div class="blog__top">
+					<h2 class="blog__top-title"><span class="orange">Эко</span>-блог</h2>
+					<div class="blog__btn-box">
+						<a href="blog.html" class="blog__btn white-btn">Читать все статьи</a>
+					</div>
+				</div>
+				<div class="blog__bottom">
+					<div class="blog__list-items">
+						<div class="blog__item blog__item-trend">
+							<p class="blog__item-text">
+								<span class="orange">Культ бумаги в прошлом.</span>
+								Как меняются тренды в системе общепита
+							</p>
+							<a href="blog1.html" class="blog__item-btn white-btn">
+								читать статью
+							</a>
+						</div>
+						<div class="blog__item blog__item-coffee">
+							<p class="blog__item-text">
+								Выпил кофе, съел посуду.<span class="orange"> Съедобная чашка-печенье</span> Cookie Cup
+								для Lavazza
+							</p>
+
+							<a href="blog1.html" class="blog__item-btn white-btn">
+								читать статью
+							</a>
+						</div>
+						<div class="blog__item blog__item-eco">
+							<p class="blog__item-text">
+								Почему бизнесу выгодно быть <span class="orange"> экологически ответственным</span>
+							</p>
+
+							<a href="blog1.html" class="blog__item-btn white-btn">
+								читать статью
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+		<section class="footer_main-info">
+			<div class="footer_logo">
+				<a href="index.html">
+			  <img
+				src="images/svg/logo-business-footer.svg"
+				class="footer_logo-img"
+				height="40"
+				alt="Логотип YUM-YUM coffee"
+			  />
+			  </a>
+			</div>
+			<div class="contacts footer_contacts">
+			  <ul class="contact_links footer_contact-links">
+				<li class="contact_item footer_contact-item">
+				  <a target="blank" 
+					href="https://vk.com/yumcoffee"
+					class="contact_link footer_contact-link footer_contact-vk"
+					aria-label="Ссылка на вконтакте"
+				  ></a>
+				</li>
+				<li class="contact_item footer_contact-item">
+				  <a target="blank" 
+					href="https://www.instagram.com/yumyum_coffee/"
+					class="contact_link footer_contact-link footer_contact-ig"
+					aria-label="Ссылка на инстаграм"
+				  ></a>
+				</li>
+				<li class="contact_item footer_contact-item">
+				  <a target="blank" 
+					href="https://www.facebook.com/yumcoffee"
+					class="contact_link footer_contact-link footer_contact-fb"
+					aria-label="Ссылка на фейсбук"
+				  ></a>
+				</li>
+			  </ul>
+			</div>
+			<p class="footer_copyright">© <span class="number">2021</span> YUM-YUM coffee</p>
+			<a href="#" class="footer_politic">Политика конфиденциальности</a>
+		  </section>
+		  <section class="footer_menu">
+            <p class="footer_menu-title">Бизнесу</p>
+            <ul class="footer_menu-list">
+              <li class="footer_menu-item">
+                <a href="#about" class="footer_menu-link">О нас</a>
+              </li>
+              <li class="footer_menu-item">
+                <a href="#benefit" class="footer_menu-link">Результаты</a>
+              </li>
+              <li class="footer_menu-item">
+                <a href="#work" class="footer_menu-link">Процесс</a>
+              </li>
+              <li class="footer_menu-item">
+                <a href="#blog" class="footer_menu-link">Блог</a>
+              </li>
+            </ul>
+          </section>
+		  <section class="footer_contacts footer_contacts_blog">
+			<p class="footer_tel-text">
+			  <a href="tel:8-(3412)-99-88-22" class="footer_tel"
+				><span class="number">+7 (3412) 99-88-22</span></a
+			  ><br />
+			  для звонков из России и других стран
+			</p>
+			<a href="mailto:yum-yum.coffee@gmail.com" class="footer_mail"
+			  >yum-yum.coffee@gmail.com</a
+			>
+		  </section>
+		  </div>
+	</footer>
+</body>
+
+</html>

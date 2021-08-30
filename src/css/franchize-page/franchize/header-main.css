@@ -1,0 +1,60 @@
+.header__main {
+  padding-top: 90px;
+  padding-bottom: 145px;
+  background-image: url('../../../images/svg/circles.svg');
+  background-repeat: no-repeat;
+  background-position: top 70% right 40%;
+}
+.header__main * {
+  z-index: 2;
+}
+.header__main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 220px;
+  width: 680px;
+  height: 842px;
+  background: linear-gradient(
+      119.77deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    linear-gradient(0deg, #fcf8f1, #fcf8f1);
+}
+.header__main .container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__info {
+  padding-top: 100px;
+}
+
+.header__info-title {
+  position: relative;
+  width: 400px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+.header__info-title::after {
+  content: '';
+  position: absolute;
+  width: 105px;
+  border-bottom: 2px solid #fba902;
+  padding-top: 80px;
+  left: 0;
+}
+
+.header__info-text {
+  padding-top: 40px;
+  width: 270px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+  opacity: 0.8;
+}

@@ -1,0 +1,34 @@
+.coffee {
+  padding-top: 75px;
+}
+.coffee-title {
+  margin-bottom: 70px;
+}
+.coffee__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 127px;
+}
+.coffee__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 390px;
+  padding: 53px 35px;
+  background-color: #fcf8f1;
+  border-radius: 10px;
+}
+.coffee__item-text {
+  text-align: left;
+  padding-left: 20px;
+}

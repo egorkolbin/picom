@@ -1,0 +1,156 @@
+/* Header */
+header {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 1220px; */
+  z-index: 3;
+}
+header.sticky {
+  position: fixed;
+  background-color: #fcf8f1;
+  width: 100vw;
+  /* padding: 10px 350px; */
+  left: 0;
+}
+.logo {
+  padding-top: 1px;
+  margin-right: auto;
+}
+.menu {
+  display: flex;
+  padding-top: 13px;
+  padding-right: 30px;
+}
+.menu_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.menu_block {
+  font-family: 'Raleway';
+  color: #351c0e;
+  margin-left: 50px;
+  height: 20px;
+  display: block;
+}
+.menu_block:hover {
+  border-bottom: 1px solid #fba902;
+  cursor: pointer;
+}
+.menu_block:active {
+  color: #fba902;
+}
+.menu_link {
+  color: inherit;
+  min-width: 45px;
+  display: block;
+}
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  z-index: 2;
+  margin-right: -15px;
+}
+.contact {
+  display: block;
+  font-family: 'Raleway';
+  color: #493326;
+  border-right: 1px solid #351c0e;
+  padding-right: 14px;
+}
+.contact:hover {
+  border-bottom: 1px solid #fba902;
+}
+.contact:active {
+  color: #fba902;
+  border-right: none;
+}
+.contact_links {
+  margin: 0;
+  padding: 0 15px;
+  list-style-type: none;
+  display: flex;
+}
+.contact_item {
+  margin-left: 15px;
+}
+.contact_link {
+  display: block;
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+.contact_vk {
+  background-image: url('../images/svg/vk.svg');
+}
+.contact_vk:hover {
+  background-image: url('../images/svg/vk-hover.svg');
+}
+.contact_vk:active {
+  background-image: url('../images/svg/vk-active.svg');
+}
+.contact_ig {
+  background-image: url('../images/svg/ig.svg');
+}
+.contact_ig:hover {
+  background-image: url('../images/svg/ig-hover.svg');
+}
+.contact_ig:active {
+  background-image: url('../images/svg/ig-active.svg');
+}
+.contact_fb {
+  background-image: url('../images/svg/fb.svg');
+}
+.contact_fb:hover {
+  background-image: url('../images/svg/fb-hover.svg');
+}
+.contact_fb:active {
+  background-image: url('../images/svg/fb-active.svg');
+}
+.burger-menu {
+  position: relative;
+  width: 30px;
+  height: 7px;
+  border-bottom: 2px solid rgb(53, 28, 14, 0.7);
+  align-self: center;
+  display: none;
+}
+@media screen and (max-width: 915px) {
+  .menu_list {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    right: 10px;
+  }
+  .menu_block {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  header .contacts {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .burger-menu::before,
+  .burger-menu::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: rgb(53, 28, 14, 0.7);
+  }
+  .burger-menu::before {
+    top: -3px;
+    width: 25px;
+    left: 5px;
+  }
+  .burger-menu::after {
+    top: 17px;
+    left: -5px;
+    width: 35px;
+  }
+}

@@ -1,0 +1,114 @@
+main {
+  margin-bottom: 150px;
+}
+.blog_content {
+  margin-top: 100px;
+  z-index: 2;
+  position: relative;
+}
+h2 {
+  font-family: 'Raleway_bold';
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #493326;
+}
+h2 span {
+  color: #fba902;
+}
+.back_button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  cursor: pointer;
+  outline: none;
+  z-index: 3;
+  text-transform: uppercase;
+  padding: 16px 60px;
+}
+.blog_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 50px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+.blog_item {
+  padding: 40px 35px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.blog_item p {
+  color: #fcf8f1;
+  font-size: 12px;
+  position: relative;
+  opacity: 0.7;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+.card_info_view::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 20px;
+  height: 14px;
+  background: url('../../images/svg/view.svg');
+}
+.card_info_time::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 17px;
+  height: 17px;
+  background: url('../../images/svg/time.svg');
+}
+p.card_text {
+  color: #fcf8f1;
+  font-family: 'Raleway_bold';
+  position: relative;
+  line-height: 38.4px;
+  font-size: 24px;
+  margin: 0;
+  margin-top: auto;
+  opacity: 1;
+}
+.card_text span {
+  color: #fba902;
+}
+.blog_card:hover {
+  cursor: pointer;
+}
+.blog_item p.blog_text {
+  margin-top: auto;
+  opacity: 1;
+  font-family: 'Raleway_bold';
+}
+.blog_item:hover .card_info_time {
+  opacity: 1;
+  font-size: 16px;
+  transition: font-size 0.5s;
+}
+.blog_item:hover .card_info_view {
+  opacity: 1;
+  transition: font-size 0.5s;
+  font-size: 16px;
+}
+
+.more_button {
+  padding: 16px 44px;
+  cursor: pointer;
+  outline: none;
+  margin: 0 auto;
+  text-transform: uppercase;
+  /* margin-bottom: 120px; */
+}

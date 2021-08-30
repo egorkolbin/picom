@@ -1,0 +1,100 @@
+.opening__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 170px;
+  position: relative;
+}
+.opening__inner::before {
+  content: "";
+  position: absolute;
+  background: -o-linear-gradient(
+      330.23deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    #fcf8f1;
+  background: linear-gradient(
+      119.77deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    #fcf8f1;
+  border-radius: 100px 0px 0px 0px;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  top: -219px;
+  left: -340px;
+  width: 740px;
+  height: 1046px;
+  z-index: -2;
+}
+.opening__info {
+  width: 340px;
+}
+.opening__info-left {
+  margin-top: 60px;
+  margin-right: 25px;
+}
+.opening__info-title {
+  margin-bottom: 40px;
+}
+.opening__info-text {
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.opening__info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.opening__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 390px;
+  padding: 40px 10px 40px 20px;
+  background: #fcf8f1;
+  border: 1px solid #3f342f;
+  border-radius: 10px;
+}
+.opening__info-item + .opening__info-item {
+  margin-top: 20px;
+}
+.opening__info-item img {
+  width: 40px;
+  height: 40px;
+}
+.opening__item-text {
+  padding-left: 12px;
+}
+
+/* Анимация */
+
+.opening__info-right {
+  transform: translateX(0);
+  transition: transform 1s;
+  z-index: -3;
+}
+.opening__info-left {
+  transform: translateX(0);
+  transition: transform 1s;
+  transition-delay: 0.5s;
+  z-index: -3;
+}
+.opening__info-right.moved {
+  transform: translateX(-800px);
+}
+.opening__info-left.moved {
+  transform: translateX(-500px);
+}

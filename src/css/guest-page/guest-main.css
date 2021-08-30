@@ -1,0 +1,32 @@
+/* Общее */
+@import url('../styles.css');
+
+/* Section Intro */
+@import url('intro.css');
+
+/* Section About */
+@import url('about.css');
+
+/* Section Advantages */
+@import url('advantages.css');
+
+/* Section Actions  */
+@import url('actions.css');
+
+/* Section Menu */
+@import url('menu.css');
+
+/* Section Add Form */
+@import url('add-form.css');
+
+/* Section Vacancies */
+@import url('vacancies.css');
+
+/* Section Map */
+@import url('map.css');
+
+/* Section Blog */
+@import url('blog.css');
+
+@import url('design.css');
+@import url('slider.css');

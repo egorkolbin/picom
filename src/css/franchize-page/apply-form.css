@@ -1,0 +1,164 @@
+.apply-dark {
+  background-color: #493326;
+  color: #fcf8f1;
+}
+.apply-light {
+  background-color: #faf5ec;
+  color: #3f342f;
+}
+.apply-light input:not([type="submit"]) {
+  border: 1px solid #493326;
+  color: #3f342f;
+}
+.apply__main-form,
+.apply__popup-form {
+  height: 520px;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.apply-form,
+.apply-popup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.apply__form-title,
+.apply-popup__form-title {
+  padding-top: 50px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.apply__form-text,
+.apply-popup__form-text {
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+.apply__form-input,
+.apply-popup__form-input {
+  width: 440px;
+  height: 50px;
+  padding: 15px 25px;
+  border: 1px solid #fcf8f1;
+  background-color: transparent;
+  caret-color: #fba902;
+  color: #fcf8f1;
+  font-family: "Raleway";
+}
+.apply__form-input ::-webkit-input-placeholder,
+.apply-popup__form-input ::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.apply__form-input ::-moz-placeholder,
+.apply-popup__form-input ::-moz-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.apply__form-input :-ms-input-placeholder,
+.apply-popup__form-input :-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.apply__form-input ::-ms-input-placeholder,
+.apply-popup__form-input ::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.apply__form-input ::placeholder,
+.apply-popup__form-input ::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.apply-form label,
+.apply-popup-form label {
+  font-size: 14px;
+  line-height: 18.2px;
+  position: absolute;
+  left: 105px;
+  opacity: 0.7;
+}
+.apply__name-label,
+.apply-popup__name-label {
+  top: 150px;
+}
+.apply__tel-label,
+.apply-popup__tel-label {
+  top: 220px;
+}
+.apply__email-label,
+.apply-popup__email-label {
+  top: 290px;
+}
+.apply__form-name,
+.apply-popup__form-name {
+  margin-top: 30px;
+}
+.apply__form-name:focus ~ .apply__name-label,
+.apply__form-name:valid ~ .apply__name-label,
+.apply-popup__form-name:focus ~ .apply__name-label,
+.apply-popup__form-name:valid ~ .apply__name-label {
+  top: 110px;
+  left: 90px;
+  font-size: 12px;
+}
+.apply__form-phone:focus ~ .apply__tel-label,
+.apply__form-phone:valid ~ .apply__tel-label {
+  top: 185px;
+  left: 90px;
+  font-size: 12px;
+}
+.apply__form-mail:focus ~ .apply__email-label,
+.apply__form-mail:valid ~ .apply__email-label {
+  top: 255px;
+  left: 90px;
+  font-size: 12px;
+}
+
+.apply__form-phone {
+  margin-top: 20px;
+}
+
+.apply__form-mail {
+  margin-top: 20px;
+}
+
+.apply__form-data {
+  padding-top: 20px;
+  font-family: "Cambay", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  opacity: 0.7;
+  max-width: 530px;
+}
+
+.apply__form-link {
+  text-decoration: underline;
+}
+
+.apply__form-btn {
+  margin-top: 20px;
+  padding: 16px 75px;
+  text-transform: uppercase;
+  font-weight: 700;
+}

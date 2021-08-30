@@ -1,0 +1,116 @@
+/* About Section */
+.about {
+  margin-bottom: 170px;
+}
+.about_slide {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.about_img {
+  margin-right: 7vw;
+  flex-shrink: 2;
+  object-fit: contain;
+  min-width: 300px;
+}
+.about_description {
+  padding: 40px 5px 0 5px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  max-width: 500px;
+}
+.about_text {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+.text-inline {
+  margin-bottom: 3px;
+}
+.about_text:last-of-type {
+  margin-bottom: auto;
+}
+.about_text-main {
+  color: #fba902;
+  font-weight: 700;
+}
+.about_button {
+  font-size: 14px;
+  line-height: 18px;
+  width: 232px;
+  padding: 20px 47px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.about_slide img.about_img-hidden {
+  display: none;
+}
+.about_text-more {
+  display: none;
+}
+@media screen and (max-width: 638px) {
+  h2.about_title {
+    font-size: 26px;
+  }
+  .about_title::after {
+    display: none;
+  }
+  .about_menu {
+    width: 100%;
+  }
+  .about_menu-item {
+    width: 50%;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about_slide {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .about_slide img.about_img {
+    display: none;
+  }
+  .about_description {
+    margin: auto;
+    padding-top: 0;
+  }
+  .about_slide img.about_img-hidden {
+    display: block;
+    width: 300px;
+    margin: 0 auto 10px auto;
+  }
+  .about_text-title {
+    margin-bottom: 20px;
+    color: #fba902;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+  }
+  .text-bold {
+    font-weight: 700;
+    margin-top: 32px;
+  }
+  .about_button {
+    margin: 20px auto 0 auto;
+    text-transform: none;
+    padding: 16px 32px;
+    width: 180px;
+  }
+  .about_text-more {
+    text-decoration: underline;
+    opacity: 0.7;
+    margin: 0;
+    margin-top: 10px;
+    display: block;
+  }
+  .text-hidden {
+    display: none;
+  }
+  /* .about_text:first-child {
+    margin-bottom: 210px;
+  } */
+}
