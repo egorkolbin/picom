@@ -203,3 +203,22 @@
 .dessert-menu_item:last-child {
   border-radius: 0 0 90px 0;
 }
+
+@media screen and (max-width: 638px) {
+  .content-menu_nav {
+    position: relative;
+    top: 0;
+    overflow-x: scroll;
+  }
+  .content-menu_item {
+    width: 50%;
+  }
+  .content-menu_nav {
+    scrollbar-width: none; /* firefox */
+  }
+  .content-menu_nav::-webkit-scrollbar {
+    /* webkit */
+    width: 0;
+    height: 0;
+  }
+}

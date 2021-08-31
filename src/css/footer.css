@@ -17,7 +17,7 @@ footer::before {
   right: 0;
   background-color: #2d190e;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1440px) {
   footer::before {
     left: -10px;
     right: -10px;

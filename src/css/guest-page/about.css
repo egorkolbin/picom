@@ -51,13 +51,13 @@
   display: none;
 }
 @media screen and (max-width: 638px) {
-  h2.about_title {
+  h2.slide_title {
     font-size: 26px;
   }
-  .about_title::after {
+  .slide_title::after {
     display: none;
   }
-  .about_menu {
+  .slider_menu {
     width: 100%;
   }
   .about_menu-item {

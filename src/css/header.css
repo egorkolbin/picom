@@ -11,9 +11,9 @@ header.sticky {
   background-color: #fcf8f1;
   width: calc(100vw - 35px);
   padding: 0 10px;
-  left: calc((100vw - 1920px) / -2);
+  left: calc((100vw - 1440px) / -2);
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1440px) {
   header.sticky {
     left: 0;
   }
