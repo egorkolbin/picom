@@ -4,55 +4,31 @@
   padding: 70px 0;
   position: relative;
 }
-.add-form::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -350px;
-  width: 1920px;
-  height: 100%;
-  background: #493326 url('../../images/design/add.png') 500px 250px no-repeat;
-}
+
 .add-form_blocks {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   position: relative;
+  gap: 20px;
+  justify-content: center;
 }
 .add-form_form {
-  width: 336px;
+  max-width: 336px;
   align-items: center;
 }
 .add-form_form input:not([type='submit']),
 .add-form_form textarea {
-  width: 284px;
+  width: 100%;
   padding: 14px 26px;
-}
-.form_name:focus ~ .label_name,
-.form_name:valid ~ .label_name {
-  top: 30px;
-  left: 90px;
-  font-size: 12px;
-}
-.form_number:focus ~ .label_phone,
-.form_number:valid ~ .label_phone,
-.form_number:hover ~ .label_phone {
-  top: 95px;
-  left: 90px;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: 'Raleway';
+  font-weight: 400;
 }
 .form_number {
   font-family: 'Noto-Sans';
 }
 .add-form_form label {
-  left: 106px;
-}
-.label_name {
-  top: 64px;
-  pointer-events: none;
-}
-.label_phone {
-  top: 130px;
-  pointer-events: none;
+  opacity: 0;
 }
 .add-form_form input.form_submit {
   width: 232px;
@@ -94,4 +70,26 @@
 .add-form .button {
   text-transform: uppercase;
   font-size: 14px;
+}
+@media screen and (max-width: 750px) {
+  .add-form_form {
+    padding: 50px 20px;
+    margin: auto;
+  }
+  .add-form_form input:not([type='submit']),
+  .add-form_form textarea {
+    width: calc(100% - 50px);
+  }
+  .add-form .button {
+    text-transform: none;
+  }
+}
+@media screen and (max-width: 655px) {
+  .add-form_two {
+    grid-row-start: 1;
+    text-align: center;
+  }
+  .add-form_form {
+    grid-row-start: 2;
+  }
 }

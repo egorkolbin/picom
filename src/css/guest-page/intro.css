@@ -98,13 +98,11 @@
     position: absolute;
     left: 50%;
     margin-left: -90px;
-    bottom: -35vh;
+    bottom: -60vh;
     padding: 16px 27px;
     text-transform: none;
   }
   .intro_title {
-    font-size: 30px;
-    line-height: 39px;
     margin-top: 37px;
   }
   .intro_text {

@@ -62,18 +62,6 @@
       100% 100%,
     linear-gradient(0deg, #fcf8f1, #fcf8f1) 100% 100%;
 }
-@media screen and (max-width: 1440px) {
-  .intro::after {
-    right: -10px;
-  }
-  .advantages::before {
-    left: -10px;
-  }
-  .actions::before {
-    left: -10px;
-    right: -10px;
-  }
-}
 .author-menu_item:last-child figure::before {
   content: '';
   position: absolute;
@@ -110,7 +98,31 @@
   top: -35px;
   background: url('../../images/design/dessert-last-item.png') 0 -50px no-repeat;
 }
-.vacancies::after {
+.add-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 1440px) / -2);
+  right: calc((100vw - 1440px) / -2);
+  height: 100%;
+  background: #493326 url('../../images/design/add.png') no-repeat;
+}
+
+.vacancies::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: calc(60vw + (100vw - 1440px) / 2);
+  height: 1587px;
+  left: calc((100vw - 1440px) / -2);
+  background: linear-gradient(
+      119.77deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    linear-gradient(0deg, #fcf8f1, #fcf8f1);
+}
+/* .vacancies::after {
   content: '';
   position: absolute;
   top: -280px;
@@ -118,16 +130,16 @@
   width: 603px;
   height: 646px;
   background: url('../../images/design/vacancies-main.png') -50px 0 no-repeat;
-}
+} */
 .barista.vacancy_block::before {
   content: '';
   position: absolute;
   display: block;
-  bottom: -100px;
-  right: -150px;
+  bottom: 0;
+  right: 0;
   width: 270px;
   height: 175px;
-  background: url('../../images/design/vacancies-little.png') 0 -50px no-repeat;
+  background: url('../../images/design/vacancies-little.png') no-repeat;
 }
 .map_title::before {
   content: '';
@@ -141,9 +153,47 @@
 .blog::after {
   content: '';
   position: absolute;
-  right: -50px;
+  right: 0;
   top: -150px;
-  width: 700px;
+  width: 300px;
   height: 1000px;
   background: url('../../images/design/blog-ellipse.png');
+}
+.blog::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: calc((100vw - 1440px) / -2);
+  right: calc((100vw - 1440px) / -2);
+  height: 493px;
+  background: linear-gradient(
+      119.77deg,
+      rgba(245, 220, 175, 0.2) 11.15%,
+      rgba(223, 185, 115, 0.2) 75.97%
+    ),
+    linear-gradient(0deg, #fcf8f1, #fcf8f1);
+}
+@media screen and (max-width: 1440px) {
+  .intro::after {
+    right: -10px;
+  }
+  .advantages::before {
+    left: -10px;
+  }
+  .actions::before {
+    left: -10px;
+    right: -10px;
+  }
+  .add-form::before {
+    left: -10px;
+    right: -10px;
+  }
+  .vacancies::before {
+    left: -10px;
+    width: 60vw;
+  }
+  .blog::before {
+    left: -10px;
+    right: -10px;
+  }
 }

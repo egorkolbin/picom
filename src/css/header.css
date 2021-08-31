@@ -136,6 +136,7 @@ header.sticky::before {
   border-bottom: 2px solid rgb(53, 28, 14, 0.7);
   align-self: center;
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 915px) {
   .menu_list {

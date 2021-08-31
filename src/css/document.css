@@ -45,3 +45,9 @@ main section {
 span.number {
   font-family: 'Noto-Sans';
 }
+@media screen and (max-width: 700px) {
+  h2.title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
