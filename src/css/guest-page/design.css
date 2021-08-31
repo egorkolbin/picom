@@ -1,7 +1,7 @@
 .intro::after {
   content: '';
   position: absolute;
-  right: 0;
+  right: calc((100vw - 1440px) / -2);
   top: -78px;
   width: 32vw;
   height: 810px;
@@ -30,7 +30,7 @@
   position: absolute;
   height: 873px;
   bottom: 0;
-  left: calc((100vw - 1920px) / -2);
+  left: calc((100vw - 1440px) / -2);
   background: #493326 no-repeat;
   width: 50vw;
   border-radius: 0 300px 0 0;
@@ -50,8 +50,8 @@
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: calc((100vw - 1440px) / -2);
+  right: calc((100vw - 1440px) / -2);
   background: url('../../images/design/actions-ellipse.png') top -50px right 100px
       no-repeat,
     linear-gradient(
@@ -62,7 +62,7 @@
       100% 100%,
     linear-gradient(0deg, #fcf8f1, #fcf8f1) 100% 100%;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1440px) {
   .intro::after {
     right: -10px;
   }

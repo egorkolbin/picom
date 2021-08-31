@@ -13,8 +13,8 @@ footer::before {
   position: absolute;
   top: 0;
   height: 100%;
-  left: 0;
-  right: 0;
+  left: calc((100vw - 1440px) / -2);
+  right: calc((100vw - 1440px) / -2);
   background-color: #2d190e;
 }
 @media screen and (max-width: 1440px) {

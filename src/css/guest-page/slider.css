@@ -49,16 +49,15 @@
   outline: transparent;
 }
 .menu-slides {
-  width: 100vw !important;
-  /* position: absolute; */
-  left: -350px;
+  width: calc(100vw - 20px) !important;
+  left: calc((100vw - 1440px) / -2 + 10px);
   margin-top: 78px;
-}
-.menu-slides .slick-slide {
-  /* width: calc !important; */
-  margin-right: 350px;
-  margin-left: 350px;
 }
 .menu-slide {
   margin-bottom: 172px;
+}
+@media screen and (max-width: 1440px) {
+  .menu-slides {
+    left: 0;
+  }
 }

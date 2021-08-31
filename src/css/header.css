@@ -8,19 +8,33 @@ header {
 }
 header.sticky {
   position: fixed;
+  padding: 0;
+  width: calc(100% - 20px);
+  max-width: 1440px;
+}
+header.sticky * {
+  z-index: 4;
+}
+header.sticky::before {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  height: 100%;
   background-color: #fcf8f1;
-  width: calc(100vw - 35px);
-  padding: 0 10px;
   left: calc((100vw - 1440px) / -2);
+  right: calc((100vw - 1440px) / -2);
 }
 @media screen and (max-width: 1440px) {
-  header.sticky {
-    left: 0;
+  header.sticky::before {
+    left: -10px;
+    right: -10px;
   }
 }
 .logo {
   padding-top: 1px;
   margin-right: auto;
+  position: relative;
 }
 .menu {
   display: flex;
