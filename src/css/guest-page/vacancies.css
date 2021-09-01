@@ -118,7 +118,11 @@ p.guest_text {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
+  .vacancies {
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
   .vacancy_block {
     margin: 0 auto;
     border-radius: 0;

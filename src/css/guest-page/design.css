@@ -14,12 +14,13 @@
       no-repeat,
     linear-gradient(0deg, #fcf8f1, #fcf8f1) no-repeat;
 }
-.intro_cup::after {
+.intro-helper::before {
+  /* z-index: 4; */
   content: '';
   position: absolute;
   display: block;
-  top: 40px;
-  left: 0;
+  bottom: -20%;
+  left: -15%;;
   width: 570px;
   height: 600px;
   background: url('../../images/design/main-shadow.png') no-repeat;
@@ -121,6 +122,7 @@
       rgba(223, 185, 115, 0.2) 75.97%
     ),
     linear-gradient(0deg, #fcf8f1, #fcf8f1);
+    border-radius: 0 0 100px 0;
 }
 /* .vacancies::after {
   content: '';
@@ -177,6 +179,9 @@
   .intro::after {
     right: -10px;
   }
+  .intro::before {
+    left: 50vw;
+  }
   .advantages::before {
     left: -10px;
   }
@@ -197,3 +202,43 @@
     right: -10px;
   }
 }
+
+@media screen and (max-width: 830px) {
+  .advantages::before {
+    width: 85vw;
+    height: 600px;
+    border-radius: 0 100px 0 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .intro-helper::before {
+    top: -5vw;
+    left: 35vw;
+    height: 300px;
+    width: 400px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 570px) {
+  .advantages::before {
+    height: 900px;
+  }
+  .vacancies::before {
+    height: 2150px;
+  }
+  .intro::after {
+    transform: rotate(90deg);
+    height: 430px;
+    top: 200px;
+    width: 60vw;
+  }
+  .intro-helper::before {
+    left: 25vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro-helper::before {
+    left: 38vw;
+  }
+}
+

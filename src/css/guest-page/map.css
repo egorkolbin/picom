@@ -91,4 +91,7 @@
   .map-flex {
     grid-template-columns: 1fr;
   }
+  .map {
+    margin-bottom: 0;
+  }
 }

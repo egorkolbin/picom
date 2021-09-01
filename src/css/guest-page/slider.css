@@ -49,8 +49,8 @@
   outline: transparent;
 }
 .menu-slides {
-  width: calc(100vw - 30px) !important;
-  left: calc((100vw - 1440px) / -2 + 10px);
+  width: 100vw !important;
+  left: calc((100vw - 1440px) / -2);
   margin-top: 78px;
 }
 .menu-slide {
@@ -61,11 +61,12 @@
 }
 @media screen and (max-width: 1440px) {
   .menu-slides {
-    left: 0;
+    left: -10px;
   }
   .menu-slide {
     margin-left: auto;
     margin-right: auto;
+    left: -10px;
   }
 }
 @media screen and (max-width: 750px) {

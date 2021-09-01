@@ -306,10 +306,9 @@ img.item_image {
     width: 0;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .classic-menu_list,
   .dessert-menu_list {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
