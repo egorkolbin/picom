@@ -1010,6 +1010,7 @@
             <input type="submit" value="Отправить" class="form_submit" />
           </form>
         </div>
+
         <div class="announce add popup-barista popup hidden invisible">
           <h3 class="announce_title"><span>ммм...</span>звучит очень вкусно</h3>
           <p class="announce_text">
@@ -1028,16 +1029,17 @@
           </p>
           <button class="announce_button button">закрыть</button>
         </div>
+
+        <div class="announce error popup hidden invisible">
+          <h3 class="announce_title">упс... произошла <span>ошибка</span></h3>
+          <p class="announce_text">
+            При отправке ваших данных произошла ошибка, перезагрузите страницу и
+            попробуйте ввести данные снова
+          </p>
+          <button class="announce_button button">закрыть</button>
+        </div>
+        <div class="overlay hidden invisible"></div>
       </div>
-      <div class="announce error popup hidden invisible">
-        <h3 class="announce_title">упс... произошла <span>ошибка</span></h3>
-        <p class="announce_text">
-          При отправке ваших данных произошла ошибка, перезагрузите страницу и
-          попробуйте ввести данные снова
-        </p>
-        <button class="announce_button button">закрыть</button>
-      </div>
-      <div class="overlay hidden invisible"></div>
     </div>
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=20b5d4b6-7489-401f-ae84-898620bb781c&lang=ru_RU"

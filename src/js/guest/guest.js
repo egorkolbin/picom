@@ -9,3 +9,5 @@ import './popups.js';
 import './form-helpers.js';
 import './form.js';
 import './phone-input.js';
+import './burger-menu.js';
+import './show-text.js';

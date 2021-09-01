@@ -16,6 +16,7 @@ div.hidden {
 }
 .wrapper {
   height: 100%;
+  overflow-x: hidden;
 }
 section * {
   z-index: 2;

@@ -87,6 +87,8 @@ p.blog_text {
     border: none;
   }
   .blog_button-read {
-    top: 170px;
+    top: 95%;
+    right: 50%;
+    margin-right: -120px;
   }
 }

@@ -16,10 +16,8 @@
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
-  
- 
 }
-.intro_cup { 
+.intro_cup {
   object-fit: contain;
   /* position: absolute;
   bottom: 0;
@@ -108,7 +106,7 @@
   }
   .intro_button {
     position: absolute;
-    left: 40%;
+    left: 30%;
     margin-left: -90px;
     bottom: -55vw;
     padding: 16px 27px;
@@ -121,8 +119,12 @@
     font-size: 14px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 430px) {
   .intro_button {
-    bottom: -90vw;
+    bottom: -85vw;
+  }
+  .intro_cup {
+    margin-right: 0;
+    margin-left: auto;
   }
 }

@@ -52,6 +52,7 @@
 }
 .about_text-more {
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 830px) {
   h2.slide_title {

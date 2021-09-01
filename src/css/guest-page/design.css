@@ -20,7 +20,7 @@
   position: absolute;
   display: block;
   bottom: -20%;
-  left: -15%;;
+  left: -15%;
   width: 570px;
   height: 600px;
   background: url('../../images/design/main-shadow.png') no-repeat;
@@ -40,7 +40,8 @@
   content: '';
   position: absolute;
   top: 240px;
-  left: -90px;
+  left: 50%;
+  margin-left: -200px;
   width: 400px;
   height: 300px;
   background: url('../../images/design/advantages-shadow.png');
@@ -106,7 +107,7 @@
   left: calc((100vw - 1440px) / -2);
   right: calc((100vw - 1440px) / -2);
   height: 100%;
-  background: #493326 url('../../images/design/add.png') no-repeat;
+  background: #493326 url('../../images/design/add.png') 50% 0 no-repeat;
 }
 
 .vacancies::before {
@@ -122,7 +123,7 @@
       rgba(223, 185, 115, 0.2) 75.97%
     ),
     linear-gradient(0deg, #fcf8f1, #fcf8f1);
-    border-radius: 0 0 100px 0;
+  border-radius: 0 0 100px 0;
 }
 /* .vacancies::after {
   content: '';
@@ -206,7 +207,7 @@
 @media screen and (max-width: 830px) {
   .advantages::before {
     width: 85vw;
-    height: 600px;
+    height: 580px;
     border-radius: 0 100px 0 0;
   }
 }
@@ -218,6 +219,15 @@
     width: 400px;
     background-size: contain;
   }
+  .blog::after {
+    top: 75%;
+    left: 0;
+    background-image: url('../../images/design/mobile-blog.png');
+    width: 320px;
+  }
+  .blog::before {
+    display: none;
+  }
 }
 @media screen and (max-width: 570px) {
   .advantages::before {
@@ -227,10 +237,11 @@
     height: 2150px;
   }
   .intro::after {
-    transform: rotate(90deg);
-    height: 430px;
-    top: 200px;
+    /* transform: rotate(90deg); */
+    height: 190px;
     width: 60vw;
+    top: 55%;
+    border-radius: 100px 0 0 0;
   }
   .intro-helper::before {
     left: 25vw;
@@ -241,4 +252,3 @@
     left: 38vw;
   }
 }
-
