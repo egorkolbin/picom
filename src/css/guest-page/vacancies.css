@@ -4,21 +4,6 @@
   margin-bottom: 170px;
   position: relative;
 }
-.vacancies::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 1180px;
-  height: 1587px;
-  left: -350px;
-  background: linear-gradient(
-      119.77deg,
-      rgba(245, 220, 175, 0.2) 11.15%,
-      rgba(223, 185, 115, 0.2) 75.97%
-    ),
-    linear-gradient(0deg, #fcf8f1, #fcf8f1);
-}
-
 .vacancies_title {
   font-size: 36px;
   line-height: 47px;
@@ -126,4 +111,31 @@ p.guest_text {
 .guest_button {
   padding: 16px 31px;
   font-size: 14px;
+}
+@media screen and (max-width: 900px) {
+  .vacancy_block {
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 620px) {
+  .vacancies {
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
+  .vacancy_block {
+    margin: 0 auto;
+    border-radius: 0;
+    width: 100%;
+  }
+  .vacancy_block p {
+    padding-right: 0;
+  }
+  .vacancy_block:first-child {
+    margin-bottom: 20px;
+    border-radius: 0 90px 0 0;
+  }
+  .vacancies_blocks {
+    flex-wrap: wrap;
+  }
 }

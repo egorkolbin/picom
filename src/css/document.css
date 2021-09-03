@@ -16,13 +16,14 @@ div.hidden {
 }
 .wrapper {
   height: 100%;
+  overflow-x: hidden;
 }
 section * {
   z-index: 2;
 }
 .container {
   padding: 0px 10px;
-  max-width: 1900px;
+  max-width: 1420px;
   position: relative;
   margin: 0 auto;
   overflow-x: visible;
@@ -44,4 +45,10 @@ main section {
 }
 span.number {
   font-family: 'Noto-Sans';
+}
+@media screen and (max-width: 700px) {
+  h2.title {
+    font-size: 30px;
+    line-height: 39px;
+  }
 }

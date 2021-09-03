@@ -4,24 +4,7 @@
   margin-bottom: 176px;
   position: relative;
 }
-.actions::before {
-  content: '';
-  width: 1920px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -350px;
-  background: url('../../images/design/actions-ellipse.png') top -50px right 100px
-      no-repeat,
-    linear-gradient(
-        119.77deg,
-        rgba(245, 220, 175, 0.2) 11.15%,
-        rgba(223, 185, 115, 0.2) 75.97%
-      )
-      100% 100%,
-    linear-gradient(0deg, #fcf8f1, #fcf8f1) 100% 100%;
-}
+
 .actions_title {
   font-size: 36px;
   margin: 0;
@@ -32,7 +15,7 @@
 }
 .actions_list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 28px;
   padding: 0;
   margin: 0;
@@ -40,10 +23,10 @@
 }
 .actions_item {
   display: flex;
-  width: 390px;
   background-repeat: no-repeat;
-  height: 450px;
+  background-size: cover;
   transition: transform 0.5s;
+  min-height: 400px;
 }
 .actions_item:hover {
   -webkit-transform: scale(1.1);
@@ -69,4 +52,19 @@
 }
 .actions_item_text span {
   color: #fba902;
+}
+@media screen and (max-width: 600px) {
+  .actions_item_text {
+    font-size: 20px;
+    margin: auto 10px 30px 10px;
+  }
+  .actions_item:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .actions {
+    margin-bottom: 80px;
+  }
 }

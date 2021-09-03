@@ -83,11 +83,13 @@
                   >Посмотреть меню</a
                 >
               </div>
-              <img
-                class="intro_cup lazy"
-                src="images/lazy-cup.png"
-                alt="Изображение напитка в съедобном стаканчике"
-              />
+              <div class="intro-helper">
+                <img
+                  class="intro_cup lazy"
+                  src="images/lazy-cup.png"
+                  alt="Изображение напитка в съедобном стаканчике"
+                />
+              </div>
             </div>
           </section>
           <section class="about" id="about">
@@ -193,7 +195,7 @@
               </div>
             </div>
           </section>
-          <!-- <section class="advantages">
+          <section class="advantages">
             <h2 class="advantages_title title">
               Преимущества съедобных <span>стаканчиков</span>
             </h2>
@@ -237,6 +239,7 @@
               </ul>
             </div>
           </section>
+
           <section class="actions">
             <h2 class="actions_title title">Акции</h2>
             <ul class="actions_list">
@@ -262,6 +265,7 @@
               </li>
             </ul>
           </section>
+
           <section class="content-menu" id="content-menu">
             <h2 class="content-menu_title title slide_title">Меню</h2>
             <ul class="content-menu_nav slider_menu">
@@ -297,8 +301,6 @@
                           src="images/menu/author-1.png"
                           alt="Изображение напитка"
                           class="item_image"
-                          width="280"
-                          height="300"
                         />
                         <figcaption class="item_properties">
                           <p class="item_volume">
@@ -342,8 +344,6 @@
                           src="images/menu/author-2.png"
                           alt="Изображение напитка"
                           class="item_image"
-                          width="280"
-                          height="300"
                         />
                         <figcaption class="item_properties">
                           <p class="item_volume">
@@ -388,8 +388,6 @@
                           src="images/menu/author-3.png"
                           alt="Изображение напитка"
                           class="item_image"
-                          width="280"
-                          height="300"
                         />
                         <figcaption class="item_properties">
                           <p class="item_volume">
@@ -549,6 +547,7 @@
                   </ul>
                 </div>
               </div>
+
               <div class="menu-slide" tabindex="0">
                 <div class="content-menu_slide slide content-menu_dessert">
                   <ul class="dessert-menu_list">
@@ -734,6 +733,7 @@
               </div>
             </div>
           </section>
+
           <section class="add-form">
             <div class="add-form_blocks">
               <form
@@ -748,6 +748,7 @@
                   id="name"
                   class="form_name"
                   required="required"
+                  placeholder="Ваше имя"
                 />
                 <label for="name" class="label_name">Ваше имя</label>
                 <input
@@ -756,6 +757,7 @@
                   id="number"
                   class="form_number"
                   required="required"
+                  placeholder="Номер телефона"
                 />
                 <label for="number" class="label_phone">Номер телефона</label>
                 <textarea
@@ -783,7 +785,7 @@
                 />
               </form>
               <div class="add-form_two">
-                <h2 class="add-form_title">Добавь свой напиток</h2>
+                <h2 class="add-form_title title">Добавь свой напиток</h2>
                 <p class="add-form_text">
                   Теперь и ты можешь внести<br />
                   разнообразие вкусов в наше меню!
@@ -796,6 +798,7 @@
               </div>
             </div>
           </section>
+
           <section class="vacancies" id="vacancies">
             <h2 class="vacancies_title title">Вакансии</h2>
             <p class="vacancies_text">
@@ -832,6 +835,7 @@
               </div>
             </div>
           </section>
+
           <section class="map">
             <h2 class="map_title title"><span>yum-yum</span> карта</h2>
             <div class="map-flex">
@@ -839,9 +843,10 @@
                 <h3 class="map_city" data-city="izhevsk">г. Ижевск</h3>
                 <ul class="map_list"></ul>
               </div>
-              <div id="map" style="width: 805px; height: 444px"></div>
+              <div id="map" style="height: 444px"></div>
             </div>
           </section>
+
           <section class="blog" id="blog">
             <h2 class="blog_title title"><span>Эко</span>-блог</h2>
             <a href="blog.html" class="button blog_button-read white_button"
@@ -876,7 +881,7 @@
                 >
               </div>
             </div>
-          </section> -->
+          </section>
         </main>
 
         <footer>
@@ -1005,6 +1010,7 @@
             <input type="submit" value="Отправить" class="form_submit" />
           </form>
         </div>
+
         <div class="announce add popup-barista popup hidden invisible">
           <h3 class="announce_title"><span>ммм...</span>звучит очень вкусно</h3>
           <p class="announce_text">
@@ -1023,16 +1029,17 @@
           </p>
           <button class="announce_button button">закрыть</button>
         </div>
+
+        <div class="announce error popup hidden invisible">
+          <h3 class="announce_title">упс... произошла <span>ошибка</span></h3>
+          <p class="announce_text">
+            При отправке ваших данных произошла ошибка, перезагрузите страницу и
+            попробуйте ввести данные снова
+          </p>
+          <button class="announce_button button">закрыть</button>
+        </div>
+        <div class="overlay hidden invisible"></div>
       </div>
-      <div class="announce error popup hidden invisible">
-        <h3 class="announce_title">упс... произошла <span>ошибка</span></h3>
-        <p class="announce_text">
-          При отправке ваших данных произошла ошибка, перезагрузите страницу и
-          попробуйте ввести данные снова
-        </p>
-        <button class="announce_button button">закрыть</button>
-      </div>
-      <div class="overlay hidden invisible"></div>
     </div>
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=20b5d4b6-7489-401f-ae84-898620bb781c&lang=ru_RU"

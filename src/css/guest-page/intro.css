@@ -5,18 +5,24 @@
   position: relative;
 }
 .intro-flex {
-  margin-right: auto;
+  /* margin-right: auto; */
   position: relative;
   flex-shrink: 1;
 }
-.intro_cup {
+.intro-helper {
   padding-top: 87px;
-  object-fit: contain;
+  position: relative;
   flex-shrink: 1;
   margin-left: auto;
+  margin-right: auto;
   z-index: 2;
+}
+.intro_cup {
+  object-fit: contain;
+  /* position: absolute;
+  bottom: 0;
+  right: 0; */
   min-width: 177px;
-  /* max-height: 209px; */
 }
 .intro_cup.animated {
   animation-name: scaleRotate;
@@ -88,24 +94,37 @@
   .intro-flex-main {
     flex-direction: column;
   }
-  .intro_cup {
+  .intro-helper {
     padding-top: 0;
-    width: 50%;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .intro_cup {
+    width: 40%;
+    margin-right: 10vw;
   }
   .intro_button {
     position: absolute;
-    left: 50%;
+    left: 30%;
     margin-left: -90px;
-    bottom: -60vh;
+    bottom: -55vw;
     padding: 16px 27px;
     text-transform: none;
   }
   .intro_title {
-    font-size: 30px;
-    line-height: 39px;
     margin-top: 37px;
   }
   .intro_text {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .intro_button {
+    bottom: -85vw;
+  }
+  .intro_cup {
+    margin-right: 0;
+    margin-left: auto;
   }
 }
