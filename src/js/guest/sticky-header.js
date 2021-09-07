@@ -1,13 +1,19 @@
 const header = document.querySelector('header');
-const nav = header.querySelector('nav');
 const firstSection = document.querySelector('section');
 const headerHeight = header.getBoundingClientRect().height;
+
+export let isStickyHeader;
 
 function stickyHeader(entries) {
   const [entry] = entries;
 
-  if (!entry.isIntersecting) header.classList.add('sticky');
-  else header.classList.remove('sticky');
+  if (!entry.isIntersecting) {
+    header.classList.add('sticky');
+    isStickyHeader = true;
+  } else {
+    header.classList.remove('sticky');
+    isStickyHeader = false;
+  }
 }
 
 const firstSectionObserver = new IntersectionObserver(stickyHeader, {

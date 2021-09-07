@@ -11,3 +11,4 @@ import './form.js';
 import './phone-input.js';
 import './burger-menu.js';
 import './show-text.js';
+import './regulate-height.js';

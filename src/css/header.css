@@ -8,7 +8,7 @@ header {
 }
 header.sticky {
   position: fixed;
-  padding: 0;
+  padding: 5px 0;
   width: calc(100% - 20px);
   max-width: 1440px;
 }
@@ -159,6 +159,15 @@ header.sticky::before {
     top: 0;
     height: 48px;
   }
+  /* header::after {
+    position: absolute;
+    content: '';
+    background-color: #fcf8f1;
+    height: 48px;
+    width: 10px;
+    right: -10px;
+    top: 0;
+  } */
   .menu_list {
     opacity: 0;
     position: absolute;
@@ -166,7 +175,7 @@ header.sticky::before {
     flex-direction: column;
     top: 43px;
     right: -10px;
-    width: 320px;
+    width: 100vw;
     background-color: #fcf8f1;
     align-items: center;
     padding-top: 20px;
@@ -182,7 +191,7 @@ header.sticky::before {
     flex-direction: column;
     background-color: #fcf8f1;
     align-items: center;
-    width: 320px;
+    width: 100vw;
     padding-top: 30px;
     padding-bottom: 55px;
     transform: translateX(100%);

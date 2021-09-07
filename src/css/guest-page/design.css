@@ -211,7 +211,7 @@
     border-radius: 0 100px 0 0;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 680px) {
   .intro-helper::before {
     top: -5vw;
     left: 35vw;
@@ -240,15 +240,11 @@
     /* transform: rotate(90deg); */
     height: 190px;
     width: 60vw;
-    top: 55%;
+    top: 65%;
     border-radius: 100px 0 0 0;
   }
   .intro-helper::before {
-    left: 25vw;
-  }
-}
-@media screen and (max-width: 480px) {
-  .intro-helper::before {
-    left: 38vw;
+    left: 35vw;
+    top: -120px;
   }
 }

@@ -10,7 +10,7 @@
   /* width: calc(100vw - 20px) !important; */
 }
 .about_img {
-  margin-right: 7vw;
+  margin-right: 128px;
   flex-shrink: 2;
   object-fit: contain;
   min-width: 300px;
@@ -53,6 +53,11 @@
 .about_text-more {
   display: none;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .about_img {
+    margin-right: 7vw;
+  }
 }
 @media screen and (max-width: 830px) {
   h2.slide_title {

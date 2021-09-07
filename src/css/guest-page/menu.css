@@ -310,5 +310,10 @@ img.item_image {
   .classic-menu_list,
   .dessert-menu_list {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 70px;
+  }
+  .classic-menu_item,
+  .dessert-menu_item {
+    padding: 40px 10px 5px 10px;
   }
 }

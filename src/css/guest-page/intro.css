@@ -119,7 +119,21 @@
     font-size: 14px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 570px) {
+  .intro-helper {
+    margin-top: 80px;
+  }
+  .intro_button {
+    left: 50%;
+    margin-left: -90px;
+    bottom: -300px;
+  }
+  .intro_cup {
+    margin-top: -100px;
+    margin-right: 0;
+  }
+}
+/* @media screen and (max-width: 430px) {
   .intro_button {
     bottom: -85vw;
   }
@@ -127,4 +141,4 @@
     margin-right: 0;
     margin-left: auto;
   }
-}
+} */

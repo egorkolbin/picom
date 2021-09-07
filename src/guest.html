@@ -10,6 +10,7 @@
   <body>
     <div class="wrapper">
       <div class="container">
+        <div class="overlay hidden invisible"></div>
         <header>
           <div class="logo">
             <a href="index.html"
@@ -967,7 +968,13 @@
         <div class="vacancy-form popup hidden invisible">
           <form action="" method="post" class="form" novalidate>
             <h3 class="vacancy-form_title">введи свои <span>данные</span></h3>
-            <input type="text" name="vacancy-name" id="vacancy-name" required />
+            <input
+              type="text"
+              name="vacancy-name"
+              id="vacancy-name"
+              placeholder="Ваше имя"
+              required
+            />
             <label for="vacancy-name" class="vacancy_name-label"
               >Ваше имя</label
             >
@@ -977,6 +984,7 @@
                 type="tel"
                 name="vacancy-phone"
                 id="vacancy-phone"
+                placeholder="Номер телефона"
                 required
               />
               <label for="vacancy-phone" class="vacancy_phone-label"
@@ -1038,7 +1046,6 @@
           </p>
           <button class="announce_button button">закрыть</button>
         </div>
-        <div class="overlay hidden invisible"></div>
       </div>
     </div>
     <script

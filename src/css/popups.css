@@ -1,7 +1,7 @@
 /* Popup Styles */
 .overlay {
   position: fixed;
-  width: 1920px;
+  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
@@ -135,6 +135,12 @@ form .submit {
   display: inline-block;
   position: relative;
 }
+.vacancy-form input::placeholder {
+  font-size: 12px;
+}
+.vacancy-form label {
+  opacity: 0;
+}
 .vacancy-form textarea {
   padding: 11px 24px;
   width: 392px;
@@ -154,39 +160,7 @@ form .submit {
 .vacancy-form .form_copyright {
   width: 550px;
 }
-.vacancy_name-label {
-  top: 155px;
-  left: 104px;
-}
-.vacancy_phone-label {
-  top: 223px;
-  left: 104px;
-}
-.vacancy_email-label {
-  top: 223px;
-  left: 336px;
-  opacity: 0;
-}
-#vacancy-name:focus ~ .vacancy_name-label,
-#vacancy-name:valid ~ .vacancy_name-label {
-  font-size: 12px;
-  top: 120px;
-  left: 90px;
-}
-#vacancy-phone:focus ~ .vacancy_phone-label,
-#vacancy-phone:valid ~ .vacancy_phone-label,
-#vacancy-phone:hover ~ .vacancy_phone-label {
-  font-size: 12px;
-  top: 190px;
-  left: 90px;
-}
-#vacancy-email:focus ~ .vacancy_email-label,
-#vacancy-email:valid ~ .vacancy_email-label {
-  font-size: 12px;
-  top: 190px;
-  left: 320px;
-  opacity: 1;
-}
+
 .popup-guest {
   color: #fcf8f1;
   background-color: #493326;
@@ -339,4 +313,83 @@ form .submit {
   font-size: 12px;
   top: 223px;
   left: 200px;
+}
+@media screen and (max-width: 1920px) {
+  .vacancy-form {
+    margin-left: -250px;
+    margin-top: 0;
+    top: 20px;
+  }
+  .vacancy-form form {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .announce {
+    width: 80%;
+    margin-left: calc((80% + 30px) / -2);
+    padding: 15px;
+  }
+  .announce_title {
+    font-size: 26px;
+  }
+  .vacancy-form {
+    width: 80%;
+    margin-left: -40%;
+    margin-top: 0;
+    top: 10px;
+  }
+  .vacancy-form form {
+    padding: 15px;
+    width: calc(100% - 30px);
+  }
+  .vacancy-form_title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .vacancy-form input {
+    width: calc(100% - 50px);
+  }
+  .vacancy-form textarea {
+    width: calc(100% - 50px);
+  }
+  .vacancy-form .form_copyright {
+    width: 100%;
+  }
+  .vacancy-inline {
+    width: 100%;
+  }
+  .vacancy-inline label + input {
+    margin-left: 20px;
+  }
+  #vacancy-phone,
+  #vacancy-email {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .vacancy-form input {
+    padding: 5px 10px;
+  }
+  .vacancy-inline {
+    flex-direction: column;
+  }
+  .vacancy-form_title {
+    margin-bottom: 10px;
+  }
+  .vacancy-form textarea {
+    height: 70px;
+  }
+  .vacancy-form form_copyright {
+    margin-bottom: 10px;
+  }
+  .vacancy-form input,
+  #vacancy-phone,
+  #vacancy-email {
+    width: calc(100% - 20px);
+  }
+  .vacancy-inline label + input {
+    margin-left: 0px;
+  }
 }
